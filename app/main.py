@@ -5,11 +5,17 @@ from sqlalchemy.orm import Session
 from app.database import get_db
 from app.init_db import init_db
 from app import models, schemas, crud
-from app.auth import hash_password, create_access_token, get_current_user
+from app.auth import hash_password, create_access_token, get_current_user, get_current_regulator
+from app import crud_regulator
+from app.routes_regulator import router as regulator_router
 
-CSV_PATH = "data/stocks.csv"
+CSV_PATH = "data/historical_data.csv"
+HISTORICAL_CSV_PATH = "data/historical_data.csv"
 
 app = FastAPI(title="Trading Simulation Test API")
+
+# Include regulator routes
+app.include_router(regulator_router)
 
 @app.on_event("startup")
 def startup():
@@ -28,6 +34,7 @@ def register(payload: schemas.UserCreate, db: Session = Depends(get_db)):
         email=payload.email,
         full_name=payload.full_name,
         hashed_password=hash_password(payload.password),
+        role=payload.role.value if payload.role else "trader",
 
         risk_score=payload.risk_score,
         risk_level=payload.risk_level.value,
@@ -43,8 +50,9 @@ def register(payload: schemas.UserCreate, db: Session = Depends(get_db)):
 
     user = crud.create_user(db, user)
 
-    # auto default portfolio
-    crud.create_default_portfolio(db, user.id, user.initial_cash_balance)
+    # auto default portfolio (only for traders)
+    if user.role == "trader":
+        crud.create_default_portfolio(db, user.id, user.initial_cash_balance)
     return user
 
 @app.post("/auth/login", response_model=schemas.Token)

@@ -21,6 +21,10 @@ class InvestmentStyle(enum.Enum):
     VALUE = "value"
     INCOME = "income"
 
+class UserRole(enum.Enum):
+    TRADER = "trader"
+    REGULATOR = "regulator"
+
 
 class User(Base):
     __tablename__ = "users"
@@ -49,12 +53,20 @@ class User(Base):
     initial_cash_balance = Column(Float, default=10000.0)
     target_portfolio_value = Column(Float)
     rebalance_frequency_days = Column(Integer, default=30)
+    role = Column(String(20), default="trader", nullable=False)  
+    is_cmf_verified = Column(Boolean, default=False)
+
     
     
     
     # Relationships
     portfolios = relationship("Portfolio", back_populates="user", cascade="all, delete-orphan")
-    transactions = relationship("Transaction", back_populates="user", cascade="all, delete-orphan")
+    transactions = relationship(
+        "Transaction",
+        back_populates="user",
+        cascade="all, delete-orphan",
+        foreign_keys="Transaction.user_id",
+    )
     simulations = relationship("PortfolioSimulation", back_populates="user", cascade="all, delete-orphan")
 
 
@@ -116,8 +128,15 @@ class Transaction(Base):
     recommended_by_ai = Column(Boolean, default=False)
     reasoning = Column(Text)  # AI reasoning for the recommendation
     
+    # Regulatory fields
+    is_suspicious = Column(Boolean, default=False)
+    suspicious_reason = Column(Text)
+    flagged_by_regulator_id = Column(Integer, ForeignKey("users.id"))
+    flagged_at = Column(DateTime(timezone=True))
+    
     # Relationships
-    user = relationship("User", back_populates="transactions")
+    user = relationship("User", foreign_keys=[user_id], back_populates="transactions")
+    flagged_by_regulator = relationship("User", foreign_keys=[flagged_by_regulator_id])
     portfolio = relationship("Portfolio", back_populates="transactions")
 
 

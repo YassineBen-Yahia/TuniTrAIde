@@ -54,3 +54,15 @@ def get_current_user(
     if not user:
         raise credentials_exception
     return user
+
+
+def get_current_regulator(
+    current_user: models.User = Depends(get_current_user)
+) -> models.User:
+    """Dependency to ensure the current user has regulator role"""
+    if current_user.role != "regulator":
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail="Only regulators can access this endpoint"
+        )
+    return current_user

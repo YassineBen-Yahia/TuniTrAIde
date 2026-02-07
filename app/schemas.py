@@ -21,11 +21,17 @@ class InvestmentStyleEnum(str, Enum):
     INCOME = "income"
 
 
+class UserRoleEnum(str, Enum):
+    TRADER = "trader"
+    REGULATOR = "regulator"
+
+
 # User Schemas
 class UserBase(BaseModel):
     username: str
     email: str  # Changed from EmailStr temporarily
     full_name: Optional[str] = None
+    role: Optional[UserRoleEnum] = UserRoleEnum.TRADER
     risk_score: Optional[int] = 5
     risk_level: Optional[RiskLevelEnum] = RiskLevelEnum.MODERATE
     investment_style: Optional[InvestmentStyleEnum] = InvestmentStyleEnum.BALANCED
@@ -90,6 +96,7 @@ class User(UserBase):
     is_active: bool
     created_at: datetime
     updated_at: Optional[datetime] = None
+    role: Optional[str] = "trader"
 
     class Config:
         from_attributes = True
@@ -182,6 +189,10 @@ class Transaction(TransactionBase):
     portfolio_id: int
     total_amount: float
     transaction_date: datetime
+    is_suspicious: Optional[bool] = False
+    suspicious_reason: Optional[str] = None
+    flagged_by_regulator_id: Optional[int] = None
+    flagged_at: Optional[datetime] = None
 
     class Config:
         from_attributes = True
@@ -324,6 +335,40 @@ class SimulationResponse(BaseModel):
 # Chat Schemas
 class ChatMessage(BaseModel):
     content: str
+
+
+# Regulator Schemas
+class FlagTransactionRequest(BaseModel):
+    transaction_id: int
+    is_suspicious: bool
+    suspicious_reason: Optional[str] = None
+
+
+class StockAnomalyInfo(BaseModel):
+    stock_code: str
+    stock_name: str
+    date: str
+    volume_anomaly: int
+    variation_anomaly: int
+    variation_anomaly_post_news: int
+    variation_anomaly_pre_news: int
+    volume_anomaly_post_news: int
+    volume_anomaly_pre_news: int
+
+
+class UpdateAnomalyRequest(BaseModel):
+    stock_code: str
+    date: str
+    anomaly_type: str  # 'volume' or 'variation'
+    value: int  # 0 or 1 for the anomaly
+
+
+class TransactionWithUser(Transaction):
+    user: User
+    portfolio: Portfolio
+    
+    class Config:
+        from_attributes = True
 
 class ChatResponse(BaseModel):
     type: str  # "user" or "agent"
