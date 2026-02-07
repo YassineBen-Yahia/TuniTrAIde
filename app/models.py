@@ -160,3 +160,35 @@ class PortfolioSimulation(Base):
     
     # Relationships
     user = relationship("User", back_populates="simulations")
+   
+class MarketData(Base):
+    __tablename__ = "market_data"
+
+    id = Column(Integer, primary_key=True, index=True)
+    stock_code = Column(String(50), nullable=False, index=True)
+    stock_name = Column(String(100))
+    date = Column(DateTime(timezone=True), nullable=False, index=True)
+    open_price = Column(Float)
+    high_price = Column(Float)
+    low_price = Column(Float)
+    close_price = Column(Float, nullable=False)
+    volume = Column(Integer)
+    adjusted_close = Column(Float)
+    
+    # Technical Indicators
+    sma_20 = Column(Float)  # 20-day Simple Moving Average
+    sma_50 = Column(Float)  # 50-day Simple Moving Average
+    ema_12 = Column(Float)  # 12-day Exponential Moving Average
+    ema_26 = Column(Float)  # 26-day Exponential Moving Average
+    rsi = Column(Float)     # Relative Strength Index
+    macd = Column(Float)    # MACD Line
+    macd_signal = Column(Float)  # MACD Signal Line
+    bollinger_upper = Column(Float)
+    bollinger_lower = Column(Float)
+    
+    # Anomaly Detection
+    is_anomaly = Column(Boolean, default=False)
+    anomaly_score = Column(Float)
+    anomaly_type = Column(String(50))  # price_spike, volume_spike, etc.
+    
+    created_at = Column(DateTime(timezone=True), server_default=func.now())
