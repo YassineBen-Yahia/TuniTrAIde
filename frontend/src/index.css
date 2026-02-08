@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html {
+    font-family: 'Manrope', 'Segoe UI', sans-serif;
+  }
+
+  /* Dark mode (default and only mode) */
+  body {
+    min-height: 100vh;
+    background-color: #0b1020;
+    background-image:
+      radial-gradient(1200px circle at 10% -10%, rgba(56, 189, 248, 0.16), transparent 40%),
+      radial-gradient(900px circle at 95% 10%, rgba(52, 211, 153, 0.12), transparent 45%),
+      radial-gradient(700px circle at 30% 80%, rgba(244, 63, 94, 0.08), transparent 45%);
+    color: #e2e8f0;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Space Grotesk', 'Manrope', sans-serif;
+    letter-spacing: -0.01em;
+  }
+}
+
+@layer components {
+  .app-shell {
+    @apply min-h-screen text-slate-100;
+  }
+
+  .panel {
+    @apply rounded-2xl border border-slate-800/80 bg-slate-900/70 shadow-[0_20px_50px_rgba(2,6,23,0.45)];
+  }
+
+  .panel-muted {
+    @apply rounded-2xl border border-slate-800/60 bg-slate-900/40;
+  }
+
+  .panel-glow {
+    @apply shadow-[0_18px_45px_rgba(14,165,233,0.18)];
+  }
+
+  .input-field {
+    @apply w-full rounded-lg border border-slate-700/70 bg-slate-900/60 px-3 py-2 text-slate-100 placeholder:text-slate-500 focus:border-cyan-400/80 focus:ring-2 focus:ring-cyan-400/30 focus:outline-none;
+  }
+
+  .select-field {
+    @apply w-full rounded-lg border border-slate-700/70 bg-slate-900/70 px-3 py-2 text-slate-100 focus:border-cyan-400/80 focus:ring-2 focus:ring-cyan-400/30 focus:outline-none;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-lg bg-cyan-400 px-4 py-2 text-slate-900 font-semibold shadow-[0_14px_30px_rgba(34,211,238,0.35)] transition hover:bg-cyan-300;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-lg border border-slate-700/70 bg-slate-900/60 px-4 py-2 text-slate-200 transition hover:bg-slate-800/80;
+  }
+
+  .pill {
+    @apply inline-flex items-center rounded-full border border-slate-700/70 bg-slate-900/70 px-2.5 py-1 text-xs text-slate-300;
+  }
+
+  .table-head {
+    @apply bg-slate-900/70 text-slate-300;
+  }
+
+  .table-row {
+    @apply border-b border-slate-800/70;
+  }
+
+  /* Dark mode scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0f172a;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #475569;
+  }
+}

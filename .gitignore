@@ -17,3 +17,6 @@ news_sentiment_analysis/exports
 */models/*
 news_sentiment_analysis/src/models
 data/
+merged.csv
+ry.ipynb
+logs/
