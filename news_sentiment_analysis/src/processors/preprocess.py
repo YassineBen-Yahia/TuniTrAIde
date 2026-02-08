@@ -1,5 +1,10 @@
 import json
 import re
+from pathlib import Path
+import sys
+
+# Get absolute path to project root
+PROJECT_ROOT = Path(__file__).resolve().parents[3]
 
 def clean_text(text, lang):
     if not text:
@@ -30,9 +35,9 @@ def clean_text(text, lang):
 # --- RUNNING THE CAR WASH ---
 
 # 1. Load your scraped data
-input_file = '../../data/raw/scraped_articles.json'
+input_file = PROJECT_ROOT / 'news_sentiment_analysis' / 'data' / 'raw' / 'scraped_articles.json'
 try:
-    with open(input_file, 'r', encoding='utf-8') as f:
+    with open(str(input_file), 'r', encoding='utf-8') as f:
         data = json.load(f)
 except (FileNotFoundError, json.JSONDecodeError) as e:
     print(f"Error loading file: {e}")
@@ -52,8 +57,9 @@ for article in data['articles']:
 data['articles'].sort(key=lambda x: x.get('date', ''), reverse=True)
 
 # 4. Save the "Machine-Ready" data
-output_file = '../../data/processed/global_cleaned.json'
-with open(output_file, 'w', encoding='utf-8') as f:
+output_file = PROJECT_ROOT / 'news_sentiment_analysis' / 'data' / 'processed' / 'global_cleaned.json'
+output_file.parent.mkdir(parents=True, exist_ok=True)  # Ensure output directory exists
+with open(str(output_file), 'w', encoding='utf-8') as f:
     json.dump(data, f, ensure_ascii=False, indent=4)
 
 print(f"Success! {len(data['articles'])} articles washed, sorted by date, and saved to {output_file}")

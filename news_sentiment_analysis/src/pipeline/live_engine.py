@@ -56,12 +56,12 @@ class RealTimeSentimentPipeline:
         run_global_scraping(today, today)
         
         # 2. LOAD RAW DATA
-        raw_file = f"../../data/raw/RESULTS_GLOBAL_{today}_to_{today}.json"
-        if not os.path.exists(raw_file):
+        raw_file = project_root / "news_sentiment_analysis" / "data" / "raw" / f"RESULTS_GLOBAL_{today}_to_{today}.json"
+        if not raw_file.exists():
             print("⚠️ No articles collected today.")
             return
 
-        with open(raw_file, 'r', encoding='utf-8') as f:
+        with open(str(raw_file), 'r', encoding='utf-8') as f:
             raw_data = json.load(f)
         
         articles = raw_data.get('all_articles', [])

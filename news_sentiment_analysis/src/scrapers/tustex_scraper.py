@@ -5,11 +5,18 @@ import re
 import hashlib
 import time
 from datetime import datetime
+from pathlib import Path
+import sys
+
+# Get absolute path to project root
+PROJECT_ROOT = Path(__file__).resolve().parents[3]
 
 # --- 1. TICKER DETECTION ---
-def load_search_dict(json_path='../../data/reference/ticker_mapping.json'):
+def load_search_dict(json_path=None):
+    if json_path is None:
+        json_path = PROJECT_ROOT / "news_sentiment_analysis" / "data" / "reference" / "ticker_mapping.json"
     try:
-        with open(json_path, 'r', encoding='utf-8') as f:
+        with open(str(json_path), 'r', encoding='utf-8') as f:
             data = json.load(f)
         search_dict = {}
         for entry in data['tickers_mapping']:

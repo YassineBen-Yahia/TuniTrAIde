@@ -1,17 +1,20 @@
 import json
 import os
 from datetime import datetime
+from pathlib import Path
 
 from ilboursa_scraper import scrape_ilboursa_by_range
 from tustex_scraper import scrape_tustex_by_range
 from tunisien_scraper import scrape_tunisien_ar_by_range
 
+# Get absolute path to project root
+PROJECT_ROOT = Path(__file__).resolve().parents[3]
 
-def ensure_dir(path: str):
-    os.makedirs(path, exist_ok=True)
+def ensure_dir(path):
+    Path(path).mkdir(parents=True, exist_ok=True)
 
 
-def save_json(path: str, data: dict):
+def save_json(path, data: dict):
     with open(path, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
@@ -22,8 +25,8 @@ def run_global_scraping(start_date, end_date):
     print(f"📅 PERIOD: {start_date} to {end_date}")
     print("=" * 60)
 
-    # Output folder (adjust if you want)
-    out_dir = "../../data/raw"
+    # Output folder using absolute path
+    out_dir = PROJECT_ROOT / "news_sentiment_analysis" / "data" / "raw"
     ensure_dir(out_dir)
 
     # Global dictionary to store all results
@@ -55,8 +58,8 @@ def run_global_scraping(start_date, end_date):
 
             # ✅ Save per-site file immediately
             site_filename = f"RESULTS_{scraper['slug']}_{start_date}_to_{end_date}.json"
-            site_path = os.path.join(out_dir, site_filename)
-            save_json(site_path, site_payload)
+            site_path = out_dir / site_filename
+            save_json(str(site_path), site_payload)
 
             if data:
                 report["all_articles"].extend(data)
@@ -75,16 +78,16 @@ def run_global_scraping(start_date, end_date):
                 "articles": []
             }
             site_filename = f"RESULTS_{scraper['slug']}_{start_date}_to_{end_date}.json"
-            site_path = os.path.join(out_dir, site_filename)
-            save_json(site_path, err_payload)
+            site_path = out_dir / site_filename
+            save_json(str(site_path), err_payload)
 
             print(f"❌ Critical error on {scraper['name']}: {e}")
             print(f"📂 Error saved to: {site_path}")
 
     # ✅ Final global save
     output_filename = f"RESULTS_GLOBAL_{start_date}_to_{end_date}.json"
-    output_path = os.path.join(out_dir, output_filename)
-    save_json(output_path, report)
+    output_path = out_dir / output_filename
+    save_json(str(output_path), report)
 
     print("\n" + "=" * 60)
     print(f"🏁 ALL SCRAPERS HAVE FINISHED")
