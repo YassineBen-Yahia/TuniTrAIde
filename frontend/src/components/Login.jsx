@@ -8,6 +8,7 @@ const Login = () => {
     email: '',
     password: '',
     full_name: '',
+    role: 'trader',
     risk_score: 5,
     risk_level: 'moderate',
     investment_style: 'balanced',
@@ -38,6 +39,7 @@ const Login = () => {
           email: formData.email,
           password: formData.password,
           full_name: formData.full_name,
+          role: formData.role,
           risk_score: parseInt(formData.risk_score),
           risk_level: formData.risk_level,
           investment_style: formData.investment_style,
@@ -77,6 +79,7 @@ const Login = () => {
       email: '',
       password: '',
       full_name: '',
+      role: 'trader',
       risk_score: 5,
       risk_level: 'moderate',
       investment_style: 'balanced',
@@ -162,45 +165,65 @@ const Login = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="risk_score" className="block text-sm font-medium text-slate-300">
-                    Risk Tolerance (1-10)
-                  </label>
-                  <input
-                    id="risk_score"
-                    name="risk_score"
-                    type="range"
-                    min="1"
-                    max="10"
-                    className="mt-1 w-full accent-cyan-400"
-                    value={formData.risk_score}
-                    onChange={handleChange}
-                  />
-                  <div className="flex justify-between text-xs text-slate-500">
-                    <span>Conservative (1)</span>
-                    <span>Current: {formData.risk_score}</span>
-                    <span>Aggressive (10)</span>
-                  </div>
-                </div>
-
-                <div>
-                  <label htmlFor="investment_style" className="block text-sm font-medium text-slate-300">
-                    Investment Style
+                  <label htmlFor="role" className="block text-sm font-medium text-slate-300">
+                    Role
                   </label>
                   <select
-                    id="investment_style"
-                    name="investment_style"
+                    id="role"
+                    name="role"
                     className="select-field mt-1"
-                    value={formData.investment_style}
+                    value={formData.role}
                     onChange={handleChange}
                   >
-                    <option value="conservative">Conservative</option>
-                    <option value="balanced">Balanced</option>
-                    <option value="aggressive">Aggressive</option>
-                    <option value="growth">Growth</option>
-                    <option value="value">Value</option>
-                    <option value="income">Income</option>
+                    <option value="trader">Investor</option>
+                    <option value="regulator">Regulator</option>
                   </select>
                 </div>
+
+                {formData.role === 'trader' && (
+                  <>
+                    <div>
+                      <label htmlFor="risk_score" className="block text-sm font-medium text-slate-300">
+                        Risk Tolerance (1-10)
+                      </label>
+                      <input
+                        id="risk_score"
+                        name="risk_score"
+                        type="range"
+                        min="1"
+                        max="10"
+                        className="mt-1 w-full accent-cyan-400"
+                        value={formData.risk_score}
+                        onChange={handleChange}
+                      />
+                      <div className="flex justify-between text-xs text-slate-500">
+                        <span>Conservative (1)</span>
+                        <span>Current: {formData.risk_score}</span>
+                        <span>Aggressive (10)</span>
+                      </div>
+                    </div>
+
+                    <div>
+                      <label htmlFor="investment_style" className="block text-sm font-medium text-slate-300">
+                        Investment Style
+                      </label>
+                      <select
+                        id="investment_style"
+                        name="investment_style"
+                        className="select-field mt-1"
+                        value={formData.investment_style}
+                        onChange={handleChange}
+                      >
+                        <option value="conservative">Conservative</option>
+                        <option value="balanced">Balanced</option>
+                        <option value="aggressive">Aggressive</option>
+                        <option value="growth">Growth</option>
+                        <option value="value">Value</option>
+                        <option value="income">Income</option>
+                      </select>
+                    </div>
+                  </>
+                )}
               </>
             )}
 

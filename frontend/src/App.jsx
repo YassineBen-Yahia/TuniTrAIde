@@ -10,6 +10,7 @@ import TradingSimulation from './components/TradingSimulation';
 import StockAnalysis from './components/StockAnalysis';
 import MarketOverview from './components/MarketOverview';
 import AlertsSurveillance from './components/AlertsSurveillance';
+import RegulatorDashboard from './components/RegulatorDashboard';
 import Profile from './components/Profile';
 import DashboardGuide from './components/DashboardGuide';
 import ErrorBoundary from './components/ErrorBoundary';
@@ -117,6 +118,17 @@ function AppRoutes() {
               <ProtectedRoute>
                 <ErrorBoundary>
                   <AlertsSurveillance />
+                </ErrorBoundary>
+              </ProtectedRoute>
+            }
+          />
+          {/* Regulator Dashboard */}
+          <Route
+            path="/regulator"
+            element={
+              <ProtectedRoute>
+                <ErrorBoundary>
+                  <RegulatorDashboard />
                 </ErrorBoundary>
               </ProtectedRoute>
             }

@@ -46,7 +46,7 @@ function authReducer(state, action) {
         ...state,
         user: null,
         token: null,
-        isAuthenticated: false,
+        isAuthenticated: false, // change back to false
         isLoading: false,
         error: action.payload,
       };
@@ -55,7 +55,7 @@ function authReducer(state, action) {
         ...state,
         user: null,
         token: null,
-        isAuthenticated: false,
+        isAuthenticated: false, // change back to false 
         isLoading: false,
         error: null,
       };
