@@ -1,0 +1,10 @@
+{
+  "tunindex_ret_mean": 0.0004215400621271655,
+  "tunindex_ret_std": 0.004259154224669637,
+  "tunindex20_ret_mean": 0.0004482615573437527,
+  "tunindex20_ret_std": 0.004950055312116928,
+  "intensity_p10": 0.724853095393154,
+  "intensity_p90": 1.3683398273351373,
+  "sentiment_mean": 0.011786389548427601,
+  "sentiment_std": 0.03142219399486337
+}
