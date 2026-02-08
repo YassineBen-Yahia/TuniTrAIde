@@ -21,7 +21,7 @@ INDICES_URLS = {
     "TUNSAC" : "https://www.investing.com/indices/tunsac",
 }   
 
-REF_PATH = r"data/filtered_anomaly_detected_dataset.csv"  # dataset reference
+REF_PATH = r"data/historical_data.csv"  # dataset reference
 
 def get_indice_price(indice_url: str):
     headers = {
@@ -158,7 +158,7 @@ def append_to_csv_table(df_new: pd.DataFrame, path: str):
 
 if __name__ == "__main__":
     # 1) Fetch A→Z
-    from new_agent.utils import get_symbols
+    from agent.utils import get_symbols
     symbols = get_symbols("data/historical_data.csv")
     print(symbols)
     df_aaz = fetch_aaz_df()
