@@ -1,0 +1,1692 @@
+{
+  "tickers_mapping": [
+    {
+      "ticker": "ADWYA",
+      "aliases": [
+        "ADWYA",
+        "Laboratoires Adwya",
+        "Laboratoire Adwya",
+        "LAB ADWYA",
+        "Adwya",
+        "Adwya SA",
+        "Adwya S.A."
+      ],
+      "arabic_aliases": [
+        "أدويّة",
+        "أدوية",
+        "شركة أدويّة",
+        "شركة أدوية",
+        "مخابر أدويّة",
+        "مخابر أدوية",
+        "مختبرات أدويّة",
+        "مختبرات أدوية",
+        "ادوية"
+      ],
+      "sector": "Pharmaceuticals"
+    },
+    {
+      "ticker": "AETECH",
+      "aliases": [
+        "AETECH",
+        "Aetec Solutions",
+        "AETEC",
+        "AETEC Solutions",
+        "AETEC Solution",
+        "Aetec",
+        "Aetech",
+        "AETECH SA",
+        "AETECH S.A."
+      ],
+      "arabic_aliases": [
+        "آيتك",
+        "آي تاك",
+        "أي تيك",
+        "ايتك",
+        "اى تاك",
+        "AETECH",
+        "AETEC"
+      ],
+      "sector": "Technology"
+    },
+    {
+      "ticker": "AIR LIQUIDE TUNISIE",
+      "aliases": [
+        "Air Liquide",
+        "Air Liquide Tunisie",
+        "AIR LIQUIDE",
+        "Air-Liquide",
+        "Air Liquide (Tunisie)",
+        "Air Liquide Tunisia",
+        "AL",
+        "A.L.",
+        "Air Liquide SA"
+      ],
+      "arabic_aliases": [
+        "أير ليكيد تونس",
+        "أير ليكيد",
+        "إير ليكيد",
+        "اير ليكيد",
+        "ايرليكيد",
+        "أيرليكيد",
+        "شركة أير ليكيد تونس"
+      ],
+      "sector": "Industry"
+    },
+    {
+      "ticker": "AMEN BANK",
+      "aliases": [
+        "Amen Bank",
+        "AMEN BANK",
+        "Amen",
+        "Banque Amen",
+        "AmenBank",
+        "AB",
+        "A.B."
+      ],
+      "arabic_aliases": [
+        "بنك الأمان",
+        "أمان بنك",
+        "بنك امين",
+        "بنك آمين",
+        "بنك amen",
+        "بنك الامان",
+        "مصرف الأمان"
+      ],
+      "sector": "Banking"
+    },
+    {
+      "ticker": "AMS",
+      "aliases": [
+        "AMS",
+        "Ateliers Mécaniques du Sahel",
+        "Ateliers Mecaniques du Sahel",
+        "Ateliers du Sahel",
+        "A.M.S.",
+        "AMS SA"
+      ],
+      "arabic_aliases": [
+        "المعامل الآلية بالساحل",
+        "الورشات الميكانيكية بالساحل",
+        "ورشات ميكانيكية الساحل",
+        "إيه إم إس",
+        "اي ام اس",
+        "AMS"
+      ],
+      "sector": "Industry"
+    },
+    {
+      "ticker": "ARAB TUNISIAN BANK",
+      "aliases": [
+        "ATB",
+        "A.T.B.",
+        "Arab Tunisian Bank",
+        "ARAB TUNISIAN BANK",
+        "Banque Arabo-Tunisienne",
+        "Banque Arabo Tunisienne",
+        "Arab Tunisian Bank (ATB)"
+      ],
+      "arabic_aliases": [
+        "البنك العربي لتونس",
+        "البنك العربي التونسي",
+        "البنك العربي التونسي الدولي",
+        "إيه تي بي",
+        "اي تي بي",
+        "ATB"
+      ],
+      "sector": "Banking"
+    },
+    {
+      "ticker": "ARAB TUNISIAN LEASE",
+      "aliases": [
+        "ATL",
+        "A.T.L.",
+        "Arab Tunisian Lease",
+        "ARAB TUNISIAN LEASE",
+        "Arab Tunisian Leasing",
+        "Arab Tunisian Lease (ATL)"
+      ],
+      "arabic_aliases": [
+        "العربي لتونس للإيجار المالي",
+        "العربي التونسي للإيجار المالي",
+        "الشركة العربية التونسية للإيجار المالي",
+        "إيه تي إل",
+        "اي تي ال",
+        "ATL"
+      ],
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "ARTES",
+      "aliases": [
+        "ARTES",
+        "Automobile Reseau Tunisien et Services",
+        "Automobile Réseau Tunisien et Services",
+        "Automobile Réseau Tunisien & Services",
+        "A.R.T.E.S.",
+        "Artes SA"
+      ],
+      "arabic_aliases": [
+        "أرتيس",
+        "ارتيس",
+        "الشبكة التونسية للسيارات",
+        "شبكة السيارات التونسية",
+        "شركة أرتيس"
+      ],
+      "sector": "Consumer Goods"
+    },
+    {
+      "ticker": "ASSAD",
+      "aliases": [
+        "ASSAD",
+        "L'Accumulateur Tunisien ASSAD",
+        "Accumulateur Tunisien ASSAD",
+        "Accumulateur Tunisien",
+        "Assad Accumulateur",
+        "ASSAD Batteries",
+        "Batteries ASSAD"
+      ],
+      "arabic_aliases": [
+        "أسد",
+        "اسد",
+        "بطاريات أسد",
+        "بطاريات الاسد",
+        "البطارية التونسية أسد",
+        "شركة أسد للبطاريات"
+      ],
+      "sector": "Industry"
+    },
+    {
+      "ticker": "ASSURANCES MAGHREBIA",
+      "aliases": [
+        "Maghrebia",
+        "Assurances Maghrebia",
+        "Assurance Maghrebia",
+        "MAGHREBIA",
+        "Maghrebia Assurances"
+      ],
+      "arabic_aliases": [
+        "مغريبية للتأمين",
+        "تأمينات مغريبية",
+        "المغريبية للتأمين",
+        "مغريبيا",
+        "مغربية للتأمين"
+      ],
+      "sector": "Insurance"
+    },
+    {
+      "ticker": "ASTREE",
+      "aliases": [
+        "ASTREE",
+        "Astree Assurances",
+        "Assurances ASTREE",
+        "ASTREE Assurances",
+        "A.S.T.R.E.E."
+      ],
+      "arabic_aliases": [
+        "أستري",
+        "استري",
+        "تأمينات أستري",
+        "شركة أستري للتأمين",
+        "ASTREE"
+      ],
+      "sector": "Insurance"
+    },
+    {
+      "ticker": "ATTIJARI BANK",
+      "aliases": [
+        "Attijari Bank",
+        "ATTIJARI BANK",
+        "Attijari",
+        "Banque Attijari",
+        "Attijari Banque",
+        "AttijariBank",
+        "ABT"
+      ],
+      "arabic_aliases": [
+        "التجاري بنك",
+        "بنك التجاري",
+        "بنك التجاري التونسي",
+        "اتجاري بنك",
+        "التجاري bank",
+        "attijari بنك"
+      ],
+      "sector": "Banking"
+    },
+    {
+      "ticker": "ATTIJARI LEASING",
+      "aliases": [
+        "Attijari Leasing",
+        "ATTIJARI LEASING",
+        "Attijari Lease",
+        "Attijari Leasing Tunisie",
+        "AttijariLeasing"
+      ],
+      "arabic_aliases": [
+        "التجاري للإيجار المالي",
+        "اتجاري للإيجار المالي",
+        "التجاري ليزينغ",
+        "التجاري ليسينغ",
+        "attijari leasing"
+      ],
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "BANQUE DE TUNISIE",
+      "aliases": [
+        "BT",
+        "B.T.",
+        "Banque de Tunisie",
+        "BANQUE DE TUNISIE",
+        "Banque De Tunisie",
+        "La Banque de Tunisie"
+      ],
+      "arabic_aliases": [
+        "البنك التونسي",
+        "بنك تونس",
+        "بي تي",
+        "بي.تي",
+        "BT",
+        "البنك التونسي (BT)"
+      ],
+      "sector": "Banking"
+    },
+    {
+      "ticker": "BANQUE NATIONALE AGRICOLE",
+      "aliases": [
+        "BNA",
+        "B.N.A.",
+        "Banque Nationale Agricole",
+        "BANQUE NATIONALE AGRICOLE",
+        "Banque Nationale Agricole (BNA)"
+      ],
+      "arabic_aliases": [
+        "البنك الوطني الفلاحي",
+        "البنك الوطني الزراعي",
+        "بي إن إيه",
+        "بي.إن.إيه",
+        "BNA",
+        "بنك وطني فلاحي"
+      ],
+      "sector": "Banking"
+    },
+    {
+      "ticker": "BEST LEASE",
+      "aliases": [
+        "Best Lease",
+        "BEST LEASE",
+        "Best Leasing",
+        "BestLease",
+        "Best Lease Tunisie"
+      ],
+      "arabic_aliases": [
+        "بيست ليس",
+        "بيست ليز",
+        "بيست ليزينغ",
+        "بست ليس",
+        "Best Lease"
+      ],
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "BH ASSURANCE",
+      "aliases": [
+        "BH Assurance",
+        "BH ASSURANCE",
+        "Assurances Salim",
+        "Assurance Salim",
+        "BH Assurances",
+        "BH Assurance (Salim)"
+      ],
+      "arabic_aliases": [
+        "بي هاش للتأمين",
+        "BH للتأمين",
+        "تأمينات سليم",
+        "تأمين سليم",
+        "شركة سليم للتأمين"
+      ],
+      "sector": "Insurance"
+    },
+    {
+      "ticker": "BH BANK",
+      "aliases": [
+        "BH Bank",
+        "BH BANK",
+        "Banque de l'Habitat",
+        "Banque de l Habitat",
+        "Banque de l’Habitat",
+        "B.H. Bank"
+      ],
+      "arabic_aliases": [
+        "بي هاش بنك",
+        "BH بنك",
+        "بنك الإسكان",
+        "بنك الاسكان",
+        "بنك السكن",
+        "البنك العقاري"
+      ],
+      "sector": "Banking"
+    },
+    {
+      "ticker": "BH LEASING",
+      "aliases": [
+        "BH Leasing",
+        "BH LEASING",
+        "Modern Leasing",
+        "ModernLeasing",
+        "BH Lease",
+        "BH Leasing Tunisie"
+      ],
+      "arabic_aliases": [
+        "بي هاش للإيجار المالي",
+        "BH للإيجار المالي",
+        "مودرن ليس",
+        "مودرن ليز",
+        "الإيجار المالي بي هاش"
+      ],
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "BIAT",
+      "aliases": [
+        "BIAT",
+        "B.I.A.T",
+        "Banque Internationale Arabe de Tunisie",
+        "Banque Internationale Arabe de Tunisie (BIAT)",
+        "Banque Internationale Arabe de Tunisie SA"
+      ],
+      "arabic_aliases": [
+        "بيات",
+        "بنك تونس العربي الدولي",
+        "البنك العربي الدولي بتونس",
+        "BIAT",
+        "ب.ي.ا.ت"
+      ],
+      "sector": "Banking"
+    },
+    {
+      "ticker": "BNA ASSURANCES",
+      "aliases": [
+        "BNA Assurances",
+        "BNA ASSURANCES",
+        "Assurances BNA",
+        "BNA Assurance"
+      ],
+      "arabic_aliases": [
+        "بينا للتأمين",
+        "تأمينات البنك الوطني الفلاحي",
+        "تأمينات BNA",
+        "BNA للتأمين"
+      ],
+      "sector": "Insurance"
+    },
+    {
+      "ticker": "BTE (ADP)",
+      "aliases": [
+        "BTE",
+        "B.T.E.",
+        "Banque de Tunisie et des Emirats",
+        "Banque de Tunisie et des Émirats",
+        "BTE ADP",
+        "BTE (ADP)",
+        "Banque Tunisie Emirats"
+      ],
+      "arabic_aliases": [
+        "بنك تونس والإمارات",
+        "بنك تونس و الإمارات",
+        "بنك تونس والامارات",
+        "BTE",
+        "بي تي إي"
+      ],
+      "sector": "Banking"
+    },
+    {
+      "ticker": "CARTHAGE CEMENT",
+      "aliases": [
+        "Carthage Cement",
+        "CARTHAGE CEMENT",
+        "CarthageCement",
+        "Carthage Ciment",
+        "CC",
+        "Carthage Cement SA"
+      ],
+      "arabic_aliases": [
+        "قرطاج للإسمنت",
+        "اسمنت قرطاج",
+        "إسمنت قرطاج",
+        "قرطاج سيمانت",
+        "قرطاج سمنت",
+        "شركة قرطاج للإسمنت"
+      ],
+      "sector": "Construction"
+    },
+    {
+      "ticker": "CELLCOM",
+      "aliases": [
+        "Cellcom",
+        "CELLCOM",
+        "Cell Com",
+        "CellCom",
+        "Evertek",
+        "Cellcom Tunisie"
+      ],
+      "arabic_aliases": [
+        "سيلكوم",
+        "سيل كوم",
+        "سيلكوم تونس",
+        "إيفيرتيك",
+        "ايفيرتيك",
+        "Cellcom"
+      ],
+      "sector": "Technology"
+    },
+    {
+      "ticker": "CEREALIS",
+      "aliases": [
+        "Cerealis",
+        "CEREALIS",
+        "Céréalys",
+        "Cerealis SA"
+      ],
+      "arabic_aliases": [
+        "سيريليس",
+        "سيرياليس",
+        "سيراليس",
+        "Cerealis"
+      ],
+      "sector": "Consumer Goods"
+    },
+    {
+      "ticker": "CIL",
+      "aliases": [
+        "CIL",
+        "C.I.L.",
+        "Compagnie Internationale de Leasing",
+        "Compagnie Internationale Leasing",
+        "CIL Leasing"
+      ],
+      "arabic_aliases": [
+        "سي إيه إل",
+        "سي.إيه.إل",
+        "الدولية للإيجار المالي",
+        "شركة الإيجار الدولي",
+        "CIL"
+      ],
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "CIMENTS DE BIZERTE",
+      "aliases": [
+        "Ciments de Bizerte",
+        "CIMENTS DE BIZERTE",
+        "SCB",
+        "S.C.B.",
+        "Ciments Bizerte",
+        "Ciments de Bizerte SA"
+      ],
+      "arabic_aliases": [
+        "إسمنت بنزرت",
+        "اسمنت بنزرت",
+        "شركة إسمنت بنزرت",
+        "شركة اسمنت بنزرت",
+        "SCB"
+      ],
+      "sector": "Construction"
+    },
+    {
+      "ticker": "CITY CARS",
+      "aliases": [
+        "City Cars",
+        "CITY CARS",
+        "CityCars",
+        "Kia Tunisie",
+        "KIA Tunisie",
+        "City Cars Kia"
+      ],
+      "arabic_aliases": [
+        "سيتي كارس",
+        "سيتيكارز",
+        "كيا تونس",
+        "KIA تونس",
+        "سيتي كارس كيا"
+      ],
+      "sector": "Consumer Goods"
+    },
+    {
+      "ticker": "DELICE HOLDING",
+      "aliases": [
+        "Delice",
+        "Délice",
+        "Delice Holding",
+        "DELICE HOLDING",
+        "Délice Holding",
+        "Groupe Délice",
+        "Groupe Delice"
+      ],
+      "arabic_aliases": [
+        "دليس القابضة",
+        "ديليس القابضة",
+        "مجموعة دليس",
+        "مجموعة ديليس",
+        "قروب دليس",
+        "شركة دليس القابضة"
+      ],
+      "sector": "Consumer Goods"
+    },
+    {
+      "ticker": "ELBENE",
+      "aliases": [
+        "Elbene Industrie",
+        "ELBENE Industrie",
+        "Elbene",
+        "ELBENE",
+        "El Bène",
+        "Elbene SA"
+      ],
+      "arabic_aliases": [
+        "ألبان",
+        "البان",
+        "شركة ألبان",
+        "شركة البان",
+        "إلبين",
+        "Elbene"
+      ],
+      "sector": "Consumer Goods"
+    },
+    {
+      "ticker": "ELECTROSTAR",
+      "aliases": [
+        "Electrostar",
+        "ELECTROSTAR",
+        "Electro Star",
+        "ElectroStar",
+        "Electrostar Tunisie"
+      ],
+      "arabic_aliases": [
+        "إليكتروستار",
+        "الكترستار",
+        "إلكتروستار",
+        "اليكتروستار",
+        "Electrostar"
+      ],
+      "sector": "Consumer Goods"
+    },
+    {
+      "ticker": "ENNAKL AUTOMOBILES",
+      "aliases": [
+        "Ennakl",
+        "ENNAKL",
+        "Ennakl Automobiles",
+        "ENNAKL AUTOMOBILES",
+        "Groupe Ennakl",
+        "Ennakl Auto"
+      ],
+      "arabic_aliases": [
+        "النقل للسيارات",
+        "شركة النقل",
+        "الناكل للسيارات",
+        "الناكل",
+        "شركة النقل للسيارات",
+        "إناكل"
+      ],
+      "sector": "Consumer Goods"
+    },
+    {
+      "ticker": "ESSOUKNA",
+      "aliases": [
+        "Essoukna",
+        "ESSOUKNA",
+        "Es Soukna",
+        "El Soukna",
+        "Essoukna SA"
+      ],
+      "arabic_aliases": [
+        "السكنى",
+        "السكنى العقارية",
+        "شركة السكنى",
+        "اسكنى",
+        "Essoukna"
+      ],
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "EURO-CYCLES",
+      "aliases": [
+        "Euro-Cycles",
+        "EURO-CYCLES",
+        "Eurocycles",
+        "Euro Cycles",
+        "Eurocycles Tunisie"
+      ],
+      "arabic_aliases": [
+        "أورو سيكل",
+        "اورو سيكل",
+        "أورو-سيكل",
+        "يورو سيكل",
+        "Eurocycles"
+      ],
+      "sector": "Consumer Goods"
+    },
+    {
+      "ticker": "GIF FILTER",
+      "aliases": [
+        "GIF",
+        "G.I.F.",
+        "GIF Filter",
+        "GIF-FILTER",
+        "GIF FILTRE",
+        "GIF Filtre",
+        "Générale Industrielle de Filtration",
+        "Generale Industrielle de Filtration"
+      ],
+      "arabic_aliases": [
+        "جيف فيلتر",
+        "جيف فلتر",
+        "GIF فلتر",
+        "شركة جيف",
+        "جي.آي.اف",
+        "جيف"
+      ],
+      "sector": "Industry"
+    },
+    {
+      "ticker": "HANNIBAL LEASE",
+      "aliases": [
+        "Hannibal Lease",
+        "HANNIBAL LEASE",
+        "Hannibal Leasing",
+        "HannibalLease",
+        "HL"
+      ],
+      "arabic_aliases": [
+        "حنبعل للإيجار المالي",
+        "حنبعل ليزينغ",
+        "حنبعل ليس",
+        "شركة حنبعل للإيجار المالي",
+        "Hannibal"
+      ],
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "HEXABYTE",
+      "aliases": [
+        "Hexabyte",
+        "HEXABYTE",
+        "HexaByte",
+        "Hexabyte Tunisie",
+        "Hexabyte SA"
+      ],
+      "arabic_aliases": [
+        "هيكسابايت",
+        "هيكسا بايت",
+        "هكسابايت",
+        "Hexabyte"
+      ],
+      "sector": "Technology"
+    },
+    {
+      "ticker": "ICF",
+      "aliases": [
+        "ICF",
+        "I.C.F.",
+        "Industries Chimiques du Fluor",
+        "Industries Chimiques du Fluor (ICF)",
+        "Industries Chimiques Fluor"
+      ],
+      "arabic_aliases": [
+        "آي سي أف",
+        "اي سي اف",
+        "الصناعات الكيميائية للفليور",
+        "الصناعات الكيميائية للفلور",
+        "ICF"
+      ],
+      "sector": "Industry"
+    },
+    {
+      "ticker": "LAND'OR",
+      "aliases": [
+        "Land'Or",
+        "LAND'OR",
+        "Landor",
+        "Land Or",
+        "Fromagerie Land'Or",
+        "Fromagerie Landor"
+      ],
+      "arabic_aliases": [
+        "لاندور",
+        "لان دور",
+        "لاند أور",
+        "Landor",
+        "Land'Or"
+      ],
+      "sector": "Consumer Goods"
+    },
+    {
+      "ticker": "MAGASIN GENERAL",
+      "aliases": [
+        "Magasin General",
+        "MAGASIN GENERAL",
+        "Magasin Général",
+        "MG",
+        "M.G.",
+        "Magasin Général Tunisie"
+      ],
+      "arabic_aliases": [
+        "المغازة العامة",
+        "المغازة",
+        "المغازة العامّة",
+        "مغازة عامة",
+        "MG"
+      ],
+      "sector": "Consumer Goods"
+    },
+    {
+      "ticker": "MAGHREBIA VIE",
+      "aliases": [
+        "Maghrebia Vie",
+        "MAGHREBIA VIE",
+        "Maghrebia Life",
+        "Maghrebia-Vie"
+      ],
+      "arabic_aliases": [
+        "مغريبية للحياة",
+        "مغريبيا للحياة",
+        "مغريبية في",
+        "تأمين الحياة مغريبية"
+      ],
+      "sector": "Insurance"
+    },
+    {
+      "ticker": "MEUBLES INTERIEURS",
+      "aliases": [
+        "Meubles Interieurs",
+        "MEUBLES INTERIEURS",
+        "Meubles Intérieurs",
+        "SAM",
+        "S.A.M.",
+        "Société d'Ameublement Moderne",
+        "Societe d'Ameublement Moderne"
+      ],
+      "arabic_aliases": [
+        "موبل انترير",
+        "موبل انتريور",
+        "موابل انترير",
+        "سام",
+        "شركة سام",
+        "SAM"
+      ],
+      "sector": "Consumer Goods"
+    },
+    {
+      "ticker": "MIP",
+      "aliases": [
+        "MIP",
+        "M.I.P.",
+        "Maghreb International Publicité",
+        "Maghreb International Publicite",
+        "Maghreb Intl Publicité",
+        "MIP Publicité"
+      ],
+      "arabic_aliases": [
+        "ميب",
+        "المغاربية الدولية للإشهار",
+        "المغاربية الدولية للاشهار",
+        "إشهار ميب",
+        "MIP"
+      ],
+      "sector": "Services"
+    },
+    {
+      "ticker": "MONOPRIX",
+      "aliases": [
+        "Monoprix",
+        "MONOPRIX",
+        "Monoprix Tunisie",
+        "Monoprix تونس",
+        "Monoprix SA"
+      ],
+      "arabic_aliases": [
+        "مونوبري",
+        "مونو بري",
+        "مونوبري تونس",
+        "Monoprix",
+        "مونوبريكس"
+      ],
+      "sector": "Consumer Goods"
+    },
+    {
+      "ticker": "MPBS",
+      "aliases": [
+        "MPBS",
+        "M.P.B.S.",
+        "Manufacture de Panneaux Bois du Sud",
+        "Manufacture de Panneaux de Bois du Sud",
+        "Panneaux Bois du Sud",
+        "MPBS SA"
+      ],
+      "arabic_aliases": [
+        "إم بي بي إس",
+        "ام بي بي اس",
+        "صناعة ألواح الخشب بالجنوب",
+        "ألواح الخشب بالجنوب",
+        "MPBS"
+      ],
+      "sector": "Industry"
+    },
+    {
+      "ticker": "NEW BODY LINE",
+      "aliases": [
+        "New Body Line",
+        "NEW BODY LINE",
+        "NBL",
+        "N.B.L.",
+        "NewBodyLine",
+        "New Bodyline"
+      ],
+      "arabic_aliases": [
+        "نيو بودي لاين",
+        "نيو بوديلاين",
+        "NBL",
+        "New Body Line"
+      ],
+      "sector": "Consumer Goods"
+    },
+    {
+      "ticker": "OFFICE PLAST",
+      "aliases": [
+        "Office Plast",
+        "OFFICE PLAST",
+        "OfficePlast",
+        "Office Plast Tunisie",
+        "OP"
+      ],
+      "arabic_aliases": [
+        "أوفيس بلاست",
+        "اوفيـس بلاست",
+        "أوفيسبلاست",
+        "Office Plast",
+        "أوفيس"
+      ],
+      "sector": "Consumer Goods"
+    },
+    {
+      "ticker": "ONE TECH",
+      "aliases": [
+        "One Tech",
+        "ONE TECH",
+        "OTH",
+        "O.T.H.",
+        "One Tech Holding",
+        "OneTech",
+        "Groupe One Tech"
+      ],
+      "arabic_aliases": [
+        "وان تك",
+        "ون تك",
+        "وان تك القابضة",
+        "مجموعة وان تك",
+        "OTH",
+        "One Tech"
+      ],
+      "sector": "Industry"
+    },
+    {
+      "ticker": "PLACEMENTS DE TUNISIE - SICAF",
+      "aliases": [
+        "Placements de Tunisie",
+        "PLACEMENTS DE TUNISIE",
+        "Placements de Tunisie SICAF",
+        "Placements de Tunisie - SICAF",
+        "SICAF Placements de Tunisie",
+        "PDT SICAF"
+      ],
+      "arabic_aliases": [
+        "توظيف تونس",
+        "توظيفات تونس",
+        "سيكاف توظيف تونس",
+        "شركة توظيف تونس",
+        "Placements de Tunisie"
+      ],
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "POULINA GROUP HOLDING",
+      "aliases": [
+        "PGH",
+        "P.G.H.",
+        "Poulina",
+        "POULINA",
+        "Poulina Group Holding",
+        "Poulina Group",
+        "Groupe Poulina",
+        "Poulina Holding"
+      ],
+      "arabic_aliases": [
+        "بولينة",
+        "بولينا",
+        "مجموعة بولينة القابضة",
+        "مجموعة بولينا القابضة",
+        "قروب بولينة",
+        "PGH"
+      ],
+      "sector": "Industry"
+    },
+    {
+      "ticker": "SAH",
+      "aliases": [
+        "SAH",
+        "S.A.H.",
+        "Lilas",
+        "LILAS",
+        "Société d'Articles Hygiéniques",
+        "Societe d'Articles Hygieniques",
+        "SAH Lilas"
+      ],
+      "arabic_aliases": [
+        "ليلاس",
+        "ليلـاس",
+        "إس إيه إتش",
+        "اس اي اتش",
+        "شركة ليلاس",
+        "SAH"
+      ],
+      "sector": "Consumer Goods"
+    },
+    {
+      "ticker": "SANIMED",
+      "aliases": [
+        "Sanimed",
+        "SANIMED",
+        "Sanimed Tunisie",
+        "Sanimed SA"
+      ],
+      "arabic_aliases": [
+        "سانيمد",
+        "سانيت",
+        "ساني ميد",
+        "Sanimed"
+      ],
+      "sector": "Industry"
+    },
+    {
+      "ticker": "SERVICOM",
+      "aliases": [
+        "Servicom",
+        "SERVICOM",
+        "ServiCom",
+        "Servicom Tunisie",
+        "Servicom SA"
+      ],
+      "arabic_aliases": [
+        "سرفيكوم",
+        "سيرفيكوم",
+        "سرفي كوم",
+        "Servicom"
+      ],
+      "sector": "Services"
+    },
+    {
+      "ticker": "SFBT",
+      "aliases": [
+        "SFBT",
+        "S.F.B.T.",
+        "Société de Fabrication des Boissons de Tunisie",
+        "Societe de Fabrication des Boissons de Tunisie",
+        "Société de Fabrication des Boissons",
+        "Societe de Fabrication des Boissons",
+        "Groupe SFBT",
+        "Boissons de Tunisie"
+      ],
+      "arabic_aliases": [
+        "شركة صنع المشروبات بتونس",
+        "شركة صنع المشروبات بتونس (SFBT)",
+        "شركة تصنيع المشروبات بتونس",
+        "شركة صناعة المشروبات بتونس",
+        "إس إف بي تي",
+        "اس اف بي تي",
+        "س ف ب ت",
+        "شركة المشروبات بتونس"
+      ],
+      "sector": "Consumer Goods"
+    },
+    {
+      "ticker": "SIAME",
+      "aliases": [
+        "SIAME",
+        "S.I.A.M.E.",
+        "Siame",
+        "SIAME Tunisie"
+      ],
+      "arabic_aliases": [
+        "سيام",
+        "سيامي",
+        "SIAME",
+        "شركة سيام"
+      ],
+      "sector": "Industry"
+    },
+    {
+      "ticker": "SIMPAR",
+      "aliases": [
+        "Simpar",
+        "SIMPAR",
+        "SIMPAR SA",
+        "S.I.M.P.A.R."
+      ],
+      "arabic_aliases": [
+        "سيمبار",
+        "سمبار",
+        "SIMPAR"
+      ],
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "SIPHAT",
+      "aliases": [
+        "Siphat",
+        "SIPHAT",
+        "Société des Industries Pharmaceutiques de Tunisie",
+        "Societe des Industries Pharmaceutiques de Tunisie",
+        "Industries Pharmaceutiques de Tunisie",
+        "SIPHAT SA"
+      ],
+      "arabic_aliases": [
+        "سيفات",
+        "سيفات تونس",
+        "الشركة التونسية للصناعات الصيدلية",
+        "الصناعات الصيدلية بتونس",
+        "SIPHAT"
+      ],
+      "sector": "Pharmaceuticals"
+    },
+    {
+      "ticker": "SITS",
+      "aliases": [
+        "SITS",
+        "S.I.T.S.",
+        "Société Immobilière Tuniso-Saoudienne",
+        "Societe Immobiliere Tuniso-Saoudienne",
+        "Tuniso-Saoudienne",
+        "SITS SA"
+      ],
+      "arabic_aliases": [
+        "سيتس",
+        "الشركة العقارية التونسية السعودية",
+        "العقارية التونسية السعودية",
+        "SITS"
+      ],
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "SMART TUNISIE",
+      "aliases": [
+        "Smart Tunisie",
+        "SMART TUNISIE",
+        "Smart",
+        "SMART",
+        "Smart Tunisia",
+        "SmartTunisie"
+      ],
+      "arabic_aliases": [
+        "سمارت تونس",
+        "سمارت",
+        "SMART تونس",
+        "Smart تونس"
+      ],
+      "sector": "Technology"
+    },
+    {
+      "ticker": "SOCIETE CHIMIQUE ALKIMIA",
+      "aliases": [
+        "Alkimia",
+        "ALKIMIA",
+        "Société Chimique Alkimia",
+        "Societe Chimique Alkimia",
+        "SCA Alkimia",
+        "Société Alkimia"
+      ],
+      "arabic_aliases": [
+        "كيمياء",
+        "شركة كيمياء",
+        "الكيميا",
+        "ألكيميا",
+        "شركة ألكيميا",
+        "ALKIMIA"
+      ],
+      "sector": "Industry"
+    },
+    {
+      "ticker": "SOMOCER",
+      "aliases": [
+        "Somocer",
+        "SOMOCER",
+        "S.O.M.O.C.E.R.",
+        "Somocer Tunisie",
+        "Somocer SA"
+      ],
+      "arabic_aliases": [
+        "صوموسير",
+        "سوموسير",
+        "Somocer"
+      ],
+      "sector": "Industry"
+    },
+    {
+      "ticker": "SOPAT",
+      "aliases": [
+        "Sopat",
+        "SOPAT",
+        "S.O.P.A.T.",
+        "Sopat Tunisie"
+      ],
+      "arabic_aliases": [
+        "سوبات",
+        "سوباط",
+        "SOPAT"
+      ],
+      "sector": "Consumer Goods"
+    },
+    {
+      "ticker": "SOTEMAIL",
+      "aliases": [
+        "Sotemail",
+        "SOTEMAIL",
+        "S.O.T.E.M.A.I.L.",
+        "Sotemail SA"
+      ],
+      "arabic_aliases": [
+        "سوتيميل",
+        "سوتيمايل",
+        "SOTEMAIL"
+      ],
+      "sector": "Industry"
+    },
+    {
+      "ticker": "SOTETEL",
+      "aliases": [
+        "Sotetel",
+        "SOTETEL",
+        "S.O.T.E.T.E.L.",
+        "Sotetel Tunisie"
+      ],
+      "arabic_aliases": [
+        "سوتيتال",
+        "سوتيتل",
+        "SOTETEL"
+      ],
+      "sector": "Telecommunications"
+    },
+    {
+      "ticker": "SOTIPAPIER",
+      "aliases": [
+        "Sotipapier",
+        "SOTIPAPIER",
+        "Soti Papier",
+        "SotiPapier",
+        "Société Industrielle du Papier et du Carton",
+        "Societe Industrielle du Papier et du Carton"
+      ],
+      "arabic_aliases": [
+        "سوتيبابييه",
+        "سوتيبابيار",
+        "الشركة الصناعية للورق والكرتون",
+        "شركة الورق والكرتون",
+        "Sotipapier"
+      ],
+      "sector": "Industry"
+    },
+    {
+      "ticker": "SOTRAPIL",
+      "aliases": [
+        "Sotrapil",
+        "SOTRAPIL",
+        "S.O.T.R.A.P.I.L.",
+        "Sotrapil SA"
+      ],
+      "arabic_aliases": [
+        "سوترافيل",
+        "سوتراپيل",
+        "SOTRAPIL"
+      ],
+      "sector": "Industry"
+    },
+    {
+      "ticker": "SOTUMAG",
+      "aliases": [
+        "Sotumag",
+        "SOTUMAG",
+        "S.O.T.U.M.A.G.",
+        "Sotumag Tunisie"
+      ],
+      "arabic_aliases": [
+        "سوتوماج",
+        "سوتوماغ",
+        "SOTUMAG"
+      ],
+      "sector": "Services"
+    },
+    {
+      "ticker": "SOTUVER",
+      "aliases": [
+        "Sotuver",
+        "SOTUVER",
+        "Société Tunisienne de Verrerie",
+        "Societe Tunisienne de Verrerie",
+        "STV",
+        "Sotuver SA"
+      ],
+      "arabic_aliases": [
+        "سوتوفير",
+        "الشركة التونسية للبلور",
+        "الشركة التونسية للزجاج",
+        "سوتوفر",
+        "SOTUVER"
+      ],
+      "sector": "Industry"
+    },
+    {
+      "ticker": "SPDIT - SICAF",
+      "aliases": [
+        "SPDIT",
+        "SPDIT-SICAF",
+        "SPDIT SICAF",
+        "S.P.D.I.T.",
+        "SPDIT - Sicaf"
+      ],
+      "arabic_aliases": [
+        "سبدت",
+        "شركة الاستثمار والتنمية",
+        "شركة الاستثمار و التنمية",
+        "SPDIT"
+      ],
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "STA",
+      "aliases": [
+        "STA",
+        "S.T.A.",
+        "Société Tunisienne d'Automobiles",
+        "Societe Tunisienne d'Automobiles",
+        "STA Tunisie"
+      ],
+      "arabic_aliases": [
+        "الشركة التونسية للسيارات",
+        "إس تي إيه",
+        "اس تي اي",
+        "STA"
+      ],
+      "sector": "Consumer Goods"
+    },
+    {
+      "ticker": "STAR",
+      "aliases": [
+        "STAR",
+        "S.T.A.R.",
+        "Société Tunisienne d'Assurances et de Réassurances",
+        "Societe Tunisienne d'Assurances et de Reassurances",
+        "Assurances STAR",
+        "STAR Assurances"
+      ],
+      "arabic_aliases": [
+        "ستار للتأمين",
+        "الشركة التونسية للتأمين وإعادة التأمين",
+        "الشركة التونسية للتأمين و إعادة التأمين",
+        "STAR",
+        "تأمينات ستار"
+      ],
+      "sector": "Insurance"
+    },
+    {
+      "ticker": "STB BANK",
+      "aliases": [
+        "STB",
+        "S.T.B.",
+        "STB Bank",
+        "STB BANK",
+        "Société Tunisienne de Banque",
+        "Societe Tunisienne de Banque"
+      ],
+      "arabic_aliases": [
+        "الشركة التونسية للبنك",
+        "الشركة التونسية للبنوك",
+        "إس تي بي",
+        "اس تي بي",
+        "STB"
+      ],
+      "sector": "Banking"
+    },
+    {
+      "ticker": "STEQ",
+      "aliases": [
+        "STEQ",
+        "S.T.E.Q.",
+        "Steq",
+        "STEQ Tunisie"
+      ],
+      "arabic_aliases": [
+        "إس تي إي كيو",
+        "اس تي اي كيو",
+        "STEQ"
+      ],
+      "sector": "Consumer Goods"
+    },
+    {
+      "ticker": "STIP",
+      "aliases": [
+        "STIP",
+        "S.T.I.P.",
+        "Société Tunisienne des Industries de Pneumatiques",
+        "Societe Tunisienne des Industries de Pneumatiques",
+        "Industries de Pneumatiques STIP"
+      ],
+      "arabic_aliases": [
+        "ستيب",
+        "الشركة التونسية لصناعة الإطارات المطاطية",
+        "صناعة الإطارات المطاطية",
+        "STIP"
+      ],
+      "sector": "Industry"
+    },
+    {
+      "ticker": "SYPHAX AIRLINES",
+      "aliases": [
+        "Syphax",
+        "SYPHAX",
+        "Syphax Airlines",
+        "SYPHAX AIRLINES",
+        "Syphax Air",
+        "Syphax Airways"
+      ],
+      "arabic_aliases": [
+        "سيفاكس",
+        "سيفاكس أيرلاينز",
+        "سيفاكس للطيران",
+        "Syphax",
+        "سيفاكـس"
+      ],
+      "sector": "Services"
+    },
+    {
+      "ticker": "TAWASOL",
+      "aliases": [
+        "Tawasol",
+        "TAWASOL",
+        "Tawasol Group Holding",
+        "Tawasol Holding",
+        "Groupe Tawasol",
+        "Tawasol GH"
+      ],
+      "arabic_aliases": [
+        "تواصل",
+        "تواصل القابضة",
+        "مجموعة تواصل",
+        "شركة تواصل",
+        "Tawasol"
+      ],
+      "sector": "Industry"
+    },
+    {
+      "ticker": "TELNET HOLDING",
+      "aliases": [
+        "Telnet",
+        "TELNET",
+        "Telnet Holding",
+        "TELNET HOLDING",
+        "Telnet Group",
+        "Groupe Telnet"
+      ],
+      "arabic_aliases": [
+        "تلنت",
+        "تلنت القابضة",
+        "مجموعة تلنت",
+        "شركة تلنت",
+        "Telnet"
+      ],
+      "sector": "Technology"
+    },
+    {
+      "ticker": "TPR",
+      "aliases": [
+        "TPR",
+        "T.P.R.",
+        "Tunisie Profilés Aluminium",
+        "Tunisie Profiles Aluminium",
+        "Tunisie Profilés Aluminium (TPR)",
+        "Tunisie Profilés"
+      ],
+      "arabic_aliases": [
+        "تي بي آر",
+        "تي.بي.آر",
+        "تونس لمجنبات الأليمنيوم",
+        "بروفيلات الألمنيوم تونس",
+        "TPR"
+      ],
+      "sector": "Industry"
+    },
+    {
+      "ticker": "TUNINDEX",
+      "aliases": [
+        "Tunindex",
+        "TUNINDEX",
+        "Indice Tunindex",
+        "Indice TUNINDEX",
+        "TUNINDEX 20",
+        "Tunindex20"
+      ],
+      "arabic_aliases": [
+        "توناندكس",
+        "مؤشر توناندكس",
+        "مؤشر تونيندكس",
+        "تونيندكس",
+        "مؤشر TUNINDEX"
+      ],
+      "sector": "Market Index"
+    },
+    {
+      "ticker": "TUNINVEST - SICAR",
+      "aliases": [
+        "Tuninvest",
+        "TUNINVEST",
+        "Tuninvest - SICAR",
+        "TUNINVEST SICAR",
+        "Tuninvest SICAR",
+        "SICAR Tuninvest"
+      ],
+      "arabic_aliases": [
+        "تونينافست",
+        "تونينفست",
+        "تونينافست سيكار",
+        "شركة تونينافست",
+        "Tuninvest"
+      ],
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "TUNIS RE",
+      "aliases": [
+        "Tunis Re",
+        "TUNIS RE",
+        "Société Tunisienne de Réassurance",
+        "Societe Tunisienne de Reassurance",
+        "Tunis Reassurance",
+        "Tunis Re SA"
+      ],
+      "arabic_aliases": [
+        "تونس لإعادة التأمين",
+        "تونس ري",
+        "تونس ري للتأمين",
+        "تونس للتأمين",
+        "Tunis Re"
+      ],
+      "sector": "Insurance"
+    },
+    {
+      "ticker": "TUNISAIR",
+      "aliases": [
+        "Tunisair",
+        "TUNISAIR",
+        "Tunis Air",
+        "Tunisair SA",
+        "Tunisair Tunisie"
+      ],
+      "arabic_aliases": [
+        "تونس الجوية",
+        "الخطوط التونسية",
+        "تونيساير",
+        "تونس اير",
+        "Tunisair"
+      ],
+      "sector": "Services"
+    },
+    {
+      "ticker": "TUNISIAN BOND INDEX",
+      "aliases": [
+        "TBI",
+        "T.B.I.",
+        "Tunisian Bond Index",
+        "TUNISIAN BOND INDEX",
+        "Indice obligataire tunisien",
+        "Indice des obligations tunisiennes"
+      ],
+      "arabic_aliases": [
+        "مؤشر السندات التونسي",
+        "مؤشر السندات في تونس",
+        "مؤشر السندات",
+        "TBI"
+      ],
+      "sector": "Market Index"
+    },
+    {
+      "ticker": "TUNISIE LEASING & FACTORING",
+      "aliases": [
+        "Tunisie Leasing",
+        "TUNISIE LEASING",
+        "Tunisie Leasing & Factoring",
+        "TLF",
+        "T.L.F.",
+        "Tunisie Leasing Factoring",
+        "Tunisie Leasing and Factoring"
+      ],
+      "arabic_aliases": [
+        "تونس للإيجار المالي",
+        "تونس للإيجار المالي والفاكتورينغ",
+        "تونس ليزينغ",
+        "تونس ليسينغ",
+        "TLF"
+      ],
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "TUNISIE VALEURS",
+      "aliases": [
+        "Tunisie Valeurs",
+        "TUNISIE VALEURS",
+        "Tunisie Valeurs SA",
+        "TV",
+        "T.V."
+      ],
+      "arabic_aliases": [
+        "تونس للأوراق المالية",
+        "تونس فالور",
+        "شركة تونس للأوراق المالية",
+        "Tunisie Valeurs"
+      ],
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "UADH",
+      "aliases": [
+        "UADH",
+        "U.A.D.H.",
+        "Universal Auto Distributors Holding",
+        "Universal Auto Distributors",
+        "UADH Holding",
+        "Groupe UADH"
+      ],
+      "arabic_aliases": [
+        "يو إيه دي إتش",
+        "يو اي دي اتش",
+        "UADH",
+        "الموزعون العالميون للسيارات"
+      ],
+      "sector": "Consumer Goods"
+    },
+    {
+      "ticker": "UBCI",
+      "aliases": [
+        "UBCI",
+        "U.B.C.I.",
+        "Union Bancaire pour le Commerce et l'Industrie",
+        "Union Bancaire pour le Commerce et Industrie",
+        "UBCI Banque",
+        "UBCI Bank"
+      ],
+      "arabic_aliases": [
+        "يو بي سي إي",
+        "يو بي سي اي",
+        "الاتحاد البنكي للتجارة والصناعة",
+        "البنك الاتحاد للتجارة والصناعة",
+        "UBCI"
+      ],
+      "sector": "Banking"
+    },
+    {
+      "ticker": "UIB",
+      "aliases": [
+        "UIB",
+        "U.I.B.",
+        "Union Internationale de Banques",
+        "Union Internationale des Banques",
+        "UIB Banque",
+        "UIB Bank"
+      ],
+      "arabic_aliases": [
+        "يو أي بي",
+        "يو اي بي",
+        "الاتحاد الدولي للبنوك",
+        "البنك الدولي للاتحاد",
+        "UIB"
+      ],
+      "sector": "Banking"
+    },
+    {
+      "ticker": "UNIMED",
+      "aliases": [
+        "UNIMED",
+        "UniMed",
+        "Unimed",
+        "Laboratoires UNIMED",
+        "Laboratoire UNIMED",
+        "Unimed Tunisie"
+      ],
+      "arabic_aliases": [
+        "يونيميد",
+        "يونيماد",
+        "مخابر يونيميد",
+        "مختبرات يونيميد",
+        "UNIMED"
+      ],
+      "sector": "Pharmaceuticals"
+    },
+    {
+      "ticker": "WIFAK INT BANK",
+      "aliases": [
+        "Wifak Bank",
+        "Wifak International Bank",
+        "WIFAK INT BANK",
+        "Wifak",
+        "WIB",
+        "W.I.B."
+      ],
+      "arabic_aliases": [
+        "مصرف الوفاق",
+        "وفاق بنك",
+        "بنك الوفاق",
+        "الوفاق الدولي",
+        "Wifak",
+        "WIB"
+      ],
+      "sector": "Banking"
+    }
+  ]
+}

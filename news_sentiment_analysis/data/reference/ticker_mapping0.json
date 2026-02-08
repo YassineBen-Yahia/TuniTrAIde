@@ -1,0 +1,94 @@
+{
+  "tickers_mapping": [
+    {
+      "ticker": "SFBT",
+      "aliases": ["SFBT", "Société de Fabrication des Boissons de Tunisie", "Boissons de Tunisie"],
+      "arabic_aliases": ["شركة صنع المشروبات بتونس", "بضائع تونس"],
+      "sector": "Consumer Goods"
+    },
+    {
+      "ticker": "ATTIJARI BANK",
+      "aliases": ["Attijari Bank", "Attijari", "Banque Attijari de Tunisie"],
+      "arabic_aliases": ["التجاري بنك", "بنك التجاري"],
+      "sector": "Banking"
+    },
+    {
+      "ticker": "BIAT",
+      "aliases": ["BIAT", "Banque Internationale Arabe de Tunisie"],
+      "arabic_aliases": ["بيات", "بنك تونس العربي الدولي"],
+      "sector": "Banking"
+    },
+    {
+      "ticker": "BT",
+      "aliases": ["BT", "Banque de Tunisie"],
+      "arabic_aliases": ["البنك التونسي"],
+      "sector": "Banking"
+    },
+    {
+      "ticker": "STB",
+      "aliases": ["STB", "Société Tunisienne de Banque"],
+      "arabic_aliases": ["الشركة التونسية للبنك"],
+      "sector": "Banking"
+    },
+    {
+      "ticker": "BNA",
+      "aliases": ["BNA", "Banque Nationale Agricole"],
+      "arabic_aliases": ["البنك الوطني الفلاحي"],
+      "sector": "Banking"
+    },
+    {
+      "ticker": "SOTETEL",
+      "aliases": ["SOTETEL", "Société Tunisienne d'Entreprises de Télécommunications"],
+      "arabic_aliases": ["سوتيتال", "الشركة التونسية للمقاولات والاتصالات"],
+      "sector": "Telecommunications"
+    },
+    {
+      "ticker": "SOTUVER",
+      "aliases": ["SOTUVER", "Société Tunisienne de Verrerie"],
+      "arabic_aliases": ["سوتوفير", "الشركة التونسية للبلور", "الشركة التونسية للزجاج"],
+      "sector": "Industry"
+    },
+    {
+      "ticker": "CARTHAGE CEMENT",
+      "aliases": ["Carthage Cement"],
+      "arabic_aliases": ["قرطاج للإسمنت", "اسمنت قرطاج", "قرطاج سمنت", "قرطاج سيمانت", "قرطاج سيمينت", "قرطاج سيمان"],
+      "sector": "Construction"
+    },
+    {
+      "ticker": "TELNET HOLDING",
+      "aliases": ["Telnet", "Telnet Holding"],
+      "arabic_aliases": ["تلنت", "تلنت القابضة"],
+      "sector": "Technology"
+    },
+    {
+      "ticker": "ONE TECH HOLDING",
+      "aliases": ["One Tech", "OTH", "One Tech Holding"],
+      "arabic_aliases": ["وان تك", "وان تك القابضة"],
+      "sector": "Industry"
+    },
+    {
+      "ticker": "EURO-CYCLES",
+      "aliases": ["Euro-Cycles", "Eurocycles", "Euro Cycles", "L'Euro-Cycles"],
+      "arabic_aliases": ["أورو سيكل"],
+      "sector": "Consumer Goods"
+    },
+    {
+      "ticker": "SAH",
+      "aliases": ["SAH", "Lilas", "Société d'Articles Hygiéniques"],
+      "arabic_aliases": ["شركة أوراس", "ليلاس"],
+      "sector": "Consumer Goods"
+    },
+    {
+      "ticker": "SOTIPAPIER",
+      "aliases": ["Sotipapier", "Société Industrielle du Papier et du Carton"],
+      "arabic_aliases": ["سوتيبابييه", "الشركة الصناعية للورق والكرتون"],
+      "sector": "Industry"
+    },
+    {
+      "ticker": "UNIMED",
+      "aliases": ["UNIMED", "Laboratoires UNIMED", "Laboratoires de l'UNIMED", "l'UNIMED"],
+      "arabic_aliases": ["يونيميد", "مخابر يونيميد", "اونيميد", "ونيميد"],
+      "sector": "Pharmaceuticals"
+    }
+  ]
+}

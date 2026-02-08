@@ -1,0 +1,40 @@
+.github/
+Anomaly\ detection/data
+
+# =====================
+# Python
+# =====================
+__pycache__/
+*.py[cod]
+
+# =====================
+# Jupyter
+# =====================
+.ipynb_checkpoints/
+
+# =====================
+# HuggingFace / ML
+# =====================
+checkpoints/
+**/checkpoints/
+
+# Model weights
+#*.bin
+#*.safetensors
+#*.pt
+
+# Saved models
+src/models/*
+!src/models/.gitkeep
+
+# =====================
+# Data (generated)
+# =====================
+data/processed/
+data/exports/
+
+# =====================
+# OS / IDE
+# =====================
+.DS_Store
+.vscode/
