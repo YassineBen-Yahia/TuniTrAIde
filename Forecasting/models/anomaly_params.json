@@ -10,7 +10,7 @@
   "TN0001100254": {
     "volume_mean": 67744.23333333334,
     "volume_std": 120102.65945738928,
-    "variation_mean": -0.021092580684000665,
+    "variation_mean": -0.02109258068400067,
     "variation_std": 1.0637081056727986,
     "volume_threshold": 3,
     "variation_threshold": 3
@@ -18,7 +18,7 @@
   "TN0001200401": {
     "volume_mean": 11834.366666666667,
     "volume_std": 18534.493702067346,
-    "variation_mean": -0.029318595087302134,
+    "variation_mean": -0.02931859508730214,
     "variation_std": 1.803314507922834,
     "volume_threshold": 3,
     "variation_threshold": 3
@@ -27,7 +27,7 @@
     "volume_mean": 4671.4,
     "volume_std": 12545.545211832248,
     "variation_mean": 0.045986659339066815,
-    "variation_std": 1.4043413197877073,
+    "variation_std": 1.4043413197877075,
     "volume_threshold": 3,
     "variation_threshold": 3
   },
@@ -66,7 +66,7 @@
   "TN0002600955": {
     "volume_mean": 22819.766666666666,
     "volume_std": 15967.98291125367,
-    "variation_mean": 0.021443994388665327,
+    "variation_mean": 0.02144399438866533,
     "variation_std": 1.5785218983959413,
     "volume_threshold": 3,
     "variation_threshold": 3
@@ -98,7 +98,7 @@
   "TN0005700018": {
     "volume_mean": 37657.3,
     "volume_std": 42434.2730545195,
-    "variation_mean": 0.06899333980642146,
+    "variation_mean": 0.06899333980642144,
     "variation_std": 1.5407259676075737,
     "volume_threshold": 3,
     "variation_threshold": 3
@@ -107,7 +107,7 @@
     "volume_mean": 7913.866666666667,
     "volume_std": 11538.77810937838,
     "variation_mean": 0.03842833683723938,
-    "variation_std": 1.8462011382346188,
+    "variation_std": 1.846201138234619,
     "volume_threshold": 3,
     "variation_threshold": 3
   },
@@ -115,7 +115,7 @@
     "volume_mean": 24998.733333333334,
     "volume_std": 22903.154327154898,
     "variation_mean": 0.06836571290162285,
-    "variation_std": 1.1830976726592657,
+    "variation_std": 1.183097672659266,
     "volume_threshold": 3,
     "variation_threshold": 3
   },
@@ -218,7 +218,7 @@
   "TN0007440019": {
     "volume_mean": 20605.033333333333,
     "volume_std": 74697.88833025264,
-    "variation_mean": -0.0113406338672804,
+    "variation_mean": -0.011340633867280401,
     "variation_std": 1.3787517176342028,
     "volume_threshold": 3,
     "variation_threshold": 3
@@ -234,7 +234,7 @@
   "TN0007540016": {
     "volume_mean": 1659.0333333333333,
     "volume_std": 2379.3016286780216,
-    "variation_mean": 0.0019318359469419058,
+    "variation_mean": 0.001931835946941907,
     "variation_std": 1.5787837186529965,
     "volume_threshold": 3,
     "variation_threshold": 3
@@ -250,7 +250,7 @@
   "TN0007570013": {
     "volume_mean": 9937.8,
     "volume_std": 7916.349299676076,
-    "variation_mean": -0.04858820031408933,
+    "variation_mean": -0.048588200314089336,
     "variation_std": 1.502387060812282,
     "volume_threshold": 3,
     "variation_threshold": 3
@@ -258,7 +258,7 @@
   "TN0007610017": {
     "volume_mean": 36290.3,
     "volume_std": 29212.186269281807,
-    "variation_mean": 0.01887794786652146,
+    "variation_mean": 0.018877947866521465,
     "variation_std": 1.1495394733446322,
     "volume_threshold": 3,
     "variation_threshold": 3
@@ -274,7 +274,7 @@
   "TN0007630015": {
     "volume_mean": 6146.6,
     "volume_std": 4530.119018091213,
-    "variation_mean": -0.02607883580150289,
+    "variation_mean": -0.026078835801502897,
     "variation_std": 1.621660928393819,
     "volume_threshold": 3,
     "variation_threshold": 3
@@ -290,7 +290,7 @@
   "TN0007670011": {
     "volume_mean": 20195.7,
     "volume_std": 13333.45735171426,
-    "variation_mean": 0.02082113529608846,
+    "variation_mean": 0.020821135296088464,
     "variation_std": 1.8463965565342302,
     "volume_threshold": 3,
     "variation_threshold": 3
@@ -306,7 +306,7 @@
   "TN0007720014": {
     "volume_mean": 33062.333333333336,
     "volume_std": 26025.01037442437,
-    "variation_mean": 0.006676447263460764,
+    "variation_mean": 0.006676447263460766,
     "variation_std": 1.3529038894023369,
     "volume_threshold": 3,
     "variation_threshold": 3
