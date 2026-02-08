@@ -86,9 +86,11 @@ const Login = () => {
   return (
     <div className="min-h-screen app-shell flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-md w-full panel p-8 space-y-8">
-        <div>
-          <h2 className="mt-6 text-center text-3xl font-semibold text-slate-100 tracking-tight">
-            {isLogin ? 'Sign in to your account' : 'Create your investment account'}
+        <div className="flex flex-col items-center">
+          <img src="/icons/iconpng.png" alt="TuniTrAide" className="h-16 w-16 mb-2" />
+          <h1 className="text-2xl font-bold text-slate-100 tracking-tight">TuniTr<span className="text-cyan-400">AI</span>de</h1>
+          <h2 className="mt-4 text-center text-3xl font-semibold text-slate-100 tracking-tight">
+            {isLogin ? 'Sign in to your account' : 'Create your account'}
           </h2>
           <p className="mt-2 text-center text-sm text-slate-400">
             {isLogin ? "Don't have an account?" : 'Already have an account?'}
