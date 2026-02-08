@@ -28,24 +28,32 @@ def clean_text(text, lang):
     return text
 
 # --- RUNNING THE CAR WASH ---
-'''
+
 # 1. Load your scraped data
-input_file = '../../data/raw/RESULTS_GLOBAL_2021-01-01_to_2026-01-08.json'
-with open(input_file, 'r', encoding='utf-8') as f:
-    data = json.load(f)
+input_file = '../../data/raw/scraped_articles.json'
+try:
+    with open(input_file, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+except (FileNotFoundError, json.JSONDecodeError) as e:
+    print(f"Error loading file: {e}")
+    exit()
 
 # 2. Process every article
-for article in data['all_articles']:
+for article in data['articles']:
     lang = article.get('language', 'fr') # Default to French if missing
     
     # Clean the headline and the content
     article['headline'] = clean_text(article['headline'], lang)
     article['content'] = clean_text(article['content'], lang)
 
-# 3. Save the "Machine-Ready" data
-output_file = '../../data/processed/global_cleaned2.json'
+# 3. SORT ARTICLES BY DATE (New Addition)
+# reverse=True puts the newest articles at the top (2026 -> 2021)
+# Use reverse=False if you want the oldest articles first
+data['articles'].sort(key=lambda x: x.get('date', ''), reverse=True)
+
+# 4. Save the "Machine-Ready" data
+output_file = '../../data/processed/global_cleaned.json'
 with open(output_file, 'w', encoding='utf-8') as f:
     json.dump(data, f, ensure_ascii=False, indent=4)
 
-print(f"Success! {len(data['all_articles'])} articles washed and saved to {output_file}")
-'''
+print(f"Success! {len(data['articles'])} articles washed, sorted by date, and saved to {output_file}")

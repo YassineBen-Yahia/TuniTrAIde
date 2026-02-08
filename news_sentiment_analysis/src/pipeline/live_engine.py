@@ -4,7 +4,7 @@ from pathlib import Path
 
 # 1. Setup absolute paths
 current_file = Path(__file__).resolve()
-project_root = current_file.parents[2]  # Go up to 'financial-news-sentimental-analysis'
+project_root = current_file.parents[2]  
 scrapers_path = project_root / "src" / "scrapers"
 
 # 2. Add BOTH the root and the scrapers folder to sys.path
@@ -56,7 +56,7 @@ class RealTimeSentimentPipeline:
         run_global_scraping(today, today)
         
         # 2. LOAD RAW DATA
-        raw_file = f"financial-news-sentimental-analysis/data/raw/RESULTS_GLOBAL_{today}_to_{today}.json"
+        raw_file = f"../../data/raw/RESULTS_GLOBAL_{today}_to_{today}.json"
         if not os.path.exists(raw_file):
             print("⚠️ No articles collected today.")
             return

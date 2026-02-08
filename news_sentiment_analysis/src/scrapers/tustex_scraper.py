@@ -7,7 +7,7 @@ import time
 from datetime import datetime
 
 # --- 1. TICKER DETECTION ---
-def load_search_dict(json_path='financial-news-sentimental-analysis/data/reference/ticker_mapping.json'):
+def load_search_dict(json_path='../../data/reference/ticker_mapping.json'):
     try:
         with open(json_path, 'r', encoding='utf-8') as f:
             data = json.load(f)
