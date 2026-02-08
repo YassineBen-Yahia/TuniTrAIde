@@ -36,9 +36,9 @@ def run_global_scraping(start_date, end_date):
     }
 
     scrapers = [
-       # {"name": "Ilboursa", "slug": "ilboursa", "func": scrape_ilboursa_by_range},
+       {"name": "Ilboursa", "slug": "ilboursa", "func": scrape_ilboursa_by_range},
        #  {"name": "Tustex", "slug": "tustex", "func": scrape_tustex_by_range},
-        {"name": "Tunisien.tn", "slug": "tunisien", "func": scrape_tunisien_ar_by_range},
+        #{"name": "Tunisien.tn", "slug": "tunisien", "func": scrape_tunisien_ar_by_range},
     ]
 
     for scraper in scrapers:

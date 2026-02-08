@@ -1,0 +1,3656 @@
+{
+  "generated_at": "2026-02-08 03:41:37",
+  "model": "xlm-roberta-tunisian-finance",
+  "total_tickers": 90,
+  "total_articles_analyzed": 4626,
+  "tickers": {
+    "BIAT": {
+      "ticker": "BIAT",
+      "positive_count": 190,
+      "neutral_count": 41,
+      "negative_count": 81,
+      "total_articles": 312,
+      "net_sentiment": 0.349,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-02-06",
+          "headline": "la biat et la bad signent une convention de 50 millions de dollars en faveur des entreprises tunisie",
+          "sentiment": "Positive",
+          "confidence": 0.683
+        },
+        {
+          "date": "2026-02-06",
+          "headline": "projet puro kairouan : l'uib contribue à hauteur de 40 millions de dinars",
+          "sentiment": "Positive",
+          "confidence": 0.716
+        },
+        {
+          "date": "2026-02-03",
+          "headline": "centrale photovoltaïque à kairouan : la biat pilote un financement syndiqué de 140 millions de dinar",
+          "sentiment": "Positive",
+          "confidence": 0.623
+        },
+        {
+          "date": "2026-02-02",
+          "headline": "bourse de tunis : le tunindex commence la semaine dans le rouge",
+          "sentiment": "Negative",
+          "confidence": 0.413
+        },
+        {
+          "date": "2026-01-30",
+          "headline": "bourse de tunis : le tunindex subit une nette baisse de 1,38%",
+          "sentiment": "Negative",
+          "confidence": 0.438
+        }
+      ]
+    },
+    "ARAB TUNISIAN BANK": {
+      "ticker": "ARAB TUNISIAN BANK",
+      "positive_count": 85,
+      "neutral_count": 24,
+      "negative_count": 30,
+      "total_articles": 139,
+      "net_sentiment": 0.396,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-02-06",
+          "headline": "projet puro kairouan : l'uib contribue à hauteur de 40 millions de dinars",
+          "sentiment": "Positive",
+          "confidence": 0.716
+        },
+        {
+          "date": "2026-02-03",
+          "headline": "centrale photovoltaïque à kairouan : la biat pilote un financement syndiqué de 140 millions de dinar",
+          "sentiment": "Positive",
+          "confidence": 0.623
+        },
+        {
+          "date": "2026-01-29",
+          "headline": "l'arab tunisian bank publie son premier reporting de durabilité esg",
+          "sentiment": "Positive",
+          "confidence": 0.41
+        },
+        {
+          "date": "2026-01-29",
+          "headline": "arab tunisian bank publie son premier reporting de durabilité esg – exercice 2024",
+          "sentiment": "Positive",
+          "confidence": 0.544
+        },
+        {
+          "date": "2026-01-27",
+          "headline": "atb : un produit net bancaire en baisse de 5,5% en 2025",
+          "sentiment": "Negative",
+          "confidence": 0.372
+        }
+      ]
+    },
+    "UBCI": {
+      "ticker": "UBCI",
+      "positive_count": 79,
+      "neutral_count": 40,
+      "negative_count": 15,
+      "total_articles": 134,
+      "net_sentiment": 0.478,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-02-06",
+          "headline": "projet puro kairouan : l'uib contribue à hauteur de 40 millions de dinars",
+          "sentiment": "Positive",
+          "confidence": 0.716
+        },
+        {
+          "date": "2026-02-03",
+          "headline": "centrale photovoltaïque à kairouan : la biat pilote un financement syndiqué de 140 millions de dinar",
+          "sentiment": "Positive",
+          "confidence": 0.623
+        },
+        {
+          "date": "2026-01-21",
+          "headline": "ubci : un produit net bancaire en hausse de 9,5% en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.685
+        },
+        {
+          "date": "2026-01-20",
+          "headline": "l'ubci améliore de 10% son pnb à plus de 350 millions de dinars en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.769
+        },
+        {
+          "date": "2026-01-07",
+          "headline": "l'ubci lève avec succès 60 millions de dinars sur le marché obligataire",
+          "sentiment": "Positive",
+          "confidence": 0.549
+        }
+      ]
+    },
+    "UIB": {
+      "ticker": "UIB",
+      "positive_count": 109,
+      "neutral_count": 38,
+      "negative_count": 21,
+      "total_articles": 168,
+      "net_sentiment": 0.524,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-02-06",
+          "headline": "projet puro kairouan : l'uib contribue à hauteur de 40 millions de dinars",
+          "sentiment": "Positive",
+          "confidence": 0.716
+        },
+        {
+          "date": "2026-02-03",
+          "headline": "centrale photovoltaïque à kairouan : la biat pilote un financement syndiqué de 140 millions de dinar",
+          "sentiment": "Positive",
+          "confidence": 0.623
+        },
+        {
+          "date": "2026-01-19",
+          "headline": "l'uib réalise un pnb de plus de 520 millions de dinars en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.69
+        },
+        {
+          "date": "2026-01-19",
+          "headline": "uib : léger repli du pnb en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.71
+        },
+        {
+          "date": "2026-01-16",
+          "headline": "l’uib lance un appel à candidature pour le choix d'un administrateur représentant des actionnaires m",
+          "sentiment": "Neutral",
+          "confidence": 0.452
+        }
+      ]
+    },
+    "SOCIETE CHIMIQUE ALKIMIA": {
+      "ticker": "SOCIETE CHIMIQUE ALKIMIA",
+      "positive_count": 23,
+      "neutral_count": 1,
+      "negative_count": 11,
+      "total_articles": 35,
+      "net_sentiment": 0.343,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-02-06",
+          "headline": "entre résilience et mutation, alkimia prépare l'après-stpp",
+          "sentiment": "Negative",
+          "confidence": 0.252
+        },
+        {
+          "date": "2026-02-05",
+          "headline": "alkimia : le chiffre d'affaires recule à 100 md en 2025",
+          "sentiment": "Negative",
+          "confidence": 0.453
+        },
+        {
+          "date": "2026-02-03",
+          "headline": "alkimia packaging mandate cap bank pour la cession de son unité de microbilles de verre",
+          "sentiment": "Positive",
+          "confidence": 0.512
+        },
+        {
+          "date": "2026-01-06",
+          "headline": "alkimia : une perte de 18,7 md au premier semestre 2025",
+          "sentiment": "Negative",
+          "confidence": 0.38
+        },
+        {
+          "date": "2025-10-24",
+          "headline": "alkimia subit une baisse de 4% de son chiffre d'affaires à fin septembre",
+          "sentiment": "Negative",
+          "confidence": 0.456
+        }
+      ]
+    },
+    "ATTIJARI BANK": {
+      "ticker": "ATTIJARI BANK",
+      "positive_count": 168,
+      "neutral_count": 34,
+      "negative_count": 36,
+      "total_articles": 238,
+      "net_sentiment": 0.555,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-02-06",
+          "headline": "bourse de tunis : le tunindex poursuit son ascension",
+          "sentiment": "Negative",
+          "confidence": 0.321
+        },
+        {
+          "date": "2026-02-05",
+          "headline": "attijari leasing annonce un bénéfice net de 10 millions de dinars en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.702
+        },
+        {
+          "date": "2026-02-04",
+          "headline": "bourse de tunis : le tunindex prolonge son rebond et prend 0,64%",
+          "sentiment": "Negative",
+          "confidence": 0.461
+        },
+        {
+          "date": "2026-02-04",
+          "headline": "attijari leasing : un bénéfice de 10 md en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.669
+        },
+        {
+          "date": "2026-01-29",
+          "headline": "bilan 2025 du secteur du leasing coté : résilience opérationnelle et perspectives conditionnelles",
+          "sentiment": "Positive",
+          "confidence": 0.665
+        }
+      ]
+    },
+    "POULINA GROUP HOLDING": {
+      "ticker": "POULINA GROUP HOLDING",
+      "positive_count": 132,
+      "neutral_count": 16,
+      "negative_count": 40,
+      "total_articles": 188,
+      "net_sentiment": 0.489,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-02-06",
+          "headline": "bourse de tunis : le tunindex poursuit son ascension",
+          "sentiment": "Negative",
+          "confidence": 0.321
+        },
+        {
+          "date": "2026-02-05",
+          "headline": "bourse de tunis : le tunindex signe un nouveau gain de 0,32%",
+          "sentiment": "Negative",
+          "confidence": 0.346
+        },
+        {
+          "date": "2026-02-04",
+          "headline": "le revenu global des sociétés cotées dépasse les 26 milliards de dinars en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.623
+        },
+        {
+          "date": "2026-02-04",
+          "headline": "bourse de tunis : amen invest voit un nouveau cycle riche en opportunités sélectives (télécharger la",
+          "sentiment": "Positive",
+          "confidence": 0.309
+        },
+        {
+          "date": "2026-02-02",
+          "headline": "bourse de tunis : a 26,5 milliards de dinars, le revenus global des sociétés cotées en hausse de 5,3",
+          "sentiment": "Positive",
+          "confidence": 0.652
+        }
+      ]
+    },
+    "TUNIS RE": {
+      "ticker": "TUNIS RE",
+      "positive_count": 58,
+      "neutral_count": 11,
+      "negative_count": 10,
+      "total_articles": 79,
+      "net_sentiment": 0.608,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-02-06",
+          "headline": "bourse de tunis : le tunindex poursuit son ascension",
+          "sentiment": "Negative",
+          "confidence": 0.321
+        },
+        {
+          "date": "2026-01-20",
+          "headline": "tunis re affiche des fondamentaux robustes en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.739
+        },
+        {
+          "date": "2026-01-17",
+          "headline": "tunis re lance sa nouvelle solution « cyber assurance » dédiée aux pme",
+          "sentiment": "Positive",
+          "confidence": 0.496
+        },
+        {
+          "date": "2025-12-31",
+          "headline": "bourse de tunis : le tunindex aligne une nouvelle hausse de 0,62%",
+          "sentiment": "Negative",
+          "confidence": 0.412
+        },
+        {
+          "date": "2025-12-26",
+          "headline": "répartition des titres en compartiments et en groupes de cotation pour l’année 2026",
+          "sentiment": "Neutral",
+          "confidence": 0.445
+        }
+      ]
+    },
+    "CARTHAGE CEMENT": {
+      "ticker": "CARTHAGE CEMENT",
+      "positive_count": 77,
+      "neutral_count": 12,
+      "negative_count": 41,
+      "total_articles": 130,
+      "net_sentiment": 0.277,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-02-06",
+          "headline": "bourse de tunis : le tunindex poursuit son ascension",
+          "sentiment": "Negative",
+          "confidence": 0.321
+        },
+        {
+          "date": "2026-02-02",
+          "headline": "bourse de tunis : a 26,5 milliards de dinars, le revenus global des sociétés cotées en hausse de 5,3",
+          "sentiment": "Positive",
+          "confidence": 0.652
+        },
+        {
+          "date": "2026-01-21",
+          "headline": "carthage cement stabilise son activité en 2025 grâce au rebond des exportations",
+          "sentiment": "Positive",
+          "confidence": 0.72
+        },
+        {
+          "date": "2026-01-20",
+          "headline": "carthage cement voit ses revenus reculer de 9% en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.749
+        },
+        {
+          "date": "2026-01-06",
+          "headline": "bourse de tunis : le tunindex toujours dans le rouge",
+          "sentiment": "Negative",
+          "confidence": 0.414
+        }
+      ]
+    },
+    "BANQUE NATIONALE AGRICOLE": {
+      "ticker": "BANQUE NATIONALE AGRICOLE",
+      "positive_count": 174,
+      "neutral_count": 52,
+      "negative_count": 42,
+      "total_articles": 268,
+      "net_sentiment": 0.493,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-02-06",
+          "headline": "bourse de tunis : le tunindex poursuit son ascension",
+          "sentiment": "Negative",
+          "confidence": 0.321
+        },
+        {
+          "date": "2026-02-03",
+          "headline": "bourse de tunis : le tunindex repart à la hausse dans un marché animé par bna",
+          "sentiment": "Negative",
+          "confidence": 0.345
+        },
+        {
+          "date": "2026-02-02",
+          "headline": "bourse de tunis : le tunindex commence la semaine dans le rouge",
+          "sentiment": "Negative",
+          "confidence": 0.413
+        },
+        {
+          "date": "2026-02-02",
+          "headline": "bna : des niveaux de valorisation attractifs et un rendement en dividende séduisant selon bna capita",
+          "sentiment": "Positive",
+          "confidence": 0.838
+        },
+        {
+          "date": "2026-01-31",
+          "headline": "la bna bank décroche trois gold awards aux tunisia digital awards 2026",
+          "sentiment": "Positive",
+          "confidence": 0.53
+        }
+      ]
+    },
+    "TUNINDEX": {
+      "ticker": "TUNINDEX",
+      "positive_count": 82,
+      "neutral_count": 7,
+      "negative_count": 123,
+      "total_articles": 212,
+      "net_sentiment": -0.193,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-02-06",
+          "headline": "bourse de tunis : le tunindex poursuit son ascension",
+          "sentiment": "Negative",
+          "confidence": 0.321
+        },
+        {
+          "date": "2026-02-05",
+          "headline": "bourse de tunis : l’insoluble paradoxe d'un marché assoiffé d’opportunités",
+          "sentiment": "Positive",
+          "confidence": 0.561
+        },
+        {
+          "date": "2026-02-05",
+          "headline": "bourse de tunis : le tunindex signe un nouveau gain de 0,32%",
+          "sentiment": "Negative",
+          "confidence": 0.346
+        },
+        {
+          "date": "2026-02-04",
+          "headline": "le revenu global des sociétés cotées dépasse les 26 milliards de dinars en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.623
+        },
+        {
+          "date": "2026-02-04",
+          "headline": "bourse de tunis : le tunindex prolonge son rebond et prend 0,64%",
+          "sentiment": "Negative",
+          "confidence": 0.461
+        }
+      ]
+    },
+    "SOTUMAG": {
+      "ticker": "SOTUMAG",
+      "positive_count": 8,
+      "neutral_count": 3,
+      "negative_count": 3,
+      "total_articles": 14,
+      "net_sentiment": 0.357,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-02-06",
+          "headline": "la sotumag cherche deux administrateurs indépendants",
+          "sentiment": "Neutral",
+          "confidence": 0.438
+        },
+        {
+          "date": "2025-01-30",
+          "headline": "bourse : portefeuille-type de tunisie valeurs pour le premier trimestre de 2025",
+          "sentiment": "Positive",
+          "confidence": 0.623
+        },
+        {
+          "date": "2024-05-10",
+          "headline": "la sotumag améliore de 23 % son bénéfice net en 2023",
+          "sentiment": "Positive",
+          "confidence": 0.704
+        },
+        {
+          "date": "2024-01-29",
+          "headline": "sofiene tarmiz nommé président directeur général de la sotumag",
+          "sentiment": "Neutral",
+          "confidence": 0.401
+        },
+        {
+          "date": "2023-09-08",
+          "headline": "la sotumag améliore de 12% ses bénéfices au premier semestre",
+          "sentiment": "Positive",
+          "confidence": 0.708
+        }
+      ]
+    },
+    "ADWYA": {
+      "ticker": "ADWYA",
+      "positive_count": 30,
+      "neutral_count": 10,
+      "negative_count": 4,
+      "total_articles": 44,
+      "net_sentiment": 0.591,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-02-05",
+          "headline": "bourse de tunis : l’insoluble paradoxe d'un marché assoiffé d’opportunités",
+          "sentiment": "Positive",
+          "confidence": 0.561
+        },
+        {
+          "date": "2025-10-21",
+          "headline": "forbes middle east : sara masmoudi et olfa gam à nouveau dans le top 100 des leaders de la santé",
+          "sentiment": "Positive",
+          "confidence": 0.466
+        },
+        {
+          "date": "2024-09-13",
+          "headline": "mena : sara masmoudi et olfa gam se maintiennent dans le top 100 des leaders de la santé",
+          "sentiment": "Positive",
+          "confidence": 0.598
+        },
+        {
+          "date": "2024-01-02",
+          "headline": "les sociétés cotées ont distribué 1,3 milliard de dinars de dividendes en 2023",
+          "sentiment": "Positive",
+          "confidence": 0.733
+        },
+        {
+          "date": "2023-12-31",
+          "headline": "bourse de tunis : quel bilan tirer de 2023 ?",
+          "sentiment": "Positive",
+          "confidence": 0.446
+        }
+      ]
+    },
+    "MIP": {
+      "ticker": "MIP",
+      "positive_count": 19,
+      "neutral_count": 2,
+      "negative_count": 2,
+      "total_articles": 23,
+      "net_sentiment": 0.739,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-02-05",
+          "headline": "bourse de tunis : l’insoluble paradoxe d'un marché assoiffé d’opportunités",
+          "sentiment": "Positive",
+          "confidence": 0.561
+        },
+        {
+          "date": "2024-09-09",
+          "headline": "la bourse de tunis décide la radiation des sociétés electrostar et mip",
+          "sentiment": "Positive",
+          "confidence": 0.411
+        },
+        {
+          "date": "2024-08-12",
+          "headline": "les sociétés cotées réalisent 12 milliards de dinars de revenus au premier semestre",
+          "sentiment": "Positive",
+          "confidence": 0.753
+        },
+        {
+          "date": "2024-08-07",
+          "headline": "suspension de la cotation du titre mip",
+          "sentiment": "Negative",
+          "confidence": 0.387
+        },
+        {
+          "date": "2024-08-05",
+          "headline": "vers la mise en faillite directe de la société mip",
+          "sentiment": "Neutral",
+          "confidence": 0.383
+        }
+      ]
+    },
+    "AMS": {
+      "ticker": "AMS",
+      "positive_count": 19,
+      "neutral_count": 4,
+      "negative_count": 3,
+      "total_articles": 26,
+      "net_sentiment": 0.615,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-02-05",
+          "headline": "bourse de tunis : l’insoluble paradoxe d'un marché assoiffé d’opportunités",
+          "sentiment": "Positive",
+          "confidence": 0.561
+        },
+        {
+          "date": "2025-11-18",
+          "headline": "réformes prudentielles : le secteur bancaire tunisien face à une transformation majeure",
+          "sentiment": "Positive",
+          "confidence": 0.631
+        },
+        {
+          "date": "2025-11-17",
+          "headline": "réformes prudentielles : le secteur bancaire tunisien face à une transformation majeure",
+          "sentiment": "Positive",
+          "confidence": 0.631
+        },
+        {
+          "date": "2024-05-20",
+          "headline": "le tribunal prolonge le délai de réception des offres d'achat de la société les ams à fin mai",
+          "sentiment": "Neutral",
+          "confidence": 0.367
+        },
+        {
+          "date": "2024-04-15",
+          "headline": "montassar dridi et taoufik laaribi rachètent les ams pour 7,6 millions de dinars",
+          "sentiment": "Positive",
+          "confidence": 0.584
+        }
+      ]
+    },
+    "ELECTROSTAR": {
+      "ticker": "ELECTROSTAR",
+      "positive_count": 22,
+      "neutral_count": 6,
+      "negative_count": 7,
+      "total_articles": 35,
+      "net_sentiment": 0.429,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-02-05",
+          "headline": "bourse de tunis : l’insoluble paradoxe d'un marché assoiffé d’opportunités",
+          "sentiment": "Positive",
+          "confidence": 0.561
+        },
+        {
+          "date": "2024-09-09",
+          "headline": "la bourse de tunis décide la radiation des sociétés electrostar et mip",
+          "sentiment": "Positive",
+          "confidence": 0.411
+        },
+        {
+          "date": "2024-08-12",
+          "headline": "les sociétés cotées réalisent 12 milliards de dinars de revenus au premier semestre",
+          "sentiment": "Positive",
+          "confidence": 0.753
+        },
+        {
+          "date": "2024-07-24",
+          "headline": "en cessation de paiement, le tribunal déclare la faillite de la société electrostar",
+          "sentiment": "Neutral",
+          "confidence": 0.324
+        },
+        {
+          "date": "2024-04-18",
+          "headline": "electrostar annule son projet d'augmentation de capital",
+          "sentiment": "Neutral",
+          "confidence": 0.433
+        }
+      ]
+    },
+    "GIF FILTER": {
+      "ticker": "GIF FILTER",
+      "positive_count": 13,
+      "neutral_count": 5,
+      "negative_count": 8,
+      "total_articles": 26,
+      "net_sentiment": 0.192,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-02-05",
+          "headline": "bourse de tunis : l’insoluble paradoxe d'un marché assoiffé d’opportunités",
+          "sentiment": "Positive",
+          "confidence": 0.561
+        },
+        {
+          "date": "2024-11-12",
+          "headline": "la bourse de tunis décide la radiation de la société gif filter",
+          "sentiment": "Negative",
+          "confidence": 0.457
+        },
+        {
+          "date": "2024-08-12",
+          "headline": "les sociétés cotées réalisent 12 milliards de dinars de revenus au premier semestre",
+          "sentiment": "Positive",
+          "confidence": 0.753
+        },
+        {
+          "date": "2024-01-02",
+          "headline": "les sociétés cotées ont distribué 1,3 milliard de dinars de dividendes en 2023",
+          "sentiment": "Positive",
+          "confidence": 0.733
+        },
+        {
+          "date": "2023-12-31",
+          "headline": "bourse de tunis : quel bilan tirer de 2023 ?",
+          "sentiment": "Positive",
+          "confidence": 0.446
+        }
+      ]
+    },
+    "SERVICOM": {
+      "ticker": "SERVICOM",
+      "positive_count": 23,
+      "neutral_count": 7,
+      "negative_count": 6,
+      "total_articles": 36,
+      "net_sentiment": 0.472,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-02-05",
+          "headline": "bourse de tunis : l’insoluble paradoxe d'un marché assoiffé d’opportunités",
+          "sentiment": "Positive",
+          "confidence": 0.561
+        },
+        {
+          "date": "2024-04-29",
+          "headline": "la bourse de tunis décide la radiation de la société servicom",
+          "sentiment": "Positive",
+          "confidence": 0.384
+        },
+        {
+          "date": "2024-03-27",
+          "headline": "le tribunal de tunis déclare la faillite de la société servicom",
+          "sentiment": "Positive",
+          "confidence": 0.383
+        },
+        {
+          "date": "2024-01-11",
+          "headline": "suspension de la cotation du titre servicom",
+          "sentiment": "Neutral",
+          "confidence": 0.402
+        },
+        {
+          "date": "2024-01-02",
+          "headline": "les sociétés cotées ont distribué 1,3 milliard de dinars de dividendes en 2023",
+          "sentiment": "Positive",
+          "confidence": 0.733
+        }
+      ]
+    },
+    "SOPAT": {
+      "ticker": "SOPAT",
+      "positive_count": 19,
+      "neutral_count": 4,
+      "negative_count": 7,
+      "total_articles": 30,
+      "net_sentiment": 0.4,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-02-05",
+          "headline": "bourse de tunis : l’insoluble paradoxe d'un marché assoiffé d’opportunités",
+          "sentiment": "Positive",
+          "confidence": 0.561
+        },
+        {
+          "date": "2024-11-22",
+          "headline": "la sopat désormais considérée comme société ne faisant pas appel public à l'épargne",
+          "sentiment": "Neutral",
+          "confidence": 0.431
+        },
+        {
+          "date": "2024-09-13",
+          "headline": "les bénéfices de la sopat multipliés par sept en 2023",
+          "sentiment": "Positive",
+          "confidence": 0.544
+        },
+        {
+          "date": "2024-01-30",
+          "headline": "un million de dinars de bénéfices pour la sopat au premier semestre de 2023",
+          "sentiment": "Positive",
+          "confidence": 0.689
+        },
+        {
+          "date": "2024-01-13",
+          "headline": "les 5 infos business à retenir cette semaine",
+          "sentiment": "Negative",
+          "confidence": 0.356
+        }
+      ]
+    },
+    "ATTIJARI LEASING": {
+      "ticker": "ATTIJARI LEASING",
+      "positive_count": 23,
+      "neutral_count": 1,
+      "negative_count": 0,
+      "total_articles": 24,
+      "net_sentiment": 0.958,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-02-05",
+          "headline": "attijari leasing annonce un bénéfice net de 10 millions de dinars en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.702
+        },
+        {
+          "date": "2026-02-04",
+          "headline": "attijari leasing : un bénéfice de 10 md en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.669
+        },
+        {
+          "date": "2026-01-29",
+          "headline": "bilan 2025 du secteur du leasing coté : résilience opérationnelle et perspectives conditionnelles",
+          "sentiment": "Positive",
+          "confidence": 0.665
+        },
+        {
+          "date": "2025-05-05",
+          "headline": "bilan 2024 du secteur du leasing : croissance soutenue, tlf et atl en tête du peloton",
+          "sentiment": "Positive",
+          "confidence": 0.615
+        },
+        {
+          "date": "2025-02-10",
+          "headline": "attijari leasing annonce un bénéfice net de 10 millions de dinars en 2024",
+          "sentiment": "Positive",
+          "confidence": 0.701
+        }
+      ]
+    },
+    "AMEN BANK": {
+      "ticker": "AMEN BANK",
+      "positive_count": 187,
+      "neutral_count": 41,
+      "negative_count": 44,
+      "total_articles": 272,
+      "net_sentiment": 0.526,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-02-05",
+          "headline": "bourse de tunis : le tunindex signe un nouveau gain de 0,32%",
+          "sentiment": "Negative",
+          "confidence": 0.346
+        },
+        {
+          "date": "2026-02-04",
+          "headline": "amen invest dévoile sa stratégie d'investissement pour 2026",
+          "sentiment": "Positive",
+          "confidence": 0.735
+        },
+        {
+          "date": "2026-02-04",
+          "headline": "bourse de tunis : le tunindex prolonge son rebond et prend 0,64%",
+          "sentiment": "Negative",
+          "confidence": 0.461
+        },
+        {
+          "date": "2026-02-04",
+          "headline": "bourse de tunis : amen invest voit un nouveau cycle riche en opportunités sélectives (télécharger la",
+          "sentiment": "Positive",
+          "confidence": 0.309
+        },
+        {
+          "date": "2026-02-03",
+          "headline": "bourse de tunis : le tunindex repart à la hausse dans un marché animé par bna",
+          "sentiment": "Negative",
+          "confidence": 0.345
+        }
+      ]
+    },
+    "BANQUE DE TUNISIE": {
+      "ticker": "BANQUE DE TUNISIE",
+      "positive_count": 165,
+      "neutral_count": 37,
+      "negative_count": 37,
+      "total_articles": 239,
+      "net_sentiment": 0.536,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-02-05",
+          "headline": "bourse de tunis : le tunindex signe un nouveau gain de 0,32%",
+          "sentiment": "Negative",
+          "confidence": 0.346
+        },
+        {
+          "date": "2026-02-04",
+          "headline": "bourse de tunis : le tunindex prolonge son rebond et prend 0,64%",
+          "sentiment": "Negative",
+          "confidence": 0.461
+        },
+        {
+          "date": "2026-01-23",
+          "headline": "bte bank consolide sa dynamique de croissance en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.768
+        },
+        {
+          "date": "2026-01-20",
+          "headline": "la banque de tunisie réalise un pnb de plus de 530 millions de dinars en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.77
+        },
+        {
+          "date": "2026-01-20",
+          "headline": "la bte et cnbees scellent un partenariat pour le développement du crowdfunding en tunisie",
+          "sentiment": "Positive",
+          "confidence": 0.478
+        }
+      ]
+    },
+    "ONE TECH": {
+      "ticker": "ONE TECH",
+      "positive_count": 95,
+      "neutral_count": 7,
+      "negative_count": 26,
+      "total_articles": 128,
+      "net_sentiment": 0.539,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-02-05",
+          "headline": "bourse de tunis : le tunindex signe un nouveau gain de 0,32%",
+          "sentiment": "Negative",
+          "confidence": 0.346
+        },
+        {
+          "date": "2026-02-02",
+          "headline": "bourse de tunis : le tunindex commence la semaine dans le rouge",
+          "sentiment": "Negative",
+          "confidence": 0.413
+        },
+        {
+          "date": "2026-01-30",
+          "headline": "bourse de tunis : le tunindex subit une nette baisse de 1,38%",
+          "sentiment": "Negative",
+          "confidence": 0.438
+        },
+        {
+          "date": "2026-01-28",
+          "headline": "bourse de tunis : le tunindex poursuit sa montée",
+          "sentiment": "Negative",
+          "confidence": 0.346
+        },
+        {
+          "date": "2026-01-23",
+          "headline": "bourse de tunis : en forte hausse, le tunindex atteint un nouveau sommet à 14 136.07 points",
+          "sentiment": "Negative",
+          "confidence": 0.391
+        }
+      ]
+    },
+    "ENNAKL AUTOMOBILES": {
+      "ticker": "ENNAKL AUTOMOBILES",
+      "positive_count": 52,
+      "neutral_count": 10,
+      "negative_count": 5,
+      "total_articles": 67,
+      "net_sentiment": 0.701,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-02-05",
+          "headline": "bourse de tunis : le tunindex signe un nouveau gain de 0,32%",
+          "sentiment": "Negative",
+          "confidence": 0.346
+        },
+        {
+          "date": "2026-01-27",
+          "headline": "ennakl : en hausse de 3%, le chiffre d'affaires dépasse les 600 md en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.726
+        },
+        {
+          "date": "2026-01-26",
+          "headline": "ennakl automobiles annonce un chiffre d’affaires de 615 millions de dinars en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.772
+        },
+        {
+          "date": "2025-10-23",
+          "headline": "ennakl augmente ses revenus de 4% sur les neuf premiers mois de 2025",
+          "sentiment": "Positive",
+          "confidence": 0.776
+        },
+        {
+          "date": "2025-10-22",
+          "headline": "ennakl automobiles enregistre des revenus de plus de 450 millions de dinars à fin septembre",
+          "sentiment": "Positive",
+          "confidence": 0.768
+        }
+      ]
+    },
+    "SFBT": {
+      "ticker": "SFBT",
+      "positive_count": 137,
+      "neutral_count": 13,
+      "negative_count": 57,
+      "total_articles": 207,
+      "net_sentiment": 0.386,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-02-04",
+          "headline": "le revenu global des sociétés cotées dépasse les 26 milliards de dinars en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.623
+        },
+        {
+          "date": "2026-02-04",
+          "headline": "bourse de tunis : le tunindex prolonge son rebond et prend 0,64%",
+          "sentiment": "Negative",
+          "confidence": 0.461
+        },
+        {
+          "date": "2026-02-03",
+          "headline": "bourse de tunis : le tunindex repart à la hausse dans un marché animé par bna",
+          "sentiment": "Negative",
+          "confidence": 0.345
+        },
+        {
+          "date": "2026-02-02",
+          "headline": "bourse de tunis : a 26,5 milliards de dinars, le revenus global des sociétés cotées en hausse de 5,3",
+          "sentiment": "Positive",
+          "confidence": 0.652
+        },
+        {
+          "date": "2026-02-02",
+          "headline": "bourse de tunis : le tunindex commence la semaine dans le rouge",
+          "sentiment": "Negative",
+          "confidence": 0.413
+        }
+      ]
+    },
+    "UADH": {
+      "ticker": "UADH",
+      "positive_count": 35,
+      "neutral_count": 8,
+      "negative_count": 18,
+      "total_articles": 61,
+      "net_sentiment": 0.279,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-02-04",
+          "headline": "le revenu global des sociétés cotées dépasse les 26 milliards de dinars en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.623
+        },
+        {
+          "date": "2026-02-02",
+          "headline": "bourse de tunis : a 26,5 milliards de dinars, le revenus global des sociétés cotées en hausse de 5,3",
+          "sentiment": "Positive",
+          "confidence": 0.652
+        },
+        {
+          "date": "2026-01-09",
+          "headline": "bourse de tunis : le tunindex remonte timidement après quatre séances dans le rouge",
+          "sentiment": "Negative",
+          "confidence": 0.335
+        },
+        {
+          "date": "2025-10-30",
+          "headline": "les revenus des sociétés cotées dépassent les 18 milliards de dinars à fin septembre",
+          "sentiment": "Positive",
+          "confidence": 0.67
+        },
+        {
+          "date": "2025-10-28",
+          "headline": "bourse de tunis : le revenu global des sociétés cotées progresse de 5,7% à fin septembre",
+          "sentiment": "Positive",
+          "confidence": 0.66
+        }
+      ]
+    },
+    "DELICE HOLDING": {
+      "ticker": "DELICE HOLDING",
+      "positive_count": 73,
+      "neutral_count": 5,
+      "negative_count": 11,
+      "total_articles": 89,
+      "net_sentiment": 0.697,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-02-04",
+          "headline": "le revenu global des sociétés cotées dépasse les 26 milliards de dinars en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.623
+        },
+        {
+          "date": "2026-02-02",
+          "headline": "bourse de tunis : a 26,5 milliards de dinars, le revenus global des sociétés cotées en hausse de 5,3",
+          "sentiment": "Positive",
+          "confidence": 0.652
+        },
+        {
+          "date": "2026-01-21",
+          "headline": "le groupe délice signe une année 2025 record avec 1,5 milliard de dinars de revenus",
+          "sentiment": "Positive",
+          "confidence": 0.765
+        },
+        {
+          "date": "2026-01-20",
+          "headline": "les revenus du groupe délice en hausse de 4% en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.749
+        },
+        {
+          "date": "2026-01-15",
+          "headline": "bourse de tunis : le tunindex flambe et culmine à plus de 13 700 points, un nouveau sommet historiqu",
+          "sentiment": "Negative",
+          "confidence": 0.407
+        }
+      ]
+    },
+    "SMART TUNISIE": {
+      "ticker": "SMART TUNISIE",
+      "positive_count": 139,
+      "neutral_count": 26,
+      "negative_count": 15,
+      "total_articles": 180,
+      "net_sentiment": 0.689,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-02-04",
+          "headline": "amen invest dévoile sa stratégie d'investissement pour 2026",
+          "sentiment": "Positive",
+          "confidence": 0.735
+        },
+        {
+          "date": "2026-02-04",
+          "headline": "bourse de tunis : amen invest voit un nouveau cycle riche en opportunités sélectives (télécharger la",
+          "sentiment": "Positive",
+          "confidence": 0.309
+        },
+        {
+          "date": "2026-01-20",
+          "headline": "smart tunisie annonce un chiffre d'affaires de 445 millions de dinars en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.741
+        },
+        {
+          "date": "2026-01-06",
+          "headline": "bilan annuel des opcvm en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.507
+        },
+        {
+          "date": "2025-12-08",
+          "headline": "bourse de tunis : le tunindex dévisse et perd 0,36%",
+          "sentiment": "Negative",
+          "confidence": 0.699
+        }
+      ]
+    },
+    "SOTUVER": {
+      "ticker": "SOTUVER",
+      "positive_count": 49,
+      "neutral_count": 5,
+      "negative_count": 23,
+      "total_articles": 77,
+      "net_sentiment": 0.338,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-02-04",
+          "headline": "bourse de tunis : le tunindex prolonge son rebond et prend 0,64%",
+          "sentiment": "Negative",
+          "confidence": 0.461
+        },
+        {
+          "date": "2026-01-28",
+          "headline": "bourse de tunis : le tunindex poursuit sa montée",
+          "sentiment": "Negative",
+          "confidence": 0.346
+        },
+        {
+          "date": "2026-01-27",
+          "headline": "afc présente sa stratégie boursière pour 2026",
+          "sentiment": "Positive",
+          "confidence": 0.586
+        },
+        {
+          "date": "2026-01-23",
+          "headline": "le groupe sotuver annonce des revenus de plus de 260 millions de dinars en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.709
+        },
+        {
+          "date": "2026-01-22",
+          "headline": "sotuver augmente son chiffre d'affaires de 16% en 2025",
+          "sentiment": "Negative",
+          "confidence": 0.374
+        }
+      ]
+    },
+    "SOTIPAPIER": {
+      "ticker": "SOTIPAPIER",
+      "positive_count": 38,
+      "neutral_count": 7,
+      "negative_count": 16,
+      "total_articles": 61,
+      "net_sentiment": 0.361,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-02-04",
+          "headline": "sotipapier annonce la reprise progressive de la production",
+          "sentiment": "Positive",
+          "confidence": 0.561
+        },
+        {
+          "date": "2026-02-04",
+          "headline": "bourse de tunis : amen invest voit un nouveau cycle riche en opportunités sélectives (télécharger la",
+          "sentiment": "Positive",
+          "confidence": 0.309
+        },
+        {
+          "date": "2026-01-26",
+          "headline": "le chiffre d'affaires de sotipapier recule de 6% en 2025, à 102,2 md",
+          "sentiment": "Negative",
+          "confidence": 0.388
+        },
+        {
+          "date": "2026-01-22",
+          "headline": "sotipapier : l'usine à l'arrêt suite aux fortes intempéries",
+          "sentiment": "Neutral",
+          "confidence": 0.316
+        },
+        {
+          "date": "2025-10-23",
+          "headline": "sotipapier : le chiffre d'affaires recule de 5% au 30 septembre",
+          "sentiment": "Negative",
+          "confidence": 0.412
+        }
+      ]
+    },
+    "TUNINVEST - SICAR": {
+      "ticker": "TUNINVEST - SICAR",
+      "positive_count": 14,
+      "neutral_count": 3,
+      "negative_count": 12,
+      "total_articles": 29,
+      "net_sentiment": 0.069,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-02-04",
+          "headline": "bourse de tunis : amen invest voit un nouveau cycle riche en opportunités sélectives (télécharger la",
+          "sentiment": "Positive",
+          "confidence": 0.309
+        },
+        {
+          "date": "2026-02-02",
+          "headline": "bourse de tunis : a 26,5 milliards de dinars, le revenus global des sociétés cotées en hausse de 5,3",
+          "sentiment": "Positive",
+          "confidence": 0.652
+        },
+        {
+          "date": "2026-01-04",
+          "headline": "rétrospective 2025 : la bourse de tunis déjoue les turbulences; une performance historique de 35,12%",
+          "sentiment": "Negative",
+          "confidence": 0.488
+        },
+        {
+          "date": "2025-12-11",
+          "headline": "bourse de tunis : le tunindex grignote quelques points , carthage cement domine les échanges",
+          "sentiment": "Negative",
+          "confidence": 0.275
+        },
+        {
+          "date": "2025-12-08",
+          "headline": "bourse de tunis : le tunindex dévisse et perd 0,36%",
+          "sentiment": "Negative",
+          "confidence": 0.699
+        }
+      ]
+    },
+    "SANIMED": {
+      "ticker": "SANIMED",
+      "positive_count": 16,
+      "neutral_count": 5,
+      "negative_count": 9,
+      "total_articles": 30,
+      "net_sentiment": 0.233,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-02-04",
+          "headline": "bourse de tunis : amen invest voit un nouveau cycle riche en opportunités sélectives (télécharger la",
+          "sentiment": "Positive",
+          "confidence": 0.309
+        },
+        {
+          "date": "2026-02-03",
+          "headline": "sanimed lance un appel à candidature pour la désignation d’un représentant des actionnaires minorita",
+          "sentiment": "Neutral",
+          "confidence": 0.432
+        },
+        {
+          "date": "2026-02-02",
+          "headline": "bourse de tunis : a 26,5 milliards de dinars, le revenus global des sociétés cotées en hausse de 5,3",
+          "sentiment": "Positive",
+          "confidence": 0.652
+        },
+        {
+          "date": "2026-01-30",
+          "headline": "sanimed voit ses revenus baisser de 13% en 2025",
+          "sentiment": "Negative",
+          "confidence": 0.385
+        },
+        {
+          "date": "2026-01-02",
+          "headline": "la bourse de tunis met à jour les échantillons du tunindex et du tunindex 20",
+          "sentiment": "Neutral",
+          "confidence": 0.44
+        }
+      ]
+    },
+    "SOTEMAIL": {
+      "ticker": "SOTEMAIL",
+      "positive_count": 16,
+      "neutral_count": 0,
+      "negative_count": 16,
+      "total_articles": 32,
+      "net_sentiment": 0.0,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-02-04",
+          "headline": "bourse de tunis : amen invest voit un nouveau cycle riche en opportunités sélectives (télécharger la",
+          "sentiment": "Positive",
+          "confidence": 0.309
+        },
+        {
+          "date": "2025-11-26",
+          "headline": "sotemail : une perte de 7,9 md au premier semestre",
+          "sentiment": "Negative",
+          "confidence": 0.388
+        },
+        {
+          "date": "2025-11-25",
+          "headline": "somocer creuse encore ses pertes au premier semestre et met en place un plan de redressement",
+          "sentiment": "Negative",
+          "confidence": 0.308
+        },
+        {
+          "date": "2025-10-27",
+          "headline": "sotemail : un chiffre d'affaires en hausse de 8% au 30 septembre",
+          "sentiment": "Negative",
+          "confidence": 0.366
+        },
+        {
+          "date": "2025-05-20",
+          "headline": "sociétés cotées : revenus globaux en hausse au premier trimestre, mais contrastes sectoriels",
+          "sentiment": "Negative",
+          "confidence": 0.389
+        }
+      ]
+    },
+    "ASSAD": {
+      "ticker": "ASSAD",
+      "positive_count": 37,
+      "neutral_count": 9,
+      "negative_count": 16,
+      "total_articles": 62,
+      "net_sentiment": 0.339,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-02-04",
+          "headline": "bourse de tunis : amen invest voit un nouveau cycle riche en opportunités sélectives (télécharger la",
+          "sentiment": "Positive",
+          "confidence": 0.309
+        },
+        {
+          "date": "2026-01-19",
+          "headline": "assad augmente son chiffre d'affaires de 8% en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.718
+        },
+        {
+          "date": "2026-01-17",
+          "headline": "assad améliore ses revenus et réduit son endettement en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.732
+        },
+        {
+          "date": "2026-01-07",
+          "headline": "bourse de tunis : le tunindex creuse ses pertes et recule de 0,15%",
+          "sentiment": "Negative",
+          "confidence": 0.42
+        },
+        {
+          "date": "2026-01-04",
+          "headline": "rétrospective 2025 : la bourse de tunis déjoue les turbulences; une performance historique de 35,12%",
+          "sentiment": "Negative",
+          "confidence": 0.488
+        }
+      ]
+    },
+    "SAH": {
+      "ticker": "SAH",
+      "positive_count": 103,
+      "neutral_count": 9,
+      "negative_count": 57,
+      "total_articles": 169,
+      "net_sentiment": 0.272,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-02-04",
+          "headline": "bourse de tunis : amen invest voit un nouveau cycle riche en opportunités sélectives (télécharger la",
+          "sentiment": "Positive",
+          "confidence": 0.309
+        },
+        {
+          "date": "2026-01-27",
+          "headline": "bourse de tunis : le tunindex s'offre un gain spectaculaire; nouveau record près des 14 500 points",
+          "sentiment": "Negative",
+          "confidence": 0.35
+        },
+        {
+          "date": "2026-01-27",
+          "headline": "afc présente sa stratégie boursière pour 2026",
+          "sentiment": "Positive",
+          "confidence": 0.586
+        },
+        {
+          "date": "2026-01-26",
+          "headline": "le groupe sah lilas stabilise ses revenus à plus de 980 millions de dinars en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.779
+        },
+        {
+          "date": "2026-01-23",
+          "headline": "les revenus du groupe sah quasiment stables en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.78
+        }
+      ]
+    },
+    "CELLCOM": {
+      "ticker": "CELLCOM",
+      "positive_count": 18,
+      "neutral_count": 2,
+      "negative_count": 3,
+      "total_articles": 23,
+      "net_sentiment": 0.652,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-02-03",
+          "headline": "bourse de tunis : le tunindex repart à la hausse dans un marché animé par bna",
+          "sentiment": "Negative",
+          "confidence": 0.345
+        },
+        {
+          "date": "2025-12-26",
+          "headline": "répartition des titres en compartiments et en groupes de cotation pour l’année 2026",
+          "sentiment": "Neutral",
+          "confidence": 0.445
+        },
+        {
+          "date": "2025-11-10",
+          "headline": "cellcom : une première moitié de 2025 déjà plus performante que toute l’année 2024",
+          "sentiment": "Positive",
+          "confidence": 0.793
+        },
+        {
+          "date": "2025-06-23",
+          "headline": "cellcom affiche un bond significatif de son bénéfice en 2024",
+          "sentiment": "Positive",
+          "confidence": 0.704
+        },
+        {
+          "date": "2025-05-20",
+          "headline": "sociétés cotées : revenus globaux en hausse au premier trimestre, mais contrastes sectoriels",
+          "sentiment": "Negative",
+          "confidence": 0.389
+        }
+      ]
+    },
+    "CIMENTS DE BIZERTE": {
+      "ticker": "CIMENTS DE BIZERTE",
+      "positive_count": 20,
+      "neutral_count": 6,
+      "negative_count": 22,
+      "total_articles": 48,
+      "net_sentiment": -0.042,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-02-02",
+          "headline": "bourse de tunis : a 26,5 milliards de dinars, le revenus global des sociétés cotées en hausse de 5,3",
+          "sentiment": "Positive",
+          "confidence": 0.652
+        },
+        {
+          "date": "2026-01-30",
+          "headline": "les ciments de bizerte : le chiffre d'affaires progresse de 31% en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.346
+        },
+        {
+          "date": "2026-01-29",
+          "headline": "la crise financière continue de menacer la viabilité de la société les ciments de bizerte",
+          "sentiment": "Negative",
+          "confidence": 0.666
+        },
+        {
+          "date": "2026-01-07",
+          "headline": "bourse de tunis : le tunindex creuse ses pertes et recule de 0,15%",
+          "sentiment": "Negative",
+          "confidence": 0.42
+        },
+        {
+          "date": "2026-01-02",
+          "headline": "la bourse de tunis met à jour les échantillons du tunindex et du tunindex 20",
+          "sentiment": "Neutral",
+          "confidence": 0.44
+        }
+      ]
+    },
+    "EURO-CYCLES": {
+      "ticker": "EURO-CYCLES",
+      "positive_count": 53,
+      "neutral_count": 2,
+      "negative_count": 30,
+      "total_articles": 85,
+      "net_sentiment": 0.271,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-02-02",
+          "headline": "bourse de tunis : a 26,5 milliards de dinars, le revenus global des sociétés cotées en hausse de 5,3",
+          "sentiment": "Positive",
+          "confidence": 0.652
+        },
+        {
+          "date": "2026-01-21",
+          "headline": "euro-cycles termine 2025 sous le signe de l’ajustement stratégique",
+          "sentiment": "Positive",
+          "confidence": 0.729
+        },
+        {
+          "date": "2025-12-12",
+          "headline": "bourse de tunis : le tuindex signe un nouveau gain timide de 0,13%",
+          "sentiment": "Negative",
+          "confidence": 0.593
+        },
+        {
+          "date": "2025-10-28",
+          "headline": "bourse de tunis : le revenu global des sociétés cotées progresse de 5,7% à fin septembre",
+          "sentiment": "Positive",
+          "confidence": 0.66
+        },
+        {
+          "date": "2025-10-23",
+          "headline": "bourse de tunis : le tunindex aligne une cinquième séance dans le vert",
+          "sentiment": "Positive",
+          "confidence": 0.476
+        }
+      ]
+    },
+    "SITS": {
+      "ticker": "SITS",
+      "positive_count": 26,
+      "neutral_count": 5,
+      "negative_count": 5,
+      "total_articles": 36,
+      "net_sentiment": 0.583,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-02-02",
+          "headline": "bourse de tunis : a 26,5 milliards de dinars, le revenus global des sociétés cotées en hausse de 5,3",
+          "sentiment": "Positive",
+          "confidence": 0.652
+        },
+        {
+          "date": "2025-12-12",
+          "headline": "bouzguenda frères signe pour la réalisation du futur hôpital universitaire de kairouan",
+          "sentiment": "Neutral",
+          "confidence": 0.267
+        },
+        {
+          "date": "2025-09-12",
+          "headline": "le groupe poulina détient désormais près de 90 % du capital du promoteur immobilier sits",
+          "sentiment": "Positive",
+          "confidence": 0.706
+        },
+        {
+          "date": "2025-06-16",
+          "headline": "le groupe poulina lance une opa sur le promoteur immobilier sits",
+          "sentiment": "Negative",
+          "confidence": 0.377
+        },
+        {
+          "date": "2025-06-09",
+          "headline": "l'affaire tsi fait déjà des dégâts à new body line",
+          "sentiment": "Negative",
+          "confidence": 0.506
+        }
+      ]
+    },
+    "STA": {
+      "ticker": "STA",
+      "positive_count": 36,
+      "neutral_count": 10,
+      "negative_count": 6,
+      "total_articles": 52,
+      "net_sentiment": 0.577,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-02-02",
+          "headline": "bourse de tunis : a 26,5 milliards de dinars, le revenus global des sociétés cotées en hausse de 5,3",
+          "sentiment": "Positive",
+          "confidence": 0.652
+        },
+        {
+          "date": "2026-01-27",
+          "headline": "bourse de tunis : le tunindex s'offre un gain spectaculaire; nouveau record près des 14 500 points",
+          "sentiment": "Negative",
+          "confidence": 0.35
+        },
+        {
+          "date": "2026-01-22",
+          "headline": "sta : un chiffre d'affaires en nette hausse en 2025, à plus de 170 md",
+          "sentiment": "Positive",
+          "confidence": 0.663
+        },
+        {
+          "date": "2026-01-19",
+          "headline": "bourse de tunis : le tunindex prolonge ses gains et tutoie les 13 900 points",
+          "sentiment": "Positive",
+          "confidence": 0.636
+        },
+        {
+          "date": "2026-01-16",
+          "headline": "bourse de tunis : le tunindex dépasse les 13 800 points",
+          "sentiment": "Negative",
+          "confidence": 0.339
+        }
+      ]
+    },
+    "STIP": {
+      "ticker": "STIP",
+      "positive_count": 39,
+      "neutral_count": 6,
+      "negative_count": 4,
+      "total_articles": 49,
+      "net_sentiment": 0.714,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-02-02",
+          "headline": "bourse de tunis : a 26,5 milliards de dinars, le revenus global des sociétés cotées en hausse de 5,3",
+          "sentiment": "Positive",
+          "confidence": 0.652
+        },
+        {
+          "date": "2025-12-09",
+          "headline": "nouvelle composition du conseil d'administration de la stip",
+          "sentiment": "Neutral",
+          "confidence": 0.422
+        },
+        {
+          "date": "2025-10-28",
+          "headline": "bourse de tunis : le revenu global des sociétés cotées progresse de 5,7% à fin septembre",
+          "sentiment": "Positive",
+          "confidence": 0.66
+        },
+        {
+          "date": "2025-07-08",
+          "headline": "la stip lance un appel à candidature au poste de représentant des actionnaires minoritaires",
+          "sentiment": "Neutral",
+          "confidence": 0.438
+        },
+        {
+          "date": "2025-04-29",
+          "headline": "la stip améliore de 5% ses revenus au premier trimestre à 27 millions de dinars",
+          "sentiment": "Positive",
+          "confidence": 0.723
+        }
+      ]
+    },
+    "AIR LIQUIDE TUNISIE": {
+      "ticker": "AIR LIQUIDE TUNISIE",
+      "positive_count": 305,
+      "neutral_count": 82,
+      "negative_count": 70,
+      "total_articles": 457,
+      "net_sentiment": 0.514,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-01-30",
+          "headline": "la holding saoudienne abunayyan envisage de lourds investissements en algérie",
+          "sentiment": "Negative",
+          "confidence": 0.293
+        },
+        {
+          "date": "2026-01-22",
+          "headline": "l'inflation au maroc s’établit à 0,8 % pour l’ensemble de l’année 2025",
+          "sentiment": "Negative",
+          "confidence": 0.714
+        },
+        {
+          "date": "2026-01-19",
+          "headline": "air liquide tunisie annonce une légère hausse de 2% de ses revenus en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.587
+        },
+        {
+          "date": "2026-01-15",
+          "headline": "le groupe émirati alnser holding explore des opportunités d’investissement en tunisie",
+          "sentiment": "Positive",
+          "confidence": 0.625
+        },
+        {
+          "date": "2026-01-12",
+          "headline": "l’arabie saoudite ouvre son marché financier à tous les investisseurs étrangers",
+          "sentiment": "Positive",
+          "confidence": 0.5
+        }
+      ]
+    },
+    "TUNISAIR": {
+      "ticker": "TUNISAIR",
+      "positive_count": 68,
+      "neutral_count": 42,
+      "negative_count": 28,
+      "total_articles": 138,
+      "net_sentiment": 0.29,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-01-30",
+          "headline": "airbus choisit la tunisie comme pilier de son réseau de formation en afrique",
+          "sentiment": "Positive",
+          "confidence": 0.44
+        },
+        {
+          "date": "2026-01-27",
+          "headline": "tunisair annonce la campagne early purchase été 2026 pour faciliter la planification des voyages est",
+          "sentiment": "Positive",
+          "confidence": 0.512
+        },
+        {
+          "date": "2026-01-26",
+          "headline": "tunisair stabilise ses revenus à 1,6 milliard de dinars en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.703
+        },
+        {
+          "date": "2026-01-25",
+          "headline": "tunisair maintient un chiffre d'affaires stable en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.57
+        },
+        {
+          "date": "2026-01-16",
+          "headline": "tunisair et etihad airways scellent un accord de partage de codes",
+          "sentiment": "Neutral",
+          "confidence": 0.336
+        }
+      ]
+    },
+    "BH LEASING": {
+      "ticker": "BH LEASING",
+      "positive_count": 25,
+      "neutral_count": 10,
+      "negative_count": 2,
+      "total_articles": 37,
+      "net_sentiment": 0.622,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-01-29",
+          "headline": "bilan 2025 du secteur du leasing coté : résilience opérationnelle et perspectives conditionnelles",
+          "sentiment": "Positive",
+          "confidence": 0.665
+        },
+        {
+          "date": "2025-12-24",
+          "headline": "bh leasing cherche un administrateur indépendant qui présidera son comité d’audit",
+          "sentiment": "Neutral",
+          "confidence": 0.449
+        },
+        {
+          "date": "2025-11-07",
+          "headline": "bh leasing : thouraya mzoughi prend la direction générale par intérim",
+          "sentiment": "Neutral",
+          "confidence": 0.45
+        },
+        {
+          "date": "2025-11-06",
+          "headline": "bh leasing : nomination de thouraya mzoughi à la tête de la direction générale par intérim",
+          "sentiment": "Neutral",
+          "confidence": 0.444
+        },
+        {
+          "date": "2025-07-29",
+          "headline": "brahim ammar nommé nouveau directeur général de bh leasing",
+          "sentiment": "Neutral",
+          "confidence": 0.414
+        }
+      ]
+    },
+    "CIL": {
+      "ticker": "CIL",
+      "positive_count": 21,
+      "neutral_count": 4,
+      "negative_count": 1,
+      "total_articles": 26,
+      "net_sentiment": 0.769,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-01-29",
+          "headline": "bilan 2025 du secteur du leasing coté : résilience opérationnelle et perspectives conditionnelles",
+          "sentiment": "Positive",
+          "confidence": 0.665
+        },
+        {
+          "date": "2025-12-26",
+          "headline": "répartition des titres en compartiments et en groupes de cotation pour l’année 2026",
+          "sentiment": "Neutral",
+          "confidence": 0.445
+        },
+        {
+          "date": "2025-11-14",
+          "headline": "cil : une transaction de bloc réalisée pour 1,6 md",
+          "sentiment": "Positive",
+          "confidence": 0.713
+        },
+        {
+          "date": "2025-09-19",
+          "headline": "bourse : portefeuille-type de tera finances pour le second semestre de 2025",
+          "sentiment": "Neutral",
+          "confidence": 0.447
+        },
+        {
+          "date": "2025-05-05",
+          "headline": "bilan 2024 du secteur du leasing : croissance soutenue, tlf et atl en tête du peloton",
+          "sentiment": "Positive",
+          "confidence": 0.615
+        }
+      ]
+    },
+    "ARAB TUNISIAN LEASE": {
+      "ticker": "ARAB TUNISIAN LEASE",
+      "positive_count": 59,
+      "neutral_count": 9,
+      "negative_count": 2,
+      "total_articles": 70,
+      "net_sentiment": 0.814,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-01-29",
+          "headline": "bilan 2025 du secteur du leasing coté : résilience opérationnelle et perspectives conditionnelles",
+          "sentiment": "Positive",
+          "confidence": 0.665
+        },
+        {
+          "date": "2026-01-20",
+          "headline": "bourse : l'action atl leasing à son plus haut historique",
+          "sentiment": "Positive",
+          "confidence": 0.512
+        },
+        {
+          "date": "2026-01-19",
+          "headline": "les mises en force de l'atl leasing dépassent les 410 millions de dinars en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.789
+        },
+        {
+          "date": "2026-01-19",
+          "headline": "atl : un produit net en hausse de 10% en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.625
+        },
+        {
+          "date": "2026-01-02",
+          "headline": "la bourse de tunis met à jour les échantillons du tunindex et du tunindex 20",
+          "sentiment": "Neutral",
+          "confidence": 0.44
+        }
+      ]
+    },
+    "TUNISIE LEASING & FACTORING": {
+      "ticker": "TUNISIE LEASING & FACTORING",
+      "positive_count": 60,
+      "neutral_count": 7,
+      "negative_count": 3,
+      "total_articles": 70,
+      "net_sentiment": 0.814,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-01-29",
+          "headline": "bilan 2025 du secteur du leasing coté : résilience opérationnelle et perspectives conditionnelles",
+          "sentiment": "Positive",
+          "confidence": 0.665
+        },
+        {
+          "date": "2026-01-23",
+          "headline": "bourse de tunis : en forte hausse, le tunindex atteint un nouveau sommet à 14 136.07 points",
+          "sentiment": "Negative",
+          "confidence": 0.391
+        },
+        {
+          "date": "2026-01-19",
+          "headline": "bourse de tunis : le tunindex prolonge ses gains et tutoie les 13 900 points",
+          "sentiment": "Positive",
+          "confidence": 0.636
+        },
+        {
+          "date": "2026-01-12",
+          "headline": "bourse de tunis : le tunindex prolonge son rebond et prend 0,44%",
+          "sentiment": "Negative",
+          "confidence": 0.457
+        },
+        {
+          "date": "2026-01-07",
+          "headline": "bourse : quelle stratégie d’investissement adopter sur le premier trimestre 2026 ?",
+          "sentiment": "Positive",
+          "confidence": 0.707
+        }
+      ]
+    },
+    "HANNIBAL LEASE": {
+      "ticker": "HANNIBAL LEASE",
+      "positive_count": 50,
+      "neutral_count": 3,
+      "negative_count": 13,
+      "total_articles": 66,
+      "net_sentiment": 0.561,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-01-29",
+          "headline": "bilan 2025 du secteur du leasing coté : résilience opérationnelle et perspectives conditionnelles",
+          "sentiment": "Positive",
+          "confidence": 0.665
+        },
+        {
+          "date": "2025-12-24",
+          "headline": "qui est akdital, le groupe marocain qui s'est emparé des cliniques taoufik ?",
+          "sentiment": "Positive",
+          "confidence": 0.353
+        },
+        {
+          "date": "2025-09-19",
+          "headline": "bourse : portefeuille-type de tera finances pour le second semestre de 2025",
+          "sentiment": "Neutral",
+          "confidence": 0.447
+        },
+        {
+          "date": "2025-08-01",
+          "headline": "bilan semestriel des opcvm : croissance historique des encours et performance au rendez-vous",
+          "sentiment": "Negative",
+          "confidence": 0.316
+        },
+        {
+          "date": "2025-08-01",
+          "headline": "encours et mises en force en hausse, un semestre prometteur pour hannibal lease",
+          "sentiment": "Negative",
+          "confidence": 0.315
+        }
+      ]
+    },
+    "BEST LEASE": {
+      "ticker": "BEST LEASE",
+      "positive_count": 13,
+      "neutral_count": 0,
+      "negative_count": 0,
+      "total_articles": 13,
+      "net_sentiment": 1.0,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-01-29",
+          "headline": "bilan 2025 du secteur du leasing coté : résilience opérationnelle et perspectives conditionnelles",
+          "sentiment": "Positive",
+          "confidence": 0.665
+        },
+        {
+          "date": "2025-10-28",
+          "headline": "best lease : une transaction de bloc réalisée pour plus de 24 md",
+          "sentiment": "Positive",
+          "confidence": 0.746
+        },
+        {
+          "date": "2025-03-21",
+          "headline": "best lease voit son bénéfice net baisser de 18 % en 2024",
+          "sentiment": "Positive",
+          "confidence": 0.651
+        },
+        {
+          "date": "2024-04-22",
+          "headline": "nouveau bénéfice record pour al baraka bank en 2023",
+          "sentiment": "Positive",
+          "confidence": 0.762
+        },
+        {
+          "date": "2023-12-31",
+          "headline": "bourse de tunis : quel bilan tirer de 2023 ?",
+          "sentiment": "Positive",
+          "confidence": 0.446
+        }
+      ]
+    },
+    "STB BANK": {
+      "ticker": "STB BANK",
+      "positive_count": 122,
+      "neutral_count": 47,
+      "negative_count": 27,
+      "total_articles": 196,
+      "net_sentiment": 0.485,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-01-29",
+          "headline": "la bourse de tunis renforce l’accompagnement des sociétés cotées sur la comptabilité carbone",
+          "sentiment": "Positive",
+          "confidence": 0.706
+        },
+        {
+          "date": "2026-01-28",
+          "headline": "le pari réussi de hatem zaara à la tête de la banque tuniso-libyenne",
+          "sentiment": "Positive",
+          "confidence": 0.409
+        },
+        {
+          "date": "2026-01-22",
+          "headline": "stb bank consolide sa rentabilité et renforce sa structure financière en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.823
+        },
+        {
+          "date": "2026-01-22",
+          "headline": "stb : le produit net bancaire progresse de 6% en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.61
+        },
+        {
+          "date": "2026-01-07",
+          "headline": "qui est sami derbel, nouveau secrétaire général de la stb bank ?",
+          "sentiment": "Neutral",
+          "confidence": 0.383
+        }
+      ]
+    },
+    "BH BANK": {
+      "ticker": "BH BANK",
+      "positive_count": 96,
+      "neutral_count": 47,
+      "negative_count": 14,
+      "total_articles": 157,
+      "net_sentiment": 0.522,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-01-28",
+          "headline": "le pari réussi de hatem zaara à la tête de la banque tuniso-libyenne",
+          "sentiment": "Positive",
+          "confidence": 0.409
+        },
+        {
+          "date": "2026-01-28",
+          "headline": "bh bank : les actionnaires minoritaires appelés à élire leur représentant au conseil d'administratio",
+          "sentiment": "Neutral",
+          "confidence": 0.458
+        },
+        {
+          "date": "2026-01-21",
+          "headline": "2025, une année de transition pour la bh bank entre collecte record et coûts en hausse",
+          "sentiment": "Positive",
+          "confidence": 0.664
+        },
+        {
+          "date": "2026-01-20",
+          "headline": "bh bank subit une baisse de 3% de son pnb en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.593
+        },
+        {
+          "date": "2025-12-31",
+          "headline": "les deux scandales financiers qui ont secoué la sphère économique en tunisie en 2025",
+          "sentiment": "Negative",
+          "confidence": 0.373
+        }
+      ]
+    },
+    "AETECH": {
+      "ticker": "AETECH",
+      "positive_count": 16,
+      "neutral_count": 3,
+      "negative_count": 1,
+      "total_articles": 20,
+      "net_sentiment": 0.75,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-01-28",
+          "headline": "aetech : la cotation suspendue",
+          "sentiment": "Neutral",
+          "confidence": 0.451
+        },
+        {
+          "date": "2025-11-24",
+          "headline": "aetech cherche un administrateur représentant des actionnaires minoritaires",
+          "sentiment": "Neutral",
+          "confidence": 0.426
+        },
+        {
+          "date": "2025-11-04",
+          "headline": "aetech prolonge à nouveau la période de dépôt des candidatures pour le poste d'administrateur indépe",
+          "sentiment": "Neutral",
+          "confidence": 0.437
+        },
+        {
+          "date": "2025-02-10",
+          "headline": "le chiffre d'affaires global des sociétés cotées dépasse les 25 milliards de dinars en 2024",
+          "sentiment": "Positive",
+          "confidence": 0.678
+        },
+        {
+          "date": "2024-08-12",
+          "headline": "les sociétés cotées réalisent 12 milliards de dinars de revenus au premier semestre",
+          "sentiment": "Positive",
+          "confidence": 0.753
+        }
+      ]
+    },
+    "STAR": {
+      "ticker": "STAR",
+      "positive_count": 62,
+      "neutral_count": 11,
+      "negative_count": 15,
+      "total_articles": 88,
+      "net_sentiment": 0.534,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-01-27",
+          "headline": "star assurances affiche une croissance à deux chiffres des primes en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.77
+        },
+        {
+          "date": "2026-01-22",
+          "headline": "star : progression des primes émises de 12% en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.657
+        },
+        {
+          "date": "2026-01-07",
+          "headline": "bourse : quelle stratégie d’investissement adopter sur le premier trimestre 2026 ?",
+          "sentiment": "Positive",
+          "confidence": 0.707
+        },
+        {
+          "date": "2025-12-31",
+          "headline": "bourse de tunis : le tunindex aligne une nouvelle hausse de 0,62%",
+          "sentiment": "Negative",
+          "confidence": 0.412
+        },
+        {
+          "date": "2025-12-30",
+          "headline": "bourse de tunis : le tunindex en nette hausse au terme d'une séance très animée",
+          "sentiment": "Negative",
+          "confidence": 0.356
+        }
+      ]
+    },
+    "TPR": {
+      "ticker": "TPR",
+      "positive_count": 50,
+      "neutral_count": 3,
+      "negative_count": 17,
+      "total_articles": 70,
+      "net_sentiment": 0.471,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-01-27",
+          "headline": "afc présente sa stratégie boursière pour 2026",
+          "sentiment": "Positive",
+          "confidence": 0.586
+        },
+        {
+          "date": "2026-01-23",
+          "headline": "le groupe tpr consolide sa croissance en 2025 et franchit le cap des 375 millions de dinars de reven",
+          "sentiment": "Positive",
+          "confidence": 0.826
+        },
+        {
+          "date": "2026-01-23",
+          "headline": "bourse de tunis : en forte hausse, le tunindex atteint un nouveau sommet à 14 136.07 points",
+          "sentiment": "Negative",
+          "confidence": 0.391
+        },
+        {
+          "date": "2026-01-22",
+          "headline": "les revenus groupe tpr progressent de 17% en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.749
+        },
+        {
+          "date": "2026-01-16",
+          "headline": "bourse de tunis : le tunindex dépasse les 13 800 points",
+          "sentiment": "Negative",
+          "confidence": 0.339
+        }
+      ]
+    },
+    "MAGHREBIA VIE": {
+      "ticker": "MAGHREBIA VIE",
+      "positive_count": 37,
+      "neutral_count": 6,
+      "negative_count": 6,
+      "total_articles": 49,
+      "net_sentiment": 0.633,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-01-27",
+          "headline": "afc présente sa stratégie boursière pour 2026",
+          "sentiment": "Positive",
+          "confidence": 0.586
+        },
+        {
+          "date": "2026-01-23",
+          "headline": "maghrebia vie augmente son chiffre d'affaires de 11,6% en 2025",
+          "sentiment": "Negative",
+          "confidence": 0.339
+        },
+        {
+          "date": "2025-10-30",
+          "headline": "les revenus des sociétés cotées dépassent les 18 milliards de dinars à fin septembre",
+          "sentiment": "Positive",
+          "confidence": 0.67
+        },
+        {
+          "date": "2025-10-20",
+          "headline": "mac sa recommande d'acheter le titre maghrebia vie comme valeur de fond de portefeuille",
+          "sentiment": "Positive",
+          "confidence": 0.465
+        },
+        {
+          "date": "2025-10-20",
+          "headline": "maghrebia vie : une valeur sous-évaluée et à fort potentiel boursier selon mac s.a",
+          "sentiment": "Negative",
+          "confidence": 0.38
+        }
+      ]
+    },
+    "UNIMED": {
+      "ticker": "UNIMED",
+      "positive_count": 54,
+      "neutral_count": 13,
+      "negative_count": 22,
+      "total_articles": 89,
+      "net_sentiment": 0.36,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-01-27",
+          "headline": "afc présente sa stratégie boursière pour 2026",
+          "sentiment": "Positive",
+          "confidence": 0.586
+        },
+        {
+          "date": "2026-01-22",
+          "headline": "bourse de tunis : le tunindex repart à la hausse et se rapproche des 14 000 points",
+          "sentiment": "Negative",
+          "confidence": 0.389
+        },
+        {
+          "date": "2026-01-21",
+          "headline": "unimed : les revenus progressent légèrement de 1% en 2025 grâce à l'officinal",
+          "sentiment": "Positive",
+          "confidence": 0.721
+        },
+        {
+          "date": "2026-01-20",
+          "headline": "unimed clôture 2025 avec un chiffre d’affaires de près de 150 millions de dinars",
+          "sentiment": "Positive",
+          "confidence": 0.838
+        },
+        {
+          "date": "2026-01-13",
+          "headline": "bourse de tunis : le tunindex accélère sa montée et prend 1,04%",
+          "sentiment": "Negative",
+          "confidence": 0.449
+        }
+      ]
+    },
+    "ASSURANCES MAGHREBIA": {
+      "ticker": "ASSURANCES MAGHREBIA",
+      "positive_count": 85,
+      "neutral_count": 12,
+      "negative_count": 19,
+      "total_articles": 116,
+      "net_sentiment": 0.569,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-01-27",
+          "headline": "afc présente sa stratégie boursière pour 2026",
+          "sentiment": "Positive",
+          "confidence": 0.586
+        },
+        {
+          "date": "2026-01-23",
+          "headline": "maghrebia vie augmente son chiffre d'affaires de 11,6% en 2025",
+          "sentiment": "Negative",
+          "confidence": 0.339
+        },
+        {
+          "date": "2026-01-22",
+          "headline": "assurances maghrebia clôture 2025 sur des performances en nette amélioration",
+          "sentiment": "Positive",
+          "confidence": 0.811
+        },
+        {
+          "date": "2026-01-22",
+          "headline": "en hausse de 10,5%, le chiffre d'affaires de maghrebia dépasse les 300 md en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.751
+        },
+        {
+          "date": "2026-01-07",
+          "headline": "la compagnie assurances maghrebia en quête d'un administrateur indépendant",
+          "sentiment": "Neutral",
+          "confidence": 0.447
+        }
+      ]
+    },
+    "MAGASIN GENERAL": {
+      "ticker": "MAGASIN GENERAL",
+      "positive_count": 68,
+      "neutral_count": 12,
+      "negative_count": 7,
+      "total_articles": 87,
+      "net_sentiment": 0.701,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-01-24",
+          "headline": "magasin général consolide sa croissance en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.826
+        },
+        {
+          "date": "2026-01-12",
+          "headline": "top 10 des marques de voitures électriques les plus vendues en tunisie en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.672
+        },
+        {
+          "date": "2025-12-11",
+          "headline": "magasin général : réalisation d'une transaction de bloc de 3,6 millions de dinars",
+          "sentiment": "Positive",
+          "confidence": 0.714
+        },
+        {
+          "date": "2025-12-10",
+          "headline": "magasin général : un bloc de 400 mille actions négocié pour 3,6 md",
+          "sentiment": "Positive",
+          "confidence": 0.741
+        },
+        {
+          "date": "2025-12-09",
+          "headline": "im motors, la marque premium 100% électrique du groupe saic, s’installe en tunisie",
+          "sentiment": "Positive",
+          "confidence": 0.668
+        }
+      ]
+    },
+    "BTE (ADP)": {
+      "ticker": "BTE (ADP)",
+      "positive_count": 71,
+      "neutral_count": 17,
+      "negative_count": 13,
+      "total_articles": 101,
+      "net_sentiment": 0.574,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-01-23",
+          "headline": "bte bank consolide sa dynamique de croissance en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.768
+        },
+        {
+          "date": "2026-01-23",
+          "headline": "bte : hausse de 3% du pnb en 2025",
+          "sentiment": "Negative",
+          "confidence": 0.342
+        },
+        {
+          "date": "2026-01-20",
+          "headline": "la bte et cnbees scellent un partenariat pour le développement du crowdfunding en tunisie",
+          "sentiment": "Positive",
+          "confidence": 0.478
+        },
+        {
+          "date": "2025-12-30",
+          "headline": "la startup payday et la bte lancent une nouvelle dynamique bancaire à fort impact rse",
+          "sentiment": "Positive",
+          "confidence": 0.64
+        },
+        {
+          "date": "2025-11-20",
+          "headline": "résilience confirmée, transformation urgente : le diagnostic 2019-2024 du secteur bancaire coté",
+          "sentiment": "Positive",
+          "confidence": 0.549
+        }
+      ]
+    },
+    "SOTETEL": {
+      "ticker": "SOTETEL",
+      "positive_count": 39,
+      "neutral_count": 5,
+      "negative_count": 8,
+      "total_articles": 52,
+      "net_sentiment": 0.596,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-01-23",
+          "headline": "la sotetel boucle 2025 avec un chiffre d'affaires record de plus de 77 millions de dinars",
+          "sentiment": "Positive",
+          "confidence": 0.762
+        },
+        {
+          "date": "2026-01-23",
+          "headline": "bourse de tunis : en forte hausse, le tunindex atteint un nouveau sommet à 14 136.07 points",
+          "sentiment": "Negative",
+          "confidence": 0.391
+        },
+        {
+          "date": "2026-01-22",
+          "headline": "bourse de tunis : le tunindex repart à la hausse et se rapproche des 14 000 points",
+          "sentiment": "Negative",
+          "confidence": 0.389
+        },
+        {
+          "date": "2026-01-22",
+          "headline": "sotetel annonce un ebitda de 9,1 md en 2025, en hausse de 4,8%",
+          "sentiment": "Positive",
+          "confidence": 0.674
+        },
+        {
+          "date": "2025-10-21",
+          "headline": "sotetel signe un troisième trimestre solide qui efface le retard du premier semestre",
+          "sentiment": "Negative",
+          "confidence": 0.37
+        }
+      ]
+    },
+    "BNA ASSURANCES": {
+      "ticker": "BNA ASSURANCES",
+      "positive_count": 15,
+      "neutral_count": 8,
+      "negative_count": 4,
+      "total_articles": 27,
+      "net_sentiment": 0.407,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-01-23",
+          "headline": "le chiffre d'affaires de bna assurances progresse de 9,5% en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.619
+        },
+        {
+          "date": "2026-01-21",
+          "headline": "bna assurances boucle 2025 sur une croissance solide",
+          "sentiment": "Positive",
+          "confidence": 0.801
+        },
+        {
+          "date": "2025-12-01",
+          "headline": "bourse de tunis : le tunindex légèrement bien orienté",
+          "sentiment": "Negative",
+          "confidence": 0.395
+        },
+        {
+          "date": "2025-11-28",
+          "headline": "bourse de tunis : le tunindex retrouve la hausse et prend 0,39%",
+          "sentiment": "Negative",
+          "confidence": 0.574
+        },
+        {
+          "date": "2025-11-24",
+          "headline": "bourse de tunis : bna assurances transféré au continu à partir du 28 novembre",
+          "sentiment": "Negative",
+          "confidence": 0.345
+        }
+      ]
+    },
+    "CITY CARS": {
+      "ticker": "CITY CARS",
+      "positive_count": 72,
+      "neutral_count": 7,
+      "negative_count": 11,
+      "total_articles": 90,
+      "net_sentiment": 0.678,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-01-22",
+          "headline": "city cars - kia consolide sa position de leader sur le marché automobile tunisien en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.716
+        },
+        {
+          "date": "2026-01-21",
+          "headline": "city cars augmente de 6% ses revenus en 2025 à plus de 385 millions de dinars",
+          "sentiment": "Positive",
+          "confidence": 0.8
+        },
+        {
+          "date": "2026-01-20",
+          "headline": "les revenus de city cars progressent de 6% en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.747
+        },
+        {
+          "date": "2026-01-12",
+          "headline": "bourse de tunis : le tunindex prolonge son rebond et prend 0,44%",
+          "sentiment": "Negative",
+          "confidence": 0.457
+        },
+        {
+          "date": "2026-01-07",
+          "headline": "bourse : quelle stratégie d’investissement adopter sur le premier trimestre 2026 ?",
+          "sentiment": "Positive",
+          "confidence": 0.707
+        }
+      ]
+    },
+    "MONOPRIX": {
+      "ticker": "MONOPRIX",
+      "positive_count": 52,
+      "neutral_count": 7,
+      "negative_count": 5,
+      "total_articles": 64,
+      "net_sentiment": 0.734,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-01-22",
+          "headline": "monoprix tunisie affiche une croissance à deux chiffres des revenus en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.825
+        },
+        {
+          "date": "2025-12-26",
+          "headline": "bourse de tunis : le tunindex finit la semaine sur un gain timide",
+          "sentiment": "Positive",
+          "confidence": 0.484
+        },
+        {
+          "date": "2025-10-30",
+          "headline": "les revenus des sociétés cotées dépassent les 18 milliards de dinars à fin septembre",
+          "sentiment": "Positive",
+          "confidence": 0.67
+        },
+        {
+          "date": "2025-10-17",
+          "headline": "enda dévoile au grand public sa solution de paiement mobile « enda tao »",
+          "sentiment": "Neutral",
+          "confidence": 0.291
+        },
+        {
+          "date": "2025-09-26",
+          "headline": "monoprix lance un nouvel appel à candidature pour la désignation d’un administrateur indépendant",
+          "sentiment": "Neutral",
+          "confidence": 0.447
+        }
+      ]
+    },
+    "OFFICE PLAST": {
+      "ticker": "OFFICE PLAST",
+      "positive_count": 15,
+      "neutral_count": 4,
+      "negative_count": 5,
+      "total_articles": 24,
+      "net_sentiment": 0.417,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-01-22",
+          "headline": "office plast fait preuve de résilience et prépare sa relance en 2026",
+          "sentiment": "Positive",
+          "confidence": 0.763
+        },
+        {
+          "date": "2025-12-26",
+          "headline": "répartition des titres en compartiments et en groupes de cotation pour l’année 2026",
+          "sentiment": "Neutral",
+          "confidence": 0.445
+        },
+        {
+          "date": "2025-10-28",
+          "headline": "officeplast : légère baisse de 2% du chiffre d'affaires à fin septembre",
+          "sentiment": "Negative",
+          "confidence": 0.37
+        },
+        {
+          "date": "2025-09-17",
+          "headline": "consensus du marché des titres cotés à la bourse de tunis",
+          "sentiment": "Negative",
+          "confidence": 0.392
+        },
+        {
+          "date": "2025-07-30",
+          "headline": "office plast maintient la croissance de sa production au premier semestre malgré un sinistre",
+          "sentiment": "Negative",
+          "confidence": 0.362
+        }
+      ]
+    },
+    "ARTES": {
+      "ticker": "ARTES",
+      "positive_count": 62,
+      "neutral_count": 8,
+      "negative_count": 7,
+      "total_articles": 77,
+      "net_sentiment": 0.714,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-01-22",
+          "headline": "le concessionnaire artes atteint un niveau historique de chiffre d’affaires en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.834
+        },
+        {
+          "date": "2026-01-22",
+          "headline": "artes : le chiffre d'affaires en hausse de 19% en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.695
+        },
+        {
+          "date": "2025-12-11",
+          "headline": "kia domine le marché automobile tunisien à fin novembre 2025",
+          "sentiment": "Positive",
+          "confidence": 0.712
+        },
+        {
+          "date": "2025-11-20",
+          "headline": "le concessionnaire automobile artes lance la 3ème édition des journées après-vente",
+          "sentiment": "Positive",
+          "confidence": 0.434
+        },
+        {
+          "date": "2025-11-11",
+          "headline": "hyundai reste en tête du marché automobile tunisien sur les dix premiers mois de 2025",
+          "sentiment": "Positive",
+          "confidence": 0.715
+        }
+      ]
+    },
+    "WIFAK INT BANK": {
+      "ticker": "WIFAK INT BANK",
+      "positive_count": 103,
+      "neutral_count": 11,
+      "negative_count": 4,
+      "total_articles": 118,
+      "net_sentiment": 0.839,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-01-22",
+          "headline": "wifak bank signe une forte croissance de ses indicateurs clés en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.803
+        },
+        {
+          "date": "2025-12-31",
+          "headline": "wifak bank inaugure sa 56ᵉ agence à cité ennasr et renforce son engagement en faveur d’une banque in",
+          "sentiment": "Positive",
+          "confidence": 0.664
+        },
+        {
+          "date": "2025-12-26",
+          "headline": "répartition des titres en compartiments et en groupes de cotation pour l’année 2026",
+          "sentiment": "Neutral",
+          "confidence": 0.445
+        },
+        {
+          "date": "2025-12-23",
+          "headline": "wifak bank réussit son émission obligataire de 22 md",
+          "sentiment": "Positive",
+          "confidence": 0.691
+        },
+        {
+          "date": "2025-12-20",
+          "headline": "wifak bank émet un emprunt obligataire selon les principes de la finance islamique",
+          "sentiment": "Neutral",
+          "confidence": 0.415
+        }
+      ]
+    },
+    "MEUBLES INTERIEURS": {
+      "ticker": "MEUBLES INTERIEURS",
+      "positive_count": 15,
+      "neutral_count": 5,
+      "negative_count": 5,
+      "total_articles": 25,
+      "net_sentiment": 0.4,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-01-22",
+          "headline": "sam : les revenus du groupe reculent de 7% en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.685
+        },
+        {
+          "date": "2025-11-25",
+          "headline": "bourse de tunis : le tunindex légèrement mal orienté",
+          "sentiment": "Positive",
+          "confidence": 0.467
+        },
+        {
+          "date": "2025-11-17",
+          "headline": "sam annonce une augmentation de capital et une distribution d'actions gratuites",
+          "sentiment": "Neutral",
+          "confidence": 0.46
+        },
+        {
+          "date": "2025-10-23",
+          "headline": "sam : le chiffre d'affaires recule de 6% à fin septembre",
+          "sentiment": "Negative",
+          "confidence": 0.443
+        },
+        {
+          "date": "2025-10-22",
+          "headline": "meubles intérieurs : une dynamique de reprise attendue au quatrième trimestre 2025",
+          "sentiment": "Positive",
+          "confidence": 0.599
+        }
+      ]
+    },
+    "TUNISIE VALEURS": {
+      "ticker": "TUNISIE VALEURS",
+      "positive_count": 137,
+      "neutral_count": 32,
+      "negative_count": 29,
+      "total_articles": 198,
+      "net_sentiment": 0.545,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-01-21",
+          "headline": "le groupe onetech confirme sa croissance et consolide sa structure financière en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.811
+        },
+        {
+          "date": "2026-01-11",
+          "headline": "les 5 infos business à retenir cette semaine",
+          "sentiment": "Negative",
+          "confidence": 0.356
+        },
+        {
+          "date": "2026-01-08",
+          "headline": "perspectives 2026 du marché des actions : un optimisme prudent est de mise",
+          "sentiment": "Positive",
+          "confidence": 0.688
+        },
+        {
+          "date": "2026-01-07",
+          "headline": "bourse : quelle stratégie d’investissement adopter sur le premier trimestre 2026 ?",
+          "sentiment": "Positive",
+          "confidence": 0.707
+        },
+        {
+          "date": "2026-01-07",
+          "headline": "tunisie valeurs publie une rétrospective des valeurs cotées et met à jour ses recommandations",
+          "sentiment": "Positive",
+          "confidence": 0.309
+        }
+      ]
+    },
+    "SIAME": {
+      "ticker": "SIAME",
+      "positive_count": 45,
+      "neutral_count": 3,
+      "negative_count": 14,
+      "total_articles": 62,
+      "net_sentiment": 0.5,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-01-21",
+          "headline": "la siame voit son chiffre d'affaires croître de 8% en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.748
+        },
+        {
+          "date": "2026-01-06",
+          "headline": "bourse de tunis : le tunindex toujours dans le rouge",
+          "sentiment": "Negative",
+          "confidence": 0.414
+        },
+        {
+          "date": "2026-01-05",
+          "headline": "la siame maintient son bénéfice stable à 1,7 md au premier semestre 2025",
+          "sentiment": "Positive",
+          "confidence": 0.705
+        },
+        {
+          "date": "2025-12-26",
+          "headline": "répartition des titres en compartiments et en groupes de cotation pour l’année 2026",
+          "sentiment": "Neutral",
+          "confidence": 0.445
+        },
+        {
+          "date": "2025-12-03",
+          "headline": "bourse de tunis : le tunindex toujours légèrement dans le vert",
+          "sentiment": "Positive",
+          "confidence": 0.435
+        }
+      ]
+    },
+    "MPBS": {
+      "ticker": "MPBS",
+      "positive_count": 33,
+      "neutral_count": 3,
+      "negative_count": 4,
+      "total_articles": 40,
+      "net_sentiment": 0.725,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-01-21",
+          "headline": "les revenus du groupe mpbs augmentent de 15% en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.773
+        },
+        {
+          "date": "2026-01-02",
+          "headline": "la bourse de tunis met à jour les échantillons du tunindex et du tunindex 20",
+          "sentiment": "Neutral",
+          "confidence": 0.44
+        },
+        {
+          "date": "2026-01-02",
+          "headline": "bourse de tunis : scb intègre le tunindex; air liquide et sanimed quittent l'indice",
+          "sentiment": "Neutral",
+          "confidence": 0.359
+        },
+        {
+          "date": "2025-12-29",
+          "headline": "bourse de tunis : le tunindex commence la semaine en légère hausse",
+          "sentiment": "Negative",
+          "confidence": 0.315
+        },
+        {
+          "date": "2025-10-23",
+          "headline": "bourse de tunis : le tunindex aligne une cinquième séance dans le vert",
+          "sentiment": "Positive",
+          "confidence": 0.476
+        }
+      ]
+    },
+    "LAND'OR": {
+      "ticker": "LAND'OR",
+      "positive_count": 47,
+      "neutral_count": 3,
+      "negative_count": 15,
+      "total_articles": 65,
+      "net_sentiment": 0.492,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-01-21",
+          "headline": "land'or : en hausse de 6%, les revenus dépassent les 200 md en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.756
+        },
+        {
+          "date": "2026-01-20",
+          "headline": "land'or améliore de 6% ses revenus et réduit sensiblement son endettement en 2025",
+          "sentiment": "Negative",
+          "confidence": 0.347
+        },
+        {
+          "date": "2026-01-19",
+          "headline": "bourse de tunis : le tunindex prolonge ses gains et tutoie les 13 900 points",
+          "sentiment": "Positive",
+          "confidence": 0.636
+        },
+        {
+          "date": "2025-11-21",
+          "headline": "bourse de tunis : le tunindex aligne une nouvelle hausse de 0,52%",
+          "sentiment": "Negative",
+          "confidence": 0.404
+        },
+        {
+          "date": "2025-11-20",
+          "headline": "bourse de tunis : le tunindex poursuit sa progression et prend 0,31%",
+          "sentiment": "Negative",
+          "confidence": 0.362
+        }
+      ]
+    },
+    "ICF": {
+      "ticker": "ICF",
+      "positive_count": 33,
+      "neutral_count": 1,
+      "negative_count": 10,
+      "total_articles": 44,
+      "net_sentiment": 0.523,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-01-21",
+          "headline": "icf annonce une légère baisse de son chiffre d'affaires en 2025",
+          "sentiment": "Negative",
+          "confidence": 0.36
+        },
+        {
+          "date": "2025-11-25",
+          "headline": "bourse de tunis : le tunindex légèrement mal orienté",
+          "sentiment": "Positive",
+          "confidence": 0.467
+        },
+        {
+          "date": "2025-11-24",
+          "headline": "bourse de tunis : le tunindex trébuche après dix hausses de suite",
+          "sentiment": "Negative",
+          "confidence": 0.484
+        },
+        {
+          "date": "2025-11-12",
+          "headline": "bourse de tunis : le tunindex signe un nouveau gain de 0,34%",
+          "sentiment": "Negative",
+          "confidence": 0.339
+        },
+        {
+          "date": "2025-11-06",
+          "headline": "bourse de tunis : le tunindex atteint un nouveau sommet à plus de 12 700 points",
+          "sentiment": "Negative",
+          "confidence": 0.394
+        }
+      ]
+    },
+    "TAWASOL": {
+      "ticker": "TAWASOL",
+      "positive_count": 61,
+      "neutral_count": 14,
+      "negative_count": 37,
+      "total_articles": 112,
+      "net_sentiment": 0.214,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-01-19",
+          "headline": "le groupe tawasol augmente de 25% ses revenus en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.761
+        },
+        {
+          "date": "2026-01-19",
+          "headline": "les revenus du groupe tawasol progressent de 26% en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.753
+        },
+        {
+          "date": "2026-01-07",
+          "headline": "bourse de tunis : le tunindex creuse ses pertes et recule de 0,15%",
+          "sentiment": "Negative",
+          "confidence": 0.42
+        },
+        {
+          "date": "2026-01-06",
+          "headline": "bourse de tunis : le tunindex toujours dans le rouge",
+          "sentiment": "Negative",
+          "confidence": 0.414
+        },
+        {
+          "date": "2025-12-24",
+          "headline": "le groupe tawasol accuse une perte consolidée de plus de 3 millions de dinars en 2024",
+          "sentiment": "Positive",
+          "confidence": 0.492
+        }
+      ]
+    },
+    "ASTREE": {
+      "ticker": "ASTREE",
+      "positive_count": 24,
+      "neutral_count": 2,
+      "negative_count": 3,
+      "total_articles": 29,
+      "net_sentiment": 0.724,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-01-19",
+          "headline": "bourse de tunis : le tunindex prolonge ses gains et tutoie les 13 900 points",
+          "sentiment": "Positive",
+          "confidence": 0.636
+        },
+        {
+          "date": "2025-12-30",
+          "headline": "bourse de tunis : le tunindex en nette hausse au terme d'une séance très animée",
+          "sentiment": "Negative",
+          "confidence": 0.356
+        },
+        {
+          "date": "2025-09-19",
+          "headline": "bourse : portefeuille-type de tera finances pour le second semestre de 2025",
+          "sentiment": "Neutral",
+          "confidence": 0.447
+        },
+        {
+          "date": "2025-07-01",
+          "headline": "classement 2024 des assurances : les grands gagnants d’un marché en expansion",
+          "sentiment": "Positive",
+          "confidence": 0.586
+        },
+        {
+          "date": "2024-08-26",
+          "headline": "quelles sont les compagnies d’assurance les plus rentables en 2023 ?",
+          "sentiment": "Positive",
+          "confidence": 0.707
+        }
+      ]
+    },
+    "TELNET HOLDING": {
+      "ticker": "TELNET HOLDING",
+      "positive_count": 45,
+      "neutral_count": 16,
+      "negative_count": 9,
+      "total_articles": 70,
+      "net_sentiment": 0.514,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-01-16",
+          "headline": "croissance solide de l’activité du groupe telnet en 2025",
+          "sentiment": "Positive",
+          "confidence": 0.796
+        },
+        {
+          "date": "2026-01-14",
+          "headline": "les produits d'exploitation du groupe telnet dépassent les 80 md en 2025, en hausse de 17%",
+          "sentiment": "Positive",
+          "confidence": 0.761
+        },
+        {
+          "date": "2025-12-30",
+          "headline": "bourse de tunis : le tunindex en nette hausse au terme d'une séance très animée",
+          "sentiment": "Negative",
+          "confidence": 0.356
+        },
+        {
+          "date": "2025-12-09",
+          "headline": "bourse de tunis : le tunindex pratiquement inchangé",
+          "sentiment": "Negative",
+          "confidence": 0.406
+        },
+        {
+          "date": "2025-10-30",
+          "headline": "les revenus des sociétés cotées dépassent les 18 milliards de dinars à fin septembre",
+          "sentiment": "Positive",
+          "confidence": 0.67
+        }
+      ]
+    },
+    "ESSOUKNA": {
+      "ticker": "ESSOUKNA",
+      "positive_count": 20,
+      "neutral_count": 2,
+      "negative_count": 4,
+      "total_articles": 26,
+      "net_sentiment": 0.615,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2026-01-04",
+          "headline": "rétrospective 2025 : la bourse de tunis déjoue les turbulences; une performance historique de 35,12%",
+          "sentiment": "Negative",
+          "confidence": 0.488
+        },
+        {
+          "date": "2025-12-26",
+          "headline": "répartition des titres en compartiments et en groupes de cotation pour l’année 2026",
+          "sentiment": "Neutral",
+          "confidence": 0.445
+        },
+        {
+          "date": "2025-08-04",
+          "headline": "essoukna signe une progression spectaculaire de ses revenus au premier semestre",
+          "sentiment": "Positive",
+          "confidence": 0.842
+        },
+        {
+          "date": "2025-02-10",
+          "headline": "le chiffre d'affaires global des sociétés cotées dépasse les 25 milliards de dinars en 2024",
+          "sentiment": "Positive",
+          "confidence": 0.678
+        },
+        {
+          "date": "2024-08-12",
+          "headline": "les sociétés cotées réalisent 12 milliards de dinars de revenus au premier semestre",
+          "sentiment": "Positive",
+          "confidence": 0.753
+        }
+      ]
+    },
+    "NEW BODY LINE": {
+      "ticker": "NEW BODY LINE",
+      "positive_count": 29,
+      "neutral_count": 0,
+      "negative_count": 4,
+      "total_articles": 33,
+      "net_sentiment": 0.758,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2025-12-31",
+          "headline": "les deux scandales financiers qui ont secoué la sphère économique en tunisie en 2025",
+          "sentiment": "Negative",
+          "confidence": 0.373
+        },
+        {
+          "date": "2025-10-28",
+          "headline": "bourse de tunis : le revenu global des sociétés cotées progresse de 5,7% à fin septembre",
+          "sentiment": "Positive",
+          "confidence": 0.66
+        },
+        {
+          "date": "2025-06-09",
+          "headline": "l'affaire tsi fait déjà des dégâts à new body line",
+          "sentiment": "Negative",
+          "confidence": 0.506
+        },
+        {
+          "date": "2025-06-09",
+          "headline": "new body line accuse une perte nette de plus de 4 millions de dinars en 2024",
+          "sentiment": "Positive",
+          "confidence": 0.618
+        },
+        {
+          "date": "2025-05-20",
+          "headline": "sociétés cotées : revenus globaux en hausse au premier trimestre, mais contrastes sectoriels",
+          "sentiment": "Negative",
+          "confidence": 0.389
+        }
+      ]
+    },
+    "SPDIT - SICAF": {
+      "ticker": "SPDIT - SICAF",
+      "positive_count": 12,
+      "neutral_count": 1,
+      "negative_count": 0,
+      "total_articles": 13,
+      "net_sentiment": 0.923,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2025-12-26",
+          "headline": "bourse de tunis : le tunindex finit la semaine sur un gain timide",
+          "sentiment": "Positive",
+          "confidence": 0.484
+        },
+        {
+          "date": "2025-05-07",
+          "headline": "assemblée générale de la sfbt : une année 2024 placée sous le signe de la résilience",
+          "sentiment": "Positive",
+          "confidence": 0.34
+        },
+        {
+          "date": "2025-02-26",
+          "headline": "la spdit propose la distribution d'un dividende de 1 dinar par action au titre de 2024",
+          "sentiment": "Positive",
+          "confidence": 0.606
+        },
+        {
+          "date": "2024-12-24",
+          "headline": "répartition des titres de la cote de la bourse en compartiments pour l’année 2025",
+          "sentiment": "Positive",
+          "confidence": 0.501
+        },
+        {
+          "date": "2024-03-06",
+          "headline": "elyès fakhfakh nommé président du conseil d'administration de la spdit",
+          "sentiment": "Neutral",
+          "confidence": 0.368
+        }
+      ]
+    },
+    "BH ASSURANCE": {
+      "ticker": "BH ASSURANCE",
+      "positive_count": 37,
+      "neutral_count": 6,
+      "negative_count": 4,
+      "total_articles": 47,
+      "net_sentiment": 0.702,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2025-12-24",
+          "headline": "bh leasing cherche un administrateur indépendant qui présidera son comité d’audit",
+          "sentiment": "Neutral",
+          "confidence": 0.449
+        },
+        {
+          "date": "2025-10-21",
+          "headline": "bh assurance améliore de 4% son chiffre d’affaires à 154 millions de dinars à fin septembre",
+          "sentiment": "Positive",
+          "confidence": 0.782
+        },
+        {
+          "date": "2025-09-05",
+          "headline": "une activité en progression pour bh assurance au premier semestre 2025",
+          "sentiment": "Positive",
+          "confidence": 0.76
+        },
+        {
+          "date": "2025-05-20",
+          "headline": "sociétés cotées : revenus globaux en hausse au premier trimestre, mais contrastes sectoriels",
+          "sentiment": "Negative",
+          "confidence": 0.389
+        },
+        {
+          "date": "2025-05-06",
+          "headline": "nouvelle direction générale à la tête de bh assurance",
+          "sentiment": "Neutral",
+          "confidence": 0.313
+        }
+      ]
+    },
+    "PLACEMENTS DE TUNISIE - SICAF": {
+      "ticker": "PLACEMENTS DE TUNISIE - SICAF",
+      "positive_count": 4,
+      "neutral_count": 0,
+      "negative_count": 2,
+      "total_articles": 6,
+      "net_sentiment": 0.333,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2025-11-27",
+          "headline": "bourse de tunis : le tunindex perd encore un peu de terrain",
+          "sentiment": "Positive",
+          "confidence": 0.395
+        },
+        {
+          "date": "2024-07-04",
+          "headline": "bilan de l'activité boursière durant le mois de juin 2024",
+          "sentiment": "Negative",
+          "confidence": 0.339
+        },
+        {
+          "date": "2022-12-21",
+          "headline": "placements de tunisie : réalisation d'une transaction de bloc pour plus de 8 millions de dinars",
+          "sentiment": "Positive",
+          "confidence": 0.651
+        },
+        {
+          "date": "2022-02-28",
+          "headline": "la société placements de tunisie propose la distribution d'un dividende de 3,900 dinars par action",
+          "sentiment": "Positive",
+          "confidence": 0.768
+        },
+        {
+          "date": "2021-06-23",
+          "headline": "la bourse de tunis termine en léger repli mercredi dans un marché creux",
+          "sentiment": "Negative",
+          "confidence": 0.728
+        }
+      ]
+    },
+    "SOMOCER": {
+      "ticker": "SOMOCER",
+      "positive_count": 18,
+      "neutral_count": 3,
+      "negative_count": 23,
+      "total_articles": 44,
+      "net_sentiment": -0.114,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2025-11-25",
+          "headline": "dettes, administration judiciaire et crédits bancaires : somocer dévoile son plan de restructuration",
+          "sentiment": "Negative",
+          "confidence": 0.389
+        },
+        {
+          "date": "2025-11-25",
+          "headline": "somocer creuse encore ses pertes au premier semestre et met en place un plan de redressement",
+          "sentiment": "Negative",
+          "confidence": 0.308
+        },
+        {
+          "date": "2025-10-27",
+          "headline": "somocer améliore légèrement ses revenus à fin septembre",
+          "sentiment": "Negative",
+          "confidence": 0.503
+        },
+        {
+          "date": "2025-10-16",
+          "headline": "somocer accuse en 2024 une perte historique de près de 29 millions de dinars",
+          "sentiment": "Negative",
+          "confidence": 0.409
+        },
+        {
+          "date": "2025-03-24",
+          "headline": "consensus de marché des titres cotés à la bourse de tunis",
+          "sentiment": "Positive",
+          "confidence": 0.389
+        }
+      ]
+    },
+    "SIPHAT": {
+      "ticker": "SIPHAT",
+      "positive_count": 13,
+      "neutral_count": 1,
+      "negative_count": 13,
+      "total_articles": 27,
+      "net_sentiment": 0.0,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2025-11-21",
+          "headline": "bourse de tunis : le tunindex aligne une nouvelle hausse de 0,52%",
+          "sentiment": "Negative",
+          "confidence": 0.404
+        },
+        {
+          "date": "2025-10-24",
+          "headline": "les revenus de la siphat reculent de 10% au 30 septembre",
+          "sentiment": "Negative",
+          "confidence": 0.508
+        },
+        {
+          "date": "2025-08-25",
+          "headline": "rached azaiez nommé directeur général des laboratoires unimed",
+          "sentiment": "Neutral",
+          "confidence": 0.425
+        },
+        {
+          "date": "2025-01-31",
+          "headline": "la siphat croule sous un endettement de plus de 128 millions de dinars",
+          "sentiment": "Negative",
+          "confidence": 0.407
+        },
+        {
+          "date": "2024-04-29",
+          "headline": "l'endettement de la siphat dépasse les 110 millions de dinars à fin mars",
+          "sentiment": "Negative",
+          "confidence": 0.462
+        }
+      ]
+    },
+    "SOTRAPIL": {
+      "ticker": "SOTRAPIL",
+      "positive_count": 6,
+      "neutral_count": 0,
+      "negative_count": 4,
+      "total_articles": 10,
+      "net_sentiment": 0.2,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2025-11-05",
+          "headline": "bourse de tunis : le tunindex repart à la hausse et prend 0,20%",
+          "sentiment": "Negative",
+          "confidence": 0.706
+        },
+        {
+          "date": "2025-05-20",
+          "headline": "sociétés cotées : revenus globaux en hausse au premier trimestre, mais contrastes sectoriels",
+          "sentiment": "Negative",
+          "confidence": 0.389
+        },
+        {
+          "date": "2025-01-30",
+          "headline": "bourse : portefeuille-type de tunisie valeurs pour le premier trimestre de 2025",
+          "sentiment": "Positive",
+          "confidence": 0.623
+        },
+        {
+          "date": "2024-01-09",
+          "headline": "la bourse de tunis enchaîne une sixième séance de baisse",
+          "sentiment": "Negative",
+          "confidence": 0.695
+        },
+        {
+          "date": "2023-10-20",
+          "headline": "la sotrapil voit son chiffre d'affaires baisser de 4% à fin septembre",
+          "sentiment": "Negative",
+          "confidence": 0.452
+        }
+      ]
+    },
+    "SIMPAR": {
+      "ticker": "SIMPAR",
+      "positive_count": 13,
+      "neutral_count": 0,
+      "negative_count": 2,
+      "total_articles": 15,
+      "net_sentiment": 0.733,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2025-10-30",
+          "headline": "les revenus des sociétés cotées dépassent les 18 milliards de dinars à fin septembre",
+          "sentiment": "Positive",
+          "confidence": 0.67
+        },
+        {
+          "date": "2025-10-28",
+          "headline": "bourse de tunis : le revenu global des sociétés cotées progresse de 5,7% à fin septembre",
+          "sentiment": "Positive",
+          "confidence": 0.66
+        },
+        {
+          "date": "2025-05-20",
+          "headline": "sociétés cotées : revenus globaux en hausse au premier trimestre, mais contrastes sectoriels",
+          "sentiment": "Negative",
+          "confidence": 0.389
+        },
+        {
+          "date": "2025-02-10",
+          "headline": "le chiffre d'affaires global des sociétés cotées dépasse les 25 milliards de dinars en 2024",
+          "sentiment": "Positive",
+          "confidence": 0.678
+        },
+        {
+          "date": "2023-08-11",
+          "headline": "les sociétés cotées réalisent 12 milliards de dinars de chiffre d'affaires au premier semestre",
+          "sentiment": "Positive",
+          "confidence": 0.752
+        }
+      ]
+    },
+    "TUNISIAN BOND INDEX": {
+      "ticker": "TUNISIAN BOND INDEX",
+      "positive_count": 1,
+      "neutral_count": 0,
+      "negative_count": 1,
+      "total_articles": 2,
+      "net_sentiment": 0.0,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2025-08-01",
+          "headline": "le groupe onetech renforce son contrôle au sein de sa filiale techniplast",
+          "sentiment": "Positive",
+          "confidence": 0.591
+        },
+        {
+          "date": "2024-01-06",
+          "headline": "reporting tunisian bond index du 05/01/2024",
+          "sentiment": "Negative",
+          "confidence": 0.532
+        }
+      ]
+    },
+    "CEREALIS": {
+      "ticker": "CEREALIS",
+      "positive_count": 23,
+      "neutral_count": 3,
+      "negative_count": 3,
+      "total_articles": 29,
+      "net_sentiment": 0.69,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2024-09-13",
+          "headline": "composition du nouveau bureau de la chambre de commerce américaine en tunisie",
+          "sentiment": "Neutral",
+          "confidence": 0.435
+        },
+        {
+          "date": "2024-01-02",
+          "headline": "les sociétés cotées ont distribué 1,3 milliard de dinars de dividendes en 2023",
+          "sentiment": "Positive",
+          "confidence": 0.733
+        },
+        {
+          "date": "2023-12-31",
+          "headline": "bourse de tunis : quel bilan tirer de 2023 ?",
+          "sentiment": "Positive",
+          "confidence": 0.446
+        },
+        {
+          "date": "2023-02-10",
+          "headline": "cerealis sera radiée du marché principal de la cote de la bourse à partir de lundi",
+          "sentiment": "Negative",
+          "confidence": 0.446
+        },
+        {
+          "date": "2023-02-01",
+          "headline": "cerealis améliore de 11% ses revenus en 2022 à plus de 23 millions de dinars",
+          "sentiment": "Positive",
+          "confidence": 0.79
+        }
+      ]
+    },
+    "SYPHAX AIRLINES": {
+      "ticker": "SYPHAX AIRLINES",
+      "positive_count": 3,
+      "neutral_count": 2,
+      "negative_count": 0,
+      "total_articles": 5,
+      "net_sentiment": 0.6,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2024-01-16",
+          "headline": "slim kallel nommé nouveau directeur général de telnet holding",
+          "sentiment": "Neutral",
+          "confidence": 0.454
+        },
+        {
+          "date": "2023-12-19",
+          "headline": "mise en faillite de la compagnie aérienne syphax airlines",
+          "sentiment": "Positive",
+          "confidence": 0.467
+        },
+        {
+          "date": "2022-09-26",
+          "headline": "le groupe telnet améliore de 20% son bénéfice semestriel à 4 millions de dinars",
+          "sentiment": "Positive",
+          "confidence": 0.792
+        },
+        {
+          "date": "2022-09-22",
+          "headline": "l'homme d'affaires mohamed frikha libéré",
+          "sentiment": "Neutral",
+          "confidence": 0.32
+        },
+        {
+          "date": "2021-10-19",
+          "headline": "syphax airlines signe un accord avec tui russia pour transporter 50.000 touristes vers la tunisie en",
+          "sentiment": "Positive",
+          "confidence": 0.627
+        }
+      ]
+    },
+    "ELBENE": {
+      "ticker": "ELBENE",
+      "positive_count": 2,
+      "neutral_count": 0,
+      "negative_count": 1,
+      "total_articles": 3,
+      "net_sentiment": 0.333,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2022-05-10",
+          "headline": "اتحاد الفلاحه يتمسك بزياده لا تقل عن 715 مليم للتر الواحد من الحليب للمربي",
+          "sentiment": "Positive",
+          "confidence": 0.566
+        },
+        {
+          "date": "2021-01-05",
+          "headline": "top 10 des plus grosses capitalisations de la bourse de tunis en 2020",
+          "sentiment": "Positive",
+          "confidence": 0.571
+        },
+        {
+          "date": "2021-01-04",
+          "headline": "rétrospective 2020 : la bourse de tunis enregistre sa deuxième année consécutive de baisse",
+          "sentiment": "Negative",
+          "confidence": 0.35
+        }
+      ]
+    },
+    "STEQ": {
+      "ticker": "STEQ",
+      "positive_count": 3,
+      "neutral_count": 0,
+      "negative_count": 2,
+      "total_articles": 5,
+      "net_sentiment": 0.2,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2021-09-23",
+          "headline": "rétrospective boursière 2021 : un bilan des huit premiers mois sous le ton bancaire",
+          "sentiment": "Positive",
+          "confidence": 0.6
+        },
+        {
+          "date": "2021-09-07",
+          "headline": "la steq du groupe arem va absorber les sociétés la rechange et autocar",
+          "sentiment": "Negative",
+          "confidence": 0.472
+        },
+        {
+          "date": "2021-01-05",
+          "headline": "top 10 des plus grosses capitalisations de la bourse de tunis en 2020",
+          "sentiment": "Positive",
+          "confidence": 0.571
+        },
+        {
+          "date": "2021-01-05",
+          "headline": "radiation de la cote de la bourse de la société steq du groupe arem à partir de demain",
+          "sentiment": "Positive",
+          "confidence": 0.348
+        },
+        {
+          "date": "2021-01-04",
+          "headline": "rétrospective 2020 : la bourse de tunis enregistre sa deuxième année consécutive de baisse",
+          "sentiment": "Negative",
+          "confidence": 0.35
+        }
+      ]
+    },
+    "HEXABYTE": {
+      "ticker": "HEXABYTE",
+      "positive_count": 2,
+      "neutral_count": 0,
+      "negative_count": 1,
+      "total_articles": 3,
+      "net_sentiment": 0.333,
+      "high_confidence_count": 0,
+      "recent_articles": [
+        {
+          "date": "2021-01-19",
+          "headline": "mac sa : l’obligataire pourrait être l’alternative idéale pour les investisseurs en 2021",
+          "sentiment": "Positive",
+          "confidence": 0.679
+        },
+        {
+          "date": "2021-01-05",
+          "headline": "top 10 des plus grosses capitalisations de la bourse de tunis en 2020",
+          "sentiment": "Positive",
+          "confidence": 0.571
+        },
+        {
+          "date": "2021-01-04",
+          "headline": "rétrospective 2020 : la bourse de tunis enregistre sa deuxième année consécutive de baisse",
+          "sentiment": "Negative",
+          "confidence": 0.35
+        }
+      ]
+    }
+  }
+}

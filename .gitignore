@@ -19,9 +19,9 @@ checkpoints/
 **/checkpoints/
 
 # Model weights
-#*.bin
-#*.safetensors
-#*.pt
+*.bin
+*.safetensors
+*.pt
 
 # Saved models
 src/models/*
