@@ -8,6 +8,12 @@ wheels/
 
 # Virtual environments
 .venv
-data/
+*/data/
 .env
 *.db
+news_sentiment_analysis/exports
+*/__pycache__/
+*/tb_logs/*
+*/models/*
+news_sentiment_analysis/src/models
+data/
