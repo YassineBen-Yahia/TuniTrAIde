@@ -165,6 +165,12 @@ class ApiService {
     return this.request(`/market-overview/alerts?limit=${limit}`);
   }
 
+  async refreshMarketData() {
+    return this.request('/market-overview/refresh', {
+      method: 'POST',
+    });
+  }
+
   async getStockSentiment(symbol, start = null, end = null) {
     let url = `/sentiment/${encodeURIComponent(symbol)}`;
     const params = [];

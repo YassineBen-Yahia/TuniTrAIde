@@ -103,6 +103,25 @@ const AlertsSurveillance = () => {
     }
   }, []);
 
+  // Refresh alerts with refresh_data() to update CSVs first
+  const handleRefresh = useCallback(async () => {
+    try {
+      setLoading(true);
+      setError(null);
+      
+      // First, call refresh endpoint to update data files (refresh_data() from utils)
+      const refreshResponse = await ApiService.refreshMarketData();
+      console.log('Market data refresh response:', refreshResponse);
+      
+      // Then fetch fresh alerts from the updated CSV
+      await fetchAlerts();
+    } catch (err) {
+      console.error('Failed to refresh alerts:', err);
+      setError('Failed to refresh alerts. Please try again.');
+      setLoading(false);
+    }
+  }, [fetchAlerts]);
+
   useEffect(() => {
     if (user) {
       fetchAlerts();
@@ -379,7 +398,7 @@ Verify the movement with volume data and consider your risk tolerance.`,
               Last updated: {lastRefresh.toLocaleTimeString()}
             </span>
             <button
-              onClick={fetchAlerts}
+              onClick={handleRefresh}
               disabled={loading}
               className="btn-secondary flex items-center gap-2"
             >
