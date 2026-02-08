@@ -14,6 +14,7 @@ sys.path.append(str(Path(__file__).resolve().parent))
 
 from . import models, schemas, crud, auth
 from .database import SessionLocal, engine, get_db, get_portfolio_pnl_and_roi
+from .routes_regulator import router as regulator_router
 
 # Add the root directory to Python path for agent imports
 parent_dir = Path(__file__).resolve().parent.parent
@@ -28,7 +29,7 @@ except ImportError as e:
 
 # Import the investment agent
 try:
-    from new_agent.agents.investment_agent import app as agent_app, AgentState
+    from agent.agents.investment_agent import app as agent_app, AgentState
     print("Investment agent imported successfully")
 except ImportError as e:
     agent_app = None
@@ -59,6 +60,9 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# Include regulator router
+app.include_router(regulator_router)
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
@@ -105,7 +109,7 @@ def auth_login(form_data: OAuth2PasswordRequestForm = Depends(), db: Session = D
     return login_for_access_token(form_data=form_data, db=db)
 
 @app.get("/users/me", response_model=schemas.User)
-def read_users_me(current_user: schemas.User = Depends(auth.get_current_user)):
+def read_users_me(current_user: models.User = Depends(auth.get_current_user)):
     """Get current user information"""
     return current_user
 
@@ -608,16 +612,16 @@ def get_chat_history(session_id: str, current_user: models.User = Depends(auth.g
         "messages": chat_sessions[session_id]
     }
 try:
-    from new_agent.agents.explain_agent import explain_anomaly
+    from agent.agents.explain_agent import explain_anomaly
 except ImportError:
-    print("Investment agent not found")
+    print("Explain agent not found")
     explain_anomaly = None
 
 @app.get("/explain/{stock_symbol}/{date}")
 def explain_stock(stock_symbol: str, date: str, current_user: models.User = Depends(auth.get_current_user)):
     """Explain a stock"""
     if explain_anomaly is None:
-        raise HTTPException(status_code=503, detail="Investment agent is not available")
+        raise HTTPException(status_code=503, detail="Explain agent is not available")
     return explain_anomaly(date=date, ticker=stock_symbol)
 
 

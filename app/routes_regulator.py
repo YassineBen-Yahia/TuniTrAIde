@@ -85,3 +85,71 @@ def update_anomaly_regulator(
         payload.anomaly_type,
         payload.value
     )
+
+
+@router.post("/anomalies/add")
+def add_anomaly_regulator(
+    payload: schemas.AddAnomalyRequest,
+    current_user: models.User = Depends(get_current_regulator),
+):
+    """Add anomaly flags to a historical row (regulators only)"""
+    return crud_regulator.add_anomaly_to_csv(
+        HISTORICAL_CSV_PATH,
+        payload.stock_code,
+        payload.date,
+        payload.volume_anomaly,
+        payload.variation_anomaly,
+        payload.variation_anomaly_post_news,
+        payload.variation_anomaly_pre_news,
+        payload.volume_anomaly_post_news,
+        payload.volume_anomaly_pre_news,
+        payload.regulator_note or '',
+    )
+
+
+@router.post("/anomalies/delete")
+def delete_anomaly_regulator(
+    payload: schemas.DeleteAnomalyRequest,
+    current_user: models.User = Depends(get_current_regulator),
+):
+    """Clear all anomaly flags for a stock/date row (regulators only)"""
+    return crud_regulator.delete_anomaly_from_csv(
+        HISTORICAL_CSV_PATH,
+        payload.stock_code,
+        payload.date,
+    )
+
+
+@router.post("/anomalies/validate")
+def validate_anomaly_regulator(
+    payload: schemas.ValidateAnomalyRequest,
+    current_user: models.User = Depends(get_current_regulator),
+):
+    """Validate or unvalidate an anomaly (regulators only)"""
+    return crud_regulator.validate_anomaly_in_csv(
+        HISTORICAL_CSV_PATH,
+        payload.stock_code,
+        payload.date,
+        payload.validated,
+        payload.regulator_note or '',
+    )
+
+
+@router.put("/anomalies/edit")
+def edit_anomaly_regulator(
+    payload: schemas.AddAnomalyRequest,
+    current_user: models.User = Depends(get_current_regulator),
+):
+    """Update specific anomaly fields (regulators only)"""
+    return crud_regulator.update_anomaly_bulk_in_csv(
+        HISTORICAL_CSV_PATH,
+        payload.stock_code,
+        payload.date,
+        payload.volume_anomaly,
+        payload.variation_anomaly,
+        payload.variation_anomaly_post_news,
+        payload.variation_anomaly_pre_news,
+        payload.volume_anomaly_post_news,
+        payload.volume_anomaly_pre_news,
+        payload.regulator_note,
+    )

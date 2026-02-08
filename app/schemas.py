@@ -31,7 +31,7 @@ class UserBase(BaseModel):
     username: str
     email: str  # Changed from EmailStr temporarily
     full_name: Optional[str] = None
-    role: Optional[UserRoleEnum] = UserRoleEnum.TRADER
+    role: Optional[str] = "trader"  # Changed to str to match database model
     risk_score: Optional[int] = 5
     risk_level: Optional[RiskLevelEnum] = RiskLevelEnum.MODERATE
     investment_style: Optional[InvestmentStyleEnum] = InvestmentStyleEnum.BALANCED
@@ -79,7 +79,6 @@ class User(UserBase):
     is_active: bool
     created_at: datetime
     updated_at: Optional[datetime] = None
-    role: Optional[str] = "trader"
     is_cmf_verified: Optional[bool] = False
 
     class Config:
@@ -338,6 +337,8 @@ class StockAnomalyInfo(BaseModel):
     variation_anomaly_pre_news: int
     volume_anomaly_post_news: int
     volume_anomaly_pre_news: int
+    validated: Optional[bool] = False
+    regulator_note: Optional[str] = None
 
 
 class UpdateAnomalyRequest(BaseModel):
@@ -345,6 +346,30 @@ class UpdateAnomalyRequest(BaseModel):
     date: str
     anomaly_type: str  # 'volume' or 'variation'
     value: int  # 0 or 1 for the anomaly
+
+
+class AddAnomalyRequest(BaseModel):
+    stock_code: str
+    date: str
+    volume_anomaly: Optional[int] = 0
+    variation_anomaly: Optional[int] = 0
+    variation_anomaly_post_news: Optional[int] = 0
+    variation_anomaly_pre_news: Optional[int] = 0
+    volume_anomaly_post_news: Optional[int] = 0
+    volume_anomaly_pre_news: Optional[int] = 0
+    regulator_note: Optional[str] = None
+
+
+class DeleteAnomalyRequest(BaseModel):
+    stock_code: str
+    date: str
+
+
+class ValidateAnomalyRequest(BaseModel):
+    stock_code: str
+    date: str
+    validated: bool = True
+    regulator_note: Optional[str] = None
 
 
 class TransactionWithUser(Transaction):

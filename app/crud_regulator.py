@@ -45,6 +45,12 @@ def get_stock_anomalies_from_csv(csv_path: str, stock_code: Optional[str] = None
     anomaly_cols = ['VOLUME_Anomaly', 'VARIATION_ANOMALY', 'VARIATION_ANOMALY_POST_NEWS', 
                     'VARIATION_ANOMALY_PRE_NEWS', 'VOLUME_ANOMALY_POST_NEWS', 'VOLUME_ANOMALY_PRE_NEWS']
     
+    # Ensure validated / regulator_note columns exist
+    if 'VALIDATED' not in df.columns:
+        df['VALIDATED'] = 0
+    if 'REGULATOR_NOTE' not in df.columns:
+        df['REGULATOR_NOTE'] = ''
+    
     # Make sure these columns exist and convert to numeric
     for col in anomaly_cols:
         if col in df.columns:
@@ -75,6 +81,8 @@ def get_stock_anomalies_from_csv(csv_path: str, stock_code: Optional[str] = None
             'variation_anomaly_pre_news': int(row.get('VARIATION_ANOMALY_PRE_NEWS', 0)),
             'volume_anomaly_post_news': int(row.get('VOLUME_ANOMALY_POST_NEWS', 0)),
             'volume_anomaly_pre_news': int(row.get('VOLUME_ANOMALY_PRE_NEWS', 0)),
+            'validated': bool(int(row.get('VALIDATED', 0))),
+            'regulator_note': str(row.get('REGULATOR_NOTE', '') or ''),
         })
     
     return result
@@ -130,3 +138,125 @@ def get_transaction_with_details(db: Session, transaction_id: int):
     if not tx:
         raise HTTPException(status_code=404, detail="Transaction not found")
     return tx
+
+
+def add_anomaly_to_csv(csv_path: str, stock_code: str, date: str,
+                       volume_anomaly: int = 0, variation_anomaly: int = 0,
+                       variation_anomaly_post_news: int = 0, variation_anomaly_pre_news: int = 0,
+                       volume_anomaly_post_news: int = 0, volume_anomaly_pre_news: int = 0,
+                       regulator_note: str = ''):
+    """Add anomaly flags to an existing row, or mark anomaly on a row in the CSV."""
+    df = pd.read_csv(csv_path)
+    df.columns = [c.strip() for c in df.columns]
+
+    if 'VALIDATED' not in df.columns:
+        df['VALIDATED'] = 0
+    if 'REGULATOR_NOTE' not in df.columns:
+        df['REGULATOR_NOTE'] = ''
+
+    mask = (df['CODE'] == stock_code) & (df['SEANCE'].astype(str) == str(date))
+
+    if not mask.any():
+        raise HTTPException(status_code=404,
+                            detail=f"No row found for stock {stock_code} on date {date}. The row must already exist in historical data.")
+
+    df.loc[mask, 'VOLUME_Anomaly'] = volume_anomaly
+    df.loc[mask, 'VARIATION_ANOMALY'] = variation_anomaly
+    df.loc[mask, 'VARIATION_ANOMALY_POST_NEWS'] = variation_anomaly_post_news
+    df.loc[mask, 'VARIATION_ANOMALY_PRE_NEWS'] = variation_anomaly_pre_news
+    df.loc[mask, 'VOLUME_ANOMALY_POST_NEWS'] = volume_anomaly_post_news
+    df.loc[mask, 'VOLUME_ANOMALY_PRE_NEWS'] = volume_anomaly_pre_news
+    if regulator_note:
+        df.loc[mask, 'REGULATOR_NOTE'] = regulator_note
+
+    df.to_csv(csv_path, index=False)
+    return {"message": f"Anomaly added for {stock_code} on {date}"}
+
+
+def delete_anomaly_from_csv(csv_path: str, stock_code: str, date: str):
+    """Clear all anomaly flags for a given stock/date row (sets them to 0)."""
+    df = pd.read_csv(csv_path)
+    df.columns = [c.strip() for c in df.columns]
+
+    if 'VALIDATED' not in df.columns:
+        df['VALIDATED'] = 0
+    if 'REGULATOR_NOTE' not in df.columns:
+        df['REGULATOR_NOTE'] = ''
+
+    mask = (df['CODE'] == stock_code) & (df['SEANCE'].astype(str) == str(date))
+
+    if not mask.any():
+        raise HTTPException(status_code=404, detail=f"No data found for stock {stock_code} on date {date}")
+
+    anomaly_cols = ['VOLUME_Anomaly', 'VARIATION_ANOMALY', 'VARIATION_ANOMALY_POST_NEWS',
+                    'VARIATION_ANOMALY_PRE_NEWS', 'VOLUME_ANOMALY_POST_NEWS', 'VOLUME_ANOMALY_PRE_NEWS']
+    for col in anomaly_cols:
+        if col in df.columns:
+            df.loc[mask, col] = 0
+    df.loc[mask, 'VALIDATED'] = 0
+    df.loc[mask, 'REGULATOR_NOTE'] = ''
+
+    df.to_csv(csv_path, index=False)
+    return {"message": f"Anomaly cleared for {stock_code} on {date}"}
+
+
+def validate_anomaly_in_csv(csv_path: str, stock_code: str, date: str, validated: bool = True, regulator_note: str = ''):
+    """Mark an anomaly as validated (or un-validated) by a regulator."""
+    df = pd.read_csv(csv_path)
+    df.columns = [c.strip() for c in df.columns]
+
+    if 'VALIDATED' not in df.columns:
+        df['VALIDATED'] = 0
+    if 'REGULATOR_NOTE' not in df.columns:
+        df['REGULATOR_NOTE'] = ''
+
+    mask = (df['CODE'] == stock_code) & (df['SEANCE'].astype(str) == str(date))
+
+    if not mask.any():
+        raise HTTPException(status_code=404, detail=f"No data found for stock {stock_code} on date {date}")
+
+    df.loc[mask, 'VALIDATED'] = 1 if validated else 0
+    if regulator_note:
+        df.loc[mask, 'REGULATOR_NOTE'] = regulator_note
+
+    df.to_csv(csv_path, index=False)
+    return {"message": f"Anomaly {'validated' if validated else 'unvalidated'} for {stock_code} on {date}"}
+
+
+def update_anomaly_bulk_in_csv(csv_path: str, stock_code: str, date: str,
+                               volume_anomaly: int = None, variation_anomaly: int = None,
+                               variation_anomaly_post_news: int = None, variation_anomaly_pre_news: int = None,
+                               volume_anomaly_post_news: int = None, volume_anomaly_pre_news: int = None,
+                               regulator_note: str = None):
+    """Update specific anomaly fields for a given stock/date."""
+    df = pd.read_csv(csv_path)
+    df.columns = [c.strip() for c in df.columns]
+
+    if 'VALIDATED' not in df.columns:
+        df['VALIDATED'] = 0
+    if 'REGULATOR_NOTE' not in df.columns:
+        df['REGULATOR_NOTE'] = ''
+
+    mask = (df['CODE'] == stock_code) & (df['SEANCE'].astype(str) == str(date))
+
+    if not mask.any():
+        raise HTTPException(status_code=404, detail=f"No data found for stock {stock_code} on date {date}")
+
+    field_map = {
+        'VOLUME_Anomaly': volume_anomaly,
+        'VARIATION_ANOMALY': variation_anomaly,
+        'VARIATION_ANOMALY_POST_NEWS': variation_anomaly_post_news,
+        'VARIATION_ANOMALY_PRE_NEWS': variation_anomaly_pre_news,
+        'VOLUME_ANOMALY_POST_NEWS': volume_anomaly_post_news,
+        'VOLUME_ANOMALY_PRE_NEWS': volume_anomaly_pre_news,
+    }
+
+    for col, val in field_map.items():
+        if val is not None and col in df.columns:
+            df.loc[mask, col] = val
+
+    if regulator_note is not None:
+        df.loc[mask, 'REGULATOR_NOTE'] = regulator_note
+
+    df.to_csv(csv_path, index=False)
+    return {"message": f"Anomaly updated for {stock_code} on {date}"}

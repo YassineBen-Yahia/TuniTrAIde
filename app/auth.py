@@ -64,7 +64,19 @@ async def get_current_user(token: str = Depends(oauth2_scheme), db: Session = De
     except JWTError:
         raise credentials_exception
         
-    user = db.query(models.User).filter(models.User.username == username).first()
+    user = db.query(models.User).filter(models.User.id == int(username)).first()
     if user is None:
         raise credentials_exception
     return user
+
+
+async def get_current_regulator(
+    current_user: models.User = Depends(get_current_user),
+):
+    """Dependency that ensures the current user has the regulator role."""
+    if current_user.role != "regulator":
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail="Only regulators can access this resource",
+        )
+    return current_user
