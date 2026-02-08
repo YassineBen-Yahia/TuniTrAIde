@@ -39,15 +39,9 @@ class UserBase(BaseModel):
     monthly_investment_budget: Optional[float] = 0.0
     avoid_anomalies: Optional[bool] = True
     allow_short_selling: Optional[bool] = False
-    max_single_stock_percentage: Optional[float] = 20.0
-    preferred_sectors: Optional[List[str]] = []
-    excluded_sectors: Optional[List[str]] = []
     initial_cash_balance: Optional[float] = 10000.0
     target_portfolio_value: Optional[float] = None
     rebalance_frequency_days: Optional[int] = 30
-    ai_assistance_level: Optional[str] = "medium"
-    auto_execute_recommendations: Optional[bool] = False
-    notification_preferences: Optional[Dict[str, Any]] = {}
 
     @validator('risk_score')
     def validate_risk_score(cls, v):
@@ -55,11 +49,6 @@ class UserBase(BaseModel):
             raise ValueError('Risk score must be between 1 and 10')
         return v
 
-    @validator('max_single_stock_percentage')
-    def validate_max_stock_percentage(cls, v):
-        if not 0 < v <= 100:
-            raise ValueError('Max single stock percentage must be between 0 and 100')
-        return v
 
 
 class UserCreate(UserBase):
@@ -81,14 +70,8 @@ class UserUpdate(BaseModel):
     monthly_investment_budget: Optional[float] = None
     avoid_anomalies: Optional[bool] = None
     allow_short_selling: Optional[bool] = None
-    max_single_stock_percentage: Optional[float] = None
-    preferred_sectors: Optional[List[str]] = None
-    excluded_sectors: Optional[List[str]] = None
     target_portfolio_value: Optional[float] = None
     rebalance_frequency_days: Optional[int] = None
-    ai_assistance_level: Optional[str] = None
-    auto_execute_recommendations: Optional[bool] = None
-    notification_preferences: Optional[Dict[str, Any]] = None
 
 
 class User(UserBase):
@@ -97,6 +80,7 @@ class User(UserBase):
     created_at: datetime
     updated_at: Optional[datetime] = None
     role: Optional[str] = "trader"
+    is_cmf_verified: Optional[bool] = False
 
     class Config:
         from_attributes = True
