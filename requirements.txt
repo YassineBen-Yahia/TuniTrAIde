@@ -47,5 +47,5 @@ langgraph>=1.0.8
 # gymnasium>=1.2.3          # Only used in RL (offline)
 # altair<5                  # Only used in Streamlit (offline)
 bs4>=0.0.2                # Duplicate of beautifulsoup4
-# psycopg2-binary>=2.9.11   # Only needed if using PostgreSQL
+psycopg2-binary>=2.9.11   # Only needed if using PostgreSQL
 # psycopg[binary]>=3.3.2    # Only needed if using PostgreSQL
