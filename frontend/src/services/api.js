@@ -1,4 +1,5 @@
-const API_BASE_URL = 'http://localhost:8000';
+// Use environment variable if available, fallback to localhost for development
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
 
 class ApiService {
   constructor() {

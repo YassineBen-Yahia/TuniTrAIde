@@ -1,5 +1,13 @@
 {
-  "routes": [
-    { "src": "/(.*)", "dest": "app/index.py" }
+  "buildCommand": "cd frontend && npm install && npm run build",
+  "outputDirectory": "frontend/dist",
+  "devCommand": "cd frontend && npm run dev",
+  "installCommand": "cd frontend && npm install",
+  "framework": "vite",
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://your-backend-url.railway.app/api/:path*"
+    }
   ]
 }

@@ -1,0 +1,38 @@
+# Python
+.venv
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+
+# Large ML models and data
+models/
+news_sentiment_analysis/src/models/
+Forecasting/models/
+data/
+*.h5
+*.pkl
+*.joblib
+*.pt
+*.pth
+*.onnx
+
+# Notebooks
+*.ipynb
+Anomaly_detection/
+RL/
+
+# Logs
+logs/
+
+# Large datasets
+merged.csv
+*.csv
+
+# Git
+.git
+.gitignore

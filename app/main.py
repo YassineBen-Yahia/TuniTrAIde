@@ -48,14 +48,23 @@ app = FastAPI(
 )
 
 # Configure CORS
+# Add your Vercel domain to allow_origins after deployment
+allowed_origins = [
+    "http://localhost:3000", 
+    "http://127.0.0.1:3000",
+    "http://localhost:5173", 
+    "http://127.0.0.1:5173",
+]
+
+# Add production domains from environment variable
+import os
+production_origins = os.getenv("ALLOWED_ORIGINS", "")
+if production_origins:
+    allowed_origins.extend(production_origins.split(","))
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:3000", 
-        "http://127.0.0.1:3000",
-        "http://localhost:5173", 
-        "http://127.0.0.1:5173"
-    ],
+    allow_origins=allowed_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
