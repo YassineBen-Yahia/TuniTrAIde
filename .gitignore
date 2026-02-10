@@ -14,9 +14,9 @@ wheels/
 news_sentiment_analysis/exports
 */__pycache__/
 */tb_logs/*
-*/models/*
+RL/models
 news_sentiment_analysis/src/models
-data/
+
 merged.csv
 ry.ipynb
 logs/
