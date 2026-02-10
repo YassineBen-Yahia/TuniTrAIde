@@ -1,35 +1,49 @@
-aiosqlite>=0.22.1
-altair<5
-bcrypt==4.0.1
-beautifulsoup4>=4.12.0
-bs4>=0.0.2
-email-validator>=2.3.0
+# === PRODUCTION REQUIREMENTS - OPTIMIZED FOR FAST BUILD ===
+# Build time: ~5-8 minutes (vs 20+ with torch/transformers)
+
+# Core FastAPI (FAST)
 fastapi>=0.128.4
-gymnasium>=1.2.3
+uvicorn>=0.34.0
+python-multipart>=0.0.22
+python-dotenv>=1.0.0
+python-jose[cryptography]>=3.5.0
+email-validator>=2.3.0
+requests>=2.32.5
+
+# Database (FAST)
+sqlalchemy>=2.0.37
+aiosqlite>=0.22.1
+passlib[bcrypt]==1.7.4
+bcrypt==4.0.1
+
+# Data processing (MODERATE)
+pandas<3
+numpy>=2.4.2
 joblib>=1.5.3
+
+# Web scraping (FAST)
+beautifulsoup4>=4.12.0
+lxml>=6.0.2
+
+# ML for forecasting (MODERATE) - Keep these, they're not huge
+scikit-learn>=1.6.1
+scipy>=1.15.2
+statsmodels>=0.14.4
+
+# LangChain for agent (MODERATE)
 langchain>=1.2.9
 langchain-community>=0.4.1
 langchain-core>=1.2.9
 langchain-ollama>=1.0.1
 langgraph>=1.0.8
-lxml>=6.0.2
-numpy>=2.4.2
-pandas<3
-passlib[bcrypt]==1.7.4
-psycopg2-binary>=2.9.11
-psycopg[binary]>=3.3.2
-python-jose[cryptography]>=3.5.0
-python-multipart>=0.0.22
-python-dotenv>=1.0.0
-requests>=2.32.5
-scikit-learn>=1.6.1
-scipy>=1.15.2
-sqlalchemy>=2.0.37
-statsmodels>=0.14.4
-streamlit>=1.42.0
-torch>=2.6.2
-transformers>=4.59.1
-uvicorn>=0.34.0
 
-# Minimal set for production - exclude if models are pre-loaded
-# Remove torch and transformers if they're too large for your platform
+# === REMOVED FOR PRODUCTION ===
+# These add 15-20 minutes to build and aren't used by the API:
+# torch>=2.6.2              # Only used in RL/train_rl.py (offline)
+# transformers>=4.59.1      # Only used in sentiment analysis (offline)
+# streamlit>=1.42.0         # Not needed for API
+# gymnasium>=1.2.3          # Only used in RL (offline)
+# altair<5                  # Only used in Streamlit (offline)
+# bs4>=0.0.2                # Duplicate of beautifulsoup4
+# psycopg2-binary>=2.9.11   # Only needed if using PostgreSQL
+# psycopg[binary]>=3.3.2    # Only needed if using PostgreSQL

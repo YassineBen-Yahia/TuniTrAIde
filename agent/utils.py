@@ -15,16 +15,30 @@ from app import models
 
 def get_symbols(data: str):
     """Get the list of unique symbols from the data."""
-    df = pd.read_csv(data)
-    symbols = df['VALEUR'].unique().tolist()
-    s=[]
-    s.extend(symbol for symbol in symbols)
-    symbols=list(set(s))
-    return symbols
+    try:
+        df = pd.read_csv(data)
+        symbols = df['VALEUR'].unique().tolist()
+        s=[]
+        s.extend(symbol for symbol in symbols)
+        symbols=list(set(s))
+        return symbols
+    except FileNotFoundError:
+        print(f"Warning: Data file {data} not found, returning empty symbol list")
+        return []
+    except Exception as e:
+        print(f"Warning: Could not load symbols from {data}: {e}")
+        return []
 
 def get_last_days(data : str, days : int):
     """Get the last 'days' number of entries from the data."""
-    df = pd.read_csv(data)
+    try:
+        df = pd.read_csv(data)
+    except FileNotFoundError:
+        print(f"Warning: Data file {data} not found, returning empty dataframe")
+        return pd.DataFrame()
+    except Exception as e:
+        print(f"Warning: Could not load data from {data}: {e}")
+        return pd.DataFrame()
     # Sort by SEANCE to ensure proper ordering
     df_sorted = df.sort_values('SEANCE')
     # Get unique dates and take the last 'days' number of them

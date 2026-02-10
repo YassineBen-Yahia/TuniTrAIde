@@ -12,6 +12,7 @@ ENV/
 # Large ML models and data
 models/
 news_sentiment_analysis/src/models/
+news_sentiment_analysis/exports/
 Forecasting/models/
 data/
 *.h5
@@ -21,7 +22,7 @@ data/
 *.pth
 *.onnx
 
-# Notebooks
+# Notebooks and offline scripts
 *.ipynb
 Anomaly_detection/
 RL/
@@ -33,6 +34,24 @@ logs/
 merged.csv
 *.csv
 
+# SQLite database (backend uses this, but Vercel frontend doesn't need it)
+*.db
+*.sqlite
+*.sqlite3
+
 # Git
 .git
 .gitignore
+
+# Node modules (these will be installed during build)
+node_modules/
+
+# Backend files (not needed for frontend-only Vercel deployment)
+app/
+agent/
+utils/
+scraper/
+news_sentiment_analysis/
+
+# Keep only frontend for Vercel
+# Everything else goes to Railway/Render
