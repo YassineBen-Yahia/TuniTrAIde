@@ -600,6 +600,7 @@ def get_portfolio_equity_curve(db: Session, portfolio_id: int, days: int = 180) 
 
     # Prefer analytics ROI if available for consistency with portfolio analytics endpoint
     try:
+        from app.database import get_portfolio_pnl_and_roi
         analytics = get_portfolio_pnl_and_roi(db, portfolio_id, portfolio.user_id)
         analytics_roi = analytics.get('roi_percentage')
         if analytics_roi is not None:
@@ -664,10 +665,9 @@ def load_market_data_from_csv() -> Dict[str, Any]:
     - Coerces numeric fields (handles percent signs, NBSP, commas)
     - Computes a safe daily_return_pct fallback if VARIATION is missing
     """
-    csv_path = os.path.join(os.path.dirname(__file__), '..', 'data', 'historical_data.csv')
-
+    csv_url = "https://zdgnyapmdqhouyaikpdb.supabase.co/storage/v1/object/public/csvs/historical_data.csv"
     try:
-        df = pd.read_csv(csv_path)
+        df = pd.read_csv(csv_url)
 
         # Parse session date and use the latest date in the CSV as reference
         if 'SEANCE' in df.columns:
@@ -783,10 +783,9 @@ def load_predicted_market_data_from_csv() -> Dict[str, Any]:
     Data Source: data/forecast_next_5_days.csv
     Contains: 5-day price and volume forecasts for BVMT stocks.
     """
-    csv_path = os.path.join(os.path.dirname(__file__), '..', 'data', 'forecast_next_5_days.csv')
-    
+    csv_url = "https://zdgnyapmdqhouyaikpdb.supabase.co/storage/v1/object/public/csvs/forecast_next_5_days.csv"
     try:
-        df = pd.read_csv(csv_path)
+        df = pd.read_csv(csv_url)
         # Group by stock code and get forecast data
         latest_data = df.groupby('CODE').last().reset_index()
         
@@ -840,10 +839,9 @@ def get_stock_history_by_symbol(symbol: str, start: Optional[str] = None, end: O
 
     Returns a list of dicts: [{ 'date': 'YYYY-MM-DD', 'close': float }, ...] sorted ascending by date.
     """
-    csv_path = os.path.join(os.path.dirname(__file__), '..', 'data', 'historical_data.csv')
-
+    csv_url = "https://zdgnyapmdqhouyaikpdb.supabase.co/storage/v1/object/public/csvs/historical_data.csv"
     try:
-        df = pd.read_csv(csv_path)
+        df = pd.read_csv(csv_url)
         # Normalize inputs and columns
         symbol_up = str(symbol).strip().upper()
         df['VALEUR'] = df['VALEUR'].astype(str).str.strip()
@@ -896,10 +894,10 @@ def search_stocks_by_name(query: str, limit: int = 10) -> List[Dict[str, Any]]:
     
     Data Source: data/historical_data.csv
     """
-    csv_path = os.path.join(os.path.dirname(__file__), '..', 'data', 'historical_data.csv')
+    csv_url = "https://zdgnyapmdqhouyaikpdb.supabase.co/storage/v1/object/public/csvs/historical_data.csv"
     
     try:
-        df = pd.read_csv(csv_path)
+        df = pd.read_csv(csv_url)
         df['VALEUR'] = df['VALEUR'].astype(str).str.strip()
         # Get unique stocks
         unique_stocks = df.drop_duplicates(['CODE', 'VALEUR'])
@@ -1038,10 +1036,10 @@ def get_tunindex_history(days: int = 30, index_type: str = 'tunindex') -> Dict[s
         days: Number of days of history to return
         index_type: 'tunindex' or 'tunindex20'
     """
-    csv_path = os.path.join(os.path.dirname(__file__), '..', 'data', 'historical_data.csv')
-    
+    #csv_path = os.path.join(os.path.dirname(__file__), '..', 'data', 'historical_data.csv')
+    csv_url = "https://zdgnyapmdqhouyaikpdb.supabase.co/storage/v1/object/public/csvs/historical_data.csv"
     try:
-        df = pd.read_csv(csv_path)
+        df = pd.read_csv(csv_url)
         df['SEANCE'] = pd.to_datetime(df['SEANCE'], errors='coerce')
         df = df[df['SEANCE'].notna()]
         
@@ -1101,10 +1099,10 @@ def get_market_mood(date: str = None) -> Dict[str, Any]:
     Data Source: data/historical_data.csv
     Columns: MarketMood, DirectionScore, BreadthScore, IntensityScore, LiquidityScore, NewsScore
     """
-    csv_path = os.path.join(os.path.dirname(__file__), '..', 'data', 'historical_data.csv')
-    
+    #csv_path = os.path.join(os.path.dirname(__file__), '..', 'data', 'historical_data.csv')
+    csv_url = "https://zdgnyapmdqhouyaikpdb.supabase.co/storage/v1/object/public/csvs/historical_data.csv"
     try:
-        df = pd.read_csv(csv_path)
+        df = pd.read_csv(csv_url)
         df['SEANCE'] = pd.to_datetime(df['SEANCE'], errors='coerce')
         df = df[df['SEANCE'].notna()]
         
@@ -1167,10 +1165,9 @@ def get_top_gainers_losers(date: str = None) -> Dict[str, Any]:
     Data Source: data/historical_data.csv
     Columns: VALEUR, CODE, CLOTURE, VARIATION
     """
-    csv_path = os.path.join(os.path.dirname(__file__), '..', 'data', 'historical_data.csv')
-    
+    csv_url = "https://zdgnyapmdqhouyaikpdb.supabase.co/storage/v1/object/public/csvs/historical_data.csv"
     try:
-        df = pd.read_csv(csv_path)
+        df = pd.read_csv(csv_url)
         df['SEANCE'] = pd.to_datetime(df['SEANCE'], errors='coerce')
         df = df[df['SEANCE'].notna()]
         
@@ -1242,10 +1239,9 @@ def get_market_alerts(limit: int = 500) -> List[Dict[str, Any]]:
     
     Returns all anomalies sorted by date (newest first) for frontend pagination.
     """
-    csv_path = os.path.join(os.path.dirname(__file__), '..', 'data', 'historical_data.csv')
-    
+    csv_url = "https://zdgnyapmdqhouyaikpdb.supabase.co/storage/v1/object/public/csvs/historical_data.csv"
     try:
-        df = pd.read_csv(csv_path)
+        df = pd.read_csv(csv_url)
         df['SEANCE'] = pd.to_datetime(df['SEANCE'], errors='coerce')
         df = df[df['SEANCE'].notna()]
         
@@ -1390,12 +1386,10 @@ def get_stock_history_with_forecast(symbol: str, start: str = None, end: str = N
     - Historical: data/historical_data.csv (OHLCV, anomalies, sentiment indicators)
     - Forecast: data/forecast_next_5_days.csv (5-day price/volume predictions)
     """
-    history_csv = os.path.join(os.path.dirname(__file__), '..', 'data', 'historical_data.csv')
-    forecast_csv = os.path.join(os.path.dirname(__file__), '..', 'data', 'forecast_next_5_days.csv')
-    
+    csv_url = "https://zdgnyapmdqhouyaikpdb.supabase.co/storage/v1/object/public/csvs/historical_data.csv"
+    forecast_csv = "https://zdgnyapmdqhouyaikpdb.supabase.co/storage/v1/object/public/csvs/forecast_next_5_days.csv"
     try:
-        # Load historical data
-        df_history = pd.read_csv(history_csv)
+        df_history = pd.read_csv(csv_url)
         df_history['SEANCE'] = pd.to_datetime(df_history['SEANCE'], errors='coerce')
         
         # Normalize symbol
@@ -1529,10 +1523,9 @@ def get_stock_sentiment_history(symbol: str, start: str = None, end: str = None)
     Data Source: data/sentiment_features.csv
     Columns: VALEUR, SEANCE, Mean_Weighted_Sentiment, Article_Count, Sentiment_Intensity
     """
-    csv_path = os.path.join(os.path.dirname(__file__), '..', 'data', 'sentiment_features.csv')
-    
+    csv_url = "https://zdgnyapmdqhouyaikpdb.supabase.co/storage/v1/object/public/csvs/sentiment_features.csv"
     try:
-        df = pd.read_csv(csv_path)
+        df = pd.read_csv(csv_url)
         df['SEANCE'] = pd.to_datetime(df['SEANCE'], errors='coerce')
         
         # Normalize symbol - handle URL encoding and strip
