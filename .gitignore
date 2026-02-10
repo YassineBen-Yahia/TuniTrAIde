@@ -20,3 +20,8 @@ news_sentiment_analysis/src/models
 merged.csv
 ry.ipynb
 logs/
+*.pkl
+*.bin
+*.pt
+*.safetensors
+*.onnx
