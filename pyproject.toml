@@ -23,6 +23,8 @@ dependencies = [
     "numpy>=2.4.2",
     "pandas<3",
     "passlib[bcrypt]==1.7.4",
+    "psycopg2-binary>=2.9.11",
+    "psycopg[binary]>=3.3.2",
     "python-jose[cryptography]>=3.5.0",
     "python-multipart>=0.0.22",
     "requests>=2.32.5",

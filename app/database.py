@@ -1,11 +1,20 @@
 from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker, DeclarativeBase,Session
+from sqlalchemy.orm import sessionmaker, DeclarativeBase , Session
+import os
+from dotenv import load_dotenv
 
-DATABASE_URL = "sqlite:///./users.db"
+load_dotenv()
+
+DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///./users.db")
+
+connect_args = {}
+if DATABASE_URL.startswith("sqlite"):
+    connect_args = {"check_same_thread": False}
 
 engine = create_engine(
     DATABASE_URL,
-    connect_args={"check_same_thread": False},  # required for SQLite + threads
+    connect_args=connect_args,
+    pool_pre_ping=True,   # helps with dropped connections
 )
 
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
@@ -22,7 +31,7 @@ def get_db():
 
 
 
-def get_user_by_id(db, user_id: str):
+def get_user_by_id(db: Session, user_id: str):
     from . import models
     user_id= int(user_id)
     user= db.query(models.User).filter(models.User.id == user_id).first()
