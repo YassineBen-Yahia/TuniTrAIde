@@ -41,11 +41,11 @@ langgraph>=1.0.8
 
 # === REMOVED FOR PRODUCTION ===
 # These add 15-20 minutes to build and aren't used by the API:
-# torch>=2.6.2              # Only used in RL/train_rl.py (offline)
-# transformers>=4.59.1      # Only used in sentiment analysis (offline)
+ torch>=2.6.2              # Only used in RL/train_rl.py (offline)
+ transformers>=4.59.1      # Only used in sentiment analysis (offline)
 # streamlit>=1.42.0         # Not needed for API
 # gymnasium>=1.2.3          # Only used in RL (offline)
 # altair<5                  # Only used in Streamlit (offline)
-# bs4>=0.0.2                # Duplicate of beautifulsoup4
+bs4>=0.0.2                # Duplicate of beautifulsoup4
 # psycopg2-binary>=2.9.11   # Only needed if using PostgreSQL
 # psycopg[binary]>=3.3.2    # Only needed if using PostgreSQL
