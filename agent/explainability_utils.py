@@ -15,14 +15,12 @@ def get_headlines(ticker: str, date: str) -> list[str]:
     """
     # Define potential paths to the data file
     # Using absolute path based on the user's workspace structure
-    file_path = r"C:/ML/hackathon/news_sentiment_analysis/data/articles_with_sentiment.json"
+    file_path = "https://zdgnyapmdqhouyaikpdb.supabase.co/storage/v1/object/public/csvs/articles_with_sentiment.json"
     
     if not os.path.exists(file_path):
         # Fallback to try relative path if absolute fails (e.g. diff environment)
         # Assumes this script is in new_agent/
-        file_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 
-                                 "financial-news-sentimental-analysis", "data", "articles_with_sentiment_2021_2026.json")
-    
+        file_path = "https://zdgnyapmdqhouyaikpdb.supabase.co/storage/v1/object/public/csvs/articles_with_sentiment.json"  
     if not os.path.exists(file_path):
         print(f"Error: Data file not found at {file_path}")
         return []

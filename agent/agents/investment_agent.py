@@ -31,7 +31,7 @@ def get_symbols_cached():
     """Get symbols list, cached and graceful if file missing."""
     global _symbols_cache
     if _symbols_cache is None:
-        _symbols_cache = get_symbols("data/historical_data.csv")
+        _symbols_cache = get_symbols("https://zdgnyapmdqhouyaikpdb.supabase.co/storage/v1/object/public/csvs/historical_data.csv")
         if not _symbols_cache:
             print("Warning: No symbols loaded, agent may have limited functionality")
             _symbols_cache = []  # Ensure it's a list even if empty
@@ -108,7 +108,9 @@ if the user mentions his portfolio, or investment goals, classify as PORTFOLIO_A
 def identify_stock_node(state: AgentState) -> AgentState:
     """Identify stock symbols mentioned in the user query."""
     
-    query = state["query"]    symbols = get_symbols_cached()  # Get symbols dynamically    prompt=f"""You are a stock symbol extraction agent for a financial chatbot.
+    query = state["query"]
+    symbols = get_symbols_cached()
+    prompt=f"""You are a stock symbol extraction agent for a financial chatbot.
 Your job is to read a user message and extract all stock symbols mentioned.
 If the stock symbol(s) mentioned are the in the following list, return them as a JSON array of strings with the same naming and casing in the list.
 Here is the list of valid stock symbols:
@@ -213,7 +215,7 @@ def investment_decision_node(state: AgentState) -> AgentState:
 def compare_stock_node(state: AgentState) -> AgentState:
     """Compare multiple stocks based on user query."""
     stocks = state["stock_symbol"]  # already a list of symbols
-    data = get_last_days("data/historical_data.csv", 5)
+    data = get_last_days("https://zdgnyapmdqhouyaikpdb.supabase.co/storage/v1/object/public/csvs/historical_data.csv", 5)
     msgs= [SystemMessage(content=COMPARE_STOCK_PROMPT)]
     stocks_dict = {}
     for stock in stocks:
@@ -238,7 +240,7 @@ def market_analysis_node(state: AgentState) -> AgentState:
     print("market_analysis_node called")
     """Perform market analysis (placeholder)."""
     # Placeholder implementation
-    data = get_last_days("data/historical_data.csv", 5)
+    data = get_last_days("https://zdgnyapmdqhouyaikpdb.supabase.co/storage/v1/object/public/csvs/historical_data.csv", 5)
     formatted_data = format_market_data_summary(data)
     msgs= [SystemMessage(content=ANALYSIS_PROMPT)]
     prompt=f"""Analyze the market based on the following recent data:
