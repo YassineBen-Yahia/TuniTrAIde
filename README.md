@@ -3,7 +3,7 @@
 ## Contexte
 La Bourse des Valeurs Mobilières de Tunis (BVMT) poursuit sa modernisation dans un contexte financier complexe et volatil. Les investisseurs tunisiens ont besoin d'outils intelligents, sécurisés et conformes au cadre réglementaire (CMF). Le marché présente des spécificités : liquidité variable, sources d'information multilingues (français/arabe), et besoin de surveillance des manipulations.
 
-![TuniTrAIde Platform](data/image.png)
+![TuniTrAIde Platform](assets/image.png)
 
 ## Problématique
 Concevoir un **Assistant Intelligent de Trading** intégré combinant :
