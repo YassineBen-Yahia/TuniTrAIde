@@ -1,124 +1,112 @@
-# ML Hackathon - Market Surveillance and Investment Advisor
+# IHEC-CODELAB 2.0 — Assistant Intelligent de Trading (BVMT)
 
-End-to-end demo combining market surveillance, anomaly detection, forecasting, sentiment analysis, and an investment advisor with trader and regulator roles.
+## Contexte
+La Bourse des Valeurs Mobilières de Tunis (BVMT) poursuit sa modernisation dans un contexte financier complexe et volatil. Les investisseurs tunisiens ont besoin d'outils intelligents, sécurisés et conformes au cadre réglementaire (CMF). Le marché présente des spécificités : liquidité variable, sources d'information multilingues (français/arabe), et besoin de surveillance des manipulations.
 
-## Features
-- Role-based access: Trader and Regulator
-- Market overview dashboards (index, movers, sentiment, alerts)
-- Alerts and surveillance with explain agent for anomalies
-- Stock analysis with rule-based market insights (last 5 days + next 5 days forecast)
-- Portfolio management, transactions, and analytics
-- Data refresh pipeline (updates CSVs on demand)
-- News sentiment pipeline and scrapers
-- Streamlit demo and React frontend
+![TuniTrAIde Platform](data/image.png)
 
-## Project Structure (high-level)
-- app/ : FastAPI backend (auth, CRUD, routes)
-- frontend/ : React UI
-- agent/ : LLM prompts and agents (investment + explain)
-- news_sentiment_analysis/ : scrapers, preprocess, live pipeline
-- data/ : CSV datasets (historical, forecast, sentiment)
-- utils/refresh.py : refresh_data() for CSV updates
+## Problématique
+Concevoir un **Assistant Intelligent de Trading** intégré combinant :
+- prévision des prix et de la liquidité,
+- analyse de sentiment de marché,
+- détection d'anomalies,
+- agent de décision et gestion de portefeuille.
 
-## Prerequisites
-- Python 3.10+ (recommended)
-- Node.js 18+ (for frontend)
-- SQLite (users.db)
+## Objectifs principaux
+- Aider les investisseurs à prendre des décisions éclairées.
+- Détecter des comportements suspects en quasi temps réel.
+- Expliquer de manière transparente les recommandations.
 
-## Installation
-1. Clone the repository and open the project folder.
-2. Install backend dependencies:
-	```bash
-	uv venv
-	uv pip install -r requirements.txt
-	```
-3. Install frontend dependencies:
-	```bash
-	cd frontend
-	npm install
-	```
+## Fonctionnalités cœur
+### A. Prévision des prix et de la liquidité (ML/Deep Learning)
+- Prédire les prix à court terme (1 à 5 jours) pour les principales valeurs BVMT.
+- Anticiper les périodes de faible/forte liquidité.
+- Identifier les meilleurs moments d'entrée/sortie.
 
-## Setup
+### B. Analyse de sentiment (NLP)
+- Collecter et analyser des actualités financières tunisiennes.
+- Classifier le sentiment (positif/négatif/neutre) par valeur.
+- Corréler sentiment et mouvements de prix (optionnel).
 
-### 1) Backend (FastAPI)
-```bash
-cd TuniTrAIde
-uv venv
-uv pip install -r requirements.txt
-```
+### C. Détection d'anomalies (Surveillance de marché)
+- Identifier les pics de volume et variations anormales.
+- Générer des alertes pour protéger l'investisseur.
+- Détecter des potentielles manipulations de marché.
 
-Start the API:
-```bash
-uv run uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
-```
+### D. Agent de décision augmentée (IA + Interface)
+- Recommandations : acheter / vendre / conserver.
+- Simulation de portefeuille virtuel.
+- Explication claire des recommandations.
+- Suivi et optimisation d'un portefeuille multi‑actifs.
 
-### 2) Frontend (React)
-```bash
-cd TuniTrAIde\frontend
-npm install
-npm run dev
-```
+## Spécifications techniques (synthèse)
+### Module 1 — Prévision
+**Objectifs**
+- Prix de clôture des 5 prochains jours ouvrables.
+- Volume journalier et probabilité de liquidité élevée/faible.
 
+**Livrables attendus**
+- Modèle entraîné avec métriques (RMSE, MAE, Directional Accuracy).
+- Visualisations prévision vs réel (avec intervalles de confiance).
+- API/fonction Python de prévision.
+- Pipeline temps réel (bonus).
 
+### Module 2 — Sentiment
+- Scraping de 3+ sources d'actualités tunisiennes.
+- Score de sentiment quotidien agrégé par entreprise.
+- Gestion du multilinguisme (français + arabe).
 
-## Authentication
-- Register: `POST /register` or `POST /auth/register`
-- Login: `POST /token`
-- Current user: `GET /users/me`
+### Module 3 — Anomalies
+- Détection :
+  - pics de volume (> 3σ),
+  - variations anormales (> 5 % en 1h sans news),
+  - patterns d'ordres suspects.
+- Livrables :
+  - métriques Precision/Recall/F1,
+  - interface d'alertes et visualisations.
 
-Tokens are stored in `localStorage` by the frontend.
+### Module 4 — Décision & Portefeuille
+- Profil utilisateur : conservateur / modéré / agressif.
+- Simulation portefeuille (capital virtuel, ROI, Sharpe, Max Drawdown).
+- Explainability obligatoire.
+- RL (optionnel) ou logique rule‑based (minimum viable).
 
-## Roles
-- Trader: standard portfolio and market tools
-- Regulator: view all transactions, flag suspicious activity, manage anomalies
+## Interface utilisateur (Dashboard)
+**Pages obligatoires**
+1. **Vue d'ensemble du marché**
+   - Indices (TUNINDEX), top gagnants/perdants, sentiment global, alertes.
+2. **Analyse d'une valeur spécifique**
+   - Historique + prévisions 5 jours, sentiment, RSI/MACD, recommandation.
+3. **Mon portefeuille**
+   - Positions, répartition, performance globale, suggestions.
+4. **Surveillance & alertes**
+   - Flux temps réel des anomalies, filtres, historique.
 
-## Market Data Refresh
-Refresh is only triggered when the user clicks the Refresh button on the Market Overview or Alerts pages.
-The backend endpoint `POST /market-overview/refresh` calls `utils.refresh.refresh_data()` and updates CSV files:
-- data/historical_data.csv
-- data/index_historical_data.csv
-- data/sentiment_features.csv
-- data/forecast_next_5_days.csv
+## Livrables finaux (hackathon)
+### Livrables techniques
+- Code source complet (GitHub/GitLab ou ZIP).
+- README avec instructions d'installation.
+- Requirements.txt (Python) ou package.json (Node).
+- Application fonctionnelle (locale ou hébergée) avec URL et identifiants.
+- Documentation technique : architecture, choix modèles, métriques, limites.
+- Notebooks Jupyter (recommandé) : EDA, entraînement, visualisations.
 
-If Refresh is not clicked, CSVs remain unchanged.
+### Livrables de présentation
+- Pitch Deck (10–15 min).
+- Vidéo démo (3–5 min).
+- Parcours utilisateur complet.
+- Cas d'usage : "Je veux investir 5000 TND, que recommandez‑vous ?"
 
-## Explain Agent
-Alerts page uses:
-`GET /explain/{stock_symbol}/{date}`
+## Scénarios d'usage (User Stories)
+### 1) Investisseur débutant
+Ahmed (28 ans) obtient un profil "modéré", reçoit un portefeuille diversifié et des explications détaillées pour chaque recommandation.
 
-This calls the explain agent to generate a short anomaly explanation for that stock/date.
+### 2) Trader averti
+Leila (35 ans) reçoit des alertes d'anomalie (volume anormal), vérifie les news, et ajuste sa stratégie selon le sentiment et la prévision de volatilité.
 
-## Key Endpoints
-- `GET /market-overview/alerts`
-- `POST /market-overview/refresh`
-- `GET /market-data/{symbol}/with-forecast`
-- `GET /sentiment/{symbol}`
-- `GET /stocks/search?q=...`
-- `GET /portfolios` and `POST /portfolios`
-- `POST /portfolios/{id}/transactions`
-- `GET /regulator/transactions`
-- `POST /regulator/suspicious`
-- `GET /regulator/anomalies`
+### 3) Régulateur (CMF)
+Un inspecteur reçoit une alerte sur une variation suspecte et déclenche une enquête en s'appuyant sur la timeline d'ordres et d'anomalies.
 
-## Data Sources
-- `data/historical_data.csv`
-- `data/forecast_next_5_days.csv`
-- `data/sentiment_features.csv`
-- `data/index_historical_data.csv`
+---
 
-## How to Use
-1. Start the backend and frontend.
-2. Register a new user or login with an existing account.
-3. Open the Market Overview page to view indices, movers, and sentiment.
-4. Use the Alerts page to review anomalies and click the explain button for details.
-5. Use the Stock Analysis page to review last 5 days and next 5 days forecast insights.
-6. For data updates, click Refresh on Market Overview or Alerts (this triggers CSV refresh).
-7. If you are a regulator, visit the Regulator views to inspect transactions and manage anomalies.
-
-## Troubleshooting
-- If `uvicorn` fails to start, check missing imports or path errors.
-- If news sentiment pipeline fails, verify paths under `news_sentiment_analysis/`.
-- If `users/me` fails, ensure a valid JWT token is present in localStorage.
-
-## Notes
-- This project is a hackathon-grade demo. For production, add caching, retries, background jobs, and stronger security controls.
+**Projet :** Assistant Intelligent de Trading pour la BVMT — IHEC‑CODELAB 2.0

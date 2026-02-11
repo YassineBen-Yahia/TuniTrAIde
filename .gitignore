@@ -27,3 +27,5 @@ logs/
 *.onnx
 data/*
 models
+
+Forecasting/mlruns
