@@ -1,112 +1,112 @@
-# IHEC-CODELAB 2.0 — Assistant Intelligent de Trading (BVMT)
+# IHEC-CODELAB 2.0 — Intelligent Trading Assistant (BVMT)
 
-## Contexte
-La Bourse des Valeurs Mobilières de Tunis (BVMT) poursuit sa modernisation dans un contexte financier complexe et volatil. Les investisseurs tunisiens ont besoin d'outils intelligents, sécurisés et conformes au cadre réglementaire (CMF). Le marché présente des spécificités : liquidité variable, sources d'information multilingues (français/arabe), et besoin de surveillance des manipulations.
+## Context
+The Tunis Stock Exchange (Bourse des Valeurs Mobilières de Tunis - BVMT) continues its modernization within a complex and volatile financial environment. Tunisian investors require intelligent, secure tools that comply with the regulatory framework (CMF). The market presents specific challenges: variable liquidity, multilingual information sources (French/Arabic), and the need for market manipulation monitoring.
 
 ![TuniTrAIde Platform](assets/image.png)
 
-## Problématique
-Concevoir un **Assistant Intelligent de Trading** intégré combinant :
-- prévision des prix et de la liquidité,
-- analyse de sentiment de marché,
-- détection d'anomalies,
-- agent de décision et gestion de portefeuille.
+## Problem Statement
+Design an integrated **Intelligent Trading Assistant** combining:
+- Price and liquidity forecasting,
+- Market sentiment analysis,
+- Anomaly detection,
+- Decision agent and portfolio management.
 
-## Objectifs principaux
-- Aider les investisseurs à prendre des décisions éclairées.
-- Détecter des comportements suspects en quasi temps réel.
-- Expliquer de manière transparente les recommandations.
+## Main Objectives
+- Assist investors in making informed decisions.
+- Detect suspicious behavior in near real-time.
+- Provide transparent explanations for recommendations.
 
-## Fonctionnalités cœur
-### A. Prévision des prix et de la liquidité (ML/Deep Learning)
-- Prédire les prix à court terme (1 à 5 jours) pour les principales valeurs BVMT.
-- Anticiper les périodes de faible/forte liquidité.
-- Identifier les meilleurs moments d'entrée/sortie.
+## Core Features
+### A. Price and Liquidity Forecasting (ML/Deep Learning)
+- Predict short-term prices (1 to 5 days) for key BVMT stocks.
+- Anticipate periods of low/high liquidity.
+- Identify optimal entry and exit points.
 
-### B. Analyse de sentiment (NLP)
-- Collecter et analyser des actualités financières tunisiennes.
-- Classifier le sentiment (positif/négatif/neutre) par valeur.
-- Corréler sentiment et mouvements de prix (optionnel).
+### B. Sentiment Analysis (NLP)
+- Collect and analyze Tunisian financial news.
+- Classify sentiment (positive/negative/neutral) per stock.
+- Correlate sentiment with price movements (optional).
 
-### C. Détection d'anomalies (Surveillance de marché)
-- Identifier les pics de volume et variations anormales.
-- Générer des alertes pour protéger l'investisseur.
-- Détecter des potentielles manipulations de marché.
+### C. Anomaly Detection (Market Surveillance)
+- Identify volume spikes and abnormal variations.
+- Generate alerts to protect the investor.
+- Detect potential market manipulations.
 
-### D. Agent de décision augmentée (IA + Interface)
-- Recommandations : acheter / vendre / conserver.
-- Simulation de portefeuille virtuel.
-- Explication claire des recommandations.
-- Suivi et optimisation d'un portefeuille multi‑actifs.
+### D. Augmented Decision Agent (AI + Interface)
+- Recommendations: Buy / Sell / Hold.
+- Virtual portfolio simulation.
+- Clear explainability of recommendations.
+- Tracking and optimization of a multi-asset portfolio.
 
-## Spécifications techniques (synthèse)
-### Module 1 — Prévision
-**Objectifs**
-- Prix de clôture des 5 prochains jours ouvrables.
-- Volume journalier et probabilité de liquidité élevée/faible.
+## Technical Specifications (Summary)
+### Module 1 — Forecasting
+**Objectives**
+- Closing prices for the next 5 business days.
+- Daily volume and probability of high/low liquidity.
 
-**Livrables attendus**
-- Modèle entraîné avec métriques (RMSE, MAE, Directional Accuracy).
-- Visualisations prévision vs réel (avec intervalles de confiance).
-- API/fonction Python de prévision.
-- Pipeline temps réel (bonus).
+**Expected Deliverables**
+- Trained model with metrics (RMSE, MAE, Directional Accuracy).
+- Forecast vs. Actual visualizations (including confidence intervals).
+- Prediction API or Python function.
+- Real-time pipeline (bonus).
 
 ### Module 2 — Sentiment
-- Scraping de 3+ sources d'actualités tunisiennes.
-- Score de sentiment quotidien agrégé par entreprise.
-- Gestion du multilinguisme (français + arabe).
+- Scraping of 3+ Tunisian news sources.
+- Daily aggregated sentiment score per company.
+- Multilingual support (French + Arabic).
 
 ### Module 3 — Anomalies
-- Détection :
-  - pics de volume (> 3σ),
-  - variations anormales (> 5 % en 1h sans news),
-  - patterns d'ordres suspects.
-- Livrables :
-  - métriques Precision/Recall/F1,
-  - interface d'alertes et visualisations.
+- Detection of:
+  - Volume spikes (> 3σ).
+  - Abnormal variations (> 5% within 1h without news).
+  - Suspicious order patterns.
+- Deliverables:
+  - Precision/Recall/F1 metrics.
+  - Alert interface and visualizations.
 
-### Module 4 — Décision & Portefeuille
-- Profil utilisateur : conservateur / modéré / agressif.
-- Simulation portefeuille (capital virtuel, ROI, Sharpe, Max Drawdown).
-- Explainability obligatoire.
-- RL (optionnel) ou logique rule‑based (minimum viable).
+### Module 4 — Decision & Portfolio
+- User Profile: Conservative / Moderate / Aggressive.
+- Portfolio simulation (Virtual capital, ROI, Sharpe ratio, Max Drawdown).
+- Mandatory Explainability.
+- Reinforcement Learning (optional) or rule-based logic (minimum viable).
 
-## Interface utilisateur (Dashboard)
-**Pages obligatoires**
-1. **Vue d'ensemble du marché**
-   - Indices (TUNINDEX), top gagnants/perdants, sentiment global, alertes.
-2. **Analyse d'une valeur spécifique**
-   - Historique + prévisions 5 jours, sentiment, RSI/MACD, recommandation.
-3. **Mon portefeuille**
-   - Positions, répartition, performance globale, suggestions.
-4. **Surveillance & alertes**
-   - Flux temps réel des anomalies, filtres, historique.
+## User Interface (Dashboard)
+**Required Pages**
+1. **Market Overview**
+   - Indices (TUNINDEX), top gainers/losers, global sentiment, alerts.
+2. **Specific Stock Analysis**
+   - History + 5-day forecasts, sentiment, RSI/MACD, recommendation.
+3. **My Portfolio**
+   - Positions, allocation, global performance, suggestions.
+4. **Surveillance & Alerts**
+   - Real-time anomaly feed, filters, history.
 
-## Livrables finaux (hackathon)
-### Livrables techniques
-- Code source complet (GitHub/GitLab ou ZIP).
-- README avec instructions d'installation.
-- Requirements.txt (Python) ou package.json (Node).
-- Application fonctionnelle (locale ou hébergée) avec URL et identifiants.
-- Documentation technique : architecture, choix modèles, métriques, limites.
-- Notebooks Jupyter (recommandé) : EDA, entraînement, visualisations.
+## Final Deliverables (Hackathon)
+### Technical Deliverables
+- Complete source code (GitHub/GitLab or ZIP).
+- README with installation instructions.
+- `requirements.txt` (Python) or `package.json` (Node).
+- Functional application (local or hosted) with URL and credentials.
+- Technical documentation: Architecture, model choices, metrics, limitations.
+- Jupyter Notebooks (recommended): EDA, training, visualizations.
 
-### Livrables de présentation
+### Presentation Deliverables
 - Pitch Deck (10–15 min).
-- Vidéo démo (3–5 min).
-- Parcours utilisateur complet.
-- Cas d'usage : "Je veux investir 5000 TND, que recommandez‑vous ?"
+- Demo Video (3–5 min).
+- Complete User Journey.
+- Use Case: "I want to invest 5,000 TND, what do you recommend?"
 
-## Scénarios d'usage (User Stories)
-### 1) Investisseur débutant
-Ahmed (28 ans) obtient un profil "modéré", reçoit un portefeuille diversifié et des explications détaillées pour chaque recommandation.
+## Usage Scenarios (User Stories)
+### 1) Beginner Investor
+Ahmed (28 years old) obtains a "moderate" profile, receives a diversified portfolio and detailed explanations for each recommendation.
 
-### 2) Trader averti
-Leila (35 ans) reçoit des alertes d'anomalie (volume anormal), vérifie les news, et ajuste sa stratégie selon le sentiment et la prévision de volatilité.
+### 2) Experienced Trader
+Leila (35 years old) receives anomaly alerts (abnormal volume), checks the news, and adjusts her strategy based on sentiment and volatility forecasts.
 
-### 3) Régulateur (CMF)
-Un inspecteur reçoit une alerte sur une variation suspecte et déclenche une enquête en s'appuyant sur la timeline d'ordres et d'anomalies.
+### 3) Regulator (CMF)
+An inspector receives an alert regarding a suspicious variation and triggers an investigation based on the timeline of orders and anomalies.
 
 ---
 
-**Projet :** Assistant Intelligent de Trading pour la BVMT — IHEC‑CODELAB 2.0
+**Project:** Intelligent Trading Assistant for BVMT — IHEC‑CODELAB 2.0

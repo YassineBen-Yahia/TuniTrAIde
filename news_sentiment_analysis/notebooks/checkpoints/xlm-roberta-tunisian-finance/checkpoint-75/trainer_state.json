@@ -1,0 +1,208 @@
+{
+  "best_metric": 1.0,
+  "best_model_checkpoint": "./checkpoints/xlm-roberta-tunisian-finance\\checkpoint-75",
+  "epoch": 3.0,
+  "eval_steps": 500,
+  "global_step": 75,
+  "is_hyper_param_search": false,
+  "is_local_process_zero": true,
+  "is_world_process_zero": true,
+  "log_history": [
+    {
+      "epoch": 0.4,
+      "grad_norm": 8.328564643859863,
+      "learning_rate": 4.000000000000001e-06,
+      "loss": 1.1025,
+      "step": 10
+    },
+    {
+      "epoch": 0.8,
+      "grad_norm": 4.172796249389648,
+      "learning_rate": 8.000000000000001e-06,
+      "loss": 1.1174,
+      "step": 20
+    },
+    {
+      "epoch": 1.0,
+      "eval_accuracy": 0.34,
+      "eval_loss": 1.0908291339874268,
+      "eval_report": {
+        "Negative": {
+          "f1-score": 0.5074626865671642,
+          "precision": 0.34,
+          "recall": 1.0,
+          "support": 17.0
+        },
+        "Neutral": {
+          "f1-score": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "support": 16.0
+        },
+        "Positive": {
+          "f1-score": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "support": 17.0
+        },
+        "accuracy": 0.34,
+        "macro avg": {
+          "f1-score": 0.1691542288557214,
+          "precision": 0.11333333333333334,
+          "recall": 0.3333333333333333,
+          "support": 50.0
+        },
+        "weighted avg": {
+          "f1-score": 0.17253731343283582,
+          "precision": 0.11560000000000001,
+          "recall": 0.34,
+          "support": 50.0
+        }
+      },
+      "eval_runtime": 15.2966,
+      "eval_samples_per_second": 3.269,
+      "eval_steps_per_second": 0.458,
+      "step": 25
+    },
+    {
+      "epoch": 1.2,
+      "grad_norm": 4.251755237579346,
+      "learning_rate": 1.2e-05,
+      "loss": 1.0909,
+      "step": 30
+    },
+    {
+      "epoch": 1.6,
+      "grad_norm": 8.530533790588379,
+      "learning_rate": 1.6000000000000003e-05,
+      "loss": 1.0676,
+      "step": 40
+    },
+    {
+      "epoch": 2.0,
+      "grad_norm": 8.33169174194336,
+      "learning_rate": 2e-05,
+      "loss": 0.9971,
+      "step": 50
+    },
+    {
+      "epoch": 2.0,
+      "eval_accuracy": 0.8,
+      "eval_loss": 0.9572147130966187,
+      "eval_report": {
+        "Negative": {
+          "f1-score": 0.7727272727272727,
+          "precision": 0.6296296296296297,
+          "recall": 1.0,
+          "support": 17.0
+        },
+        "Neutral": {
+          "f1-score": 0.8148148148148148,
+          "precision": 1.0,
+          "recall": 0.6875,
+          "support": 16.0
+        },
+        "Positive": {
+          "f1-score": 0.8275862068965517,
+          "precision": 1.0,
+          "recall": 0.7058823529411765,
+          "support": 17.0
+        },
+        "accuracy": 0.8,
+        "macro avg": {
+          "f1-score": 0.8050427648128796,
+          "precision": 0.8765432098765432,
+          "recall": 0.7977941176470589,
+          "support": 50.0
+        },
+        "weighted avg": {
+          "f1-score": 0.8048473238128411,
+          "precision": 0.874074074074074,
+          "recall": 0.8,
+          "support": 50.0
+        }
+      },
+      "eval_runtime": 13.7892,
+      "eval_samples_per_second": 3.626,
+      "eval_steps_per_second": 0.508,
+      "step": 50
+    },
+    {
+      "epoch": 2.4,
+      "grad_norm": 36.66476821899414,
+      "learning_rate": 1.7333333333333336e-05,
+      "loss": 0.9088,
+      "step": 60
+    },
+    {
+      "epoch": 2.8,
+      "grad_norm": 11.165454864501953,
+      "learning_rate": 1.4666666666666666e-05,
+      "loss": 0.6506,
+      "step": 70
+    },
+    {
+      "epoch": 3.0,
+      "eval_accuracy": 1.0,
+      "eval_loss": 0.29980430006980896,
+      "eval_report": {
+        "Negative": {
+          "f1-score": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "support": 17.0
+        },
+        "Neutral": {
+          "f1-score": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "support": 16.0
+        },
+        "Positive": {
+          "f1-score": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "support": 17.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "f1-score": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "support": 50.0
+        },
+        "weighted avg": {
+          "f1-score": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "support": 50.0
+        }
+      },
+      "eval_runtime": 19.295,
+      "eval_samples_per_second": 2.591,
+      "eval_steps_per_second": 0.363,
+      "step": 75
+    }
+  ],
+  "logging_steps": 10,
+  "max_steps": 125,
+  "num_input_tokens_seen": 0,
+  "num_train_epochs": 5,
+  "save_steps": 500,
+  "stateful_callbacks": {
+    "TrainerControl": {
+      "args": {
+        "should_epoch_stop": false,
+        "should_evaluate": false,
+        "should_log": false,
+        "should_save": true,
+        "should_training_stop": false
+      },
+      "attributes": {}
+    }
+  },
+  "total_flos": 78934025318400.0,
+  "train_batch_size": 8,
+  "trial_name": null,
+  "trial_params": null
+}
