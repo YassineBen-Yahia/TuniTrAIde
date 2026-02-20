@@ -1,4 +1,5 @@
-# IHEC-CODELAB 2.0 — Intelligent Trading Assistant (BVMT)
+# IHEC-CODELAB 2.0 — Intelligent Trading Assistant (BVMT) 
+
 
 ## Context
 The Tunis Stock Exchange (Bourse des Valeurs Mobilières de Tunis - BVMT) continues its modernization within a complex and volatile financial environment. Tunisian investors require intelligent, secure tools that comply with the regulatory framework (CMF). The market presents specific challenges: variable liquidity, multilingual information sources (French/Arabic), and the need for market manipulation monitoring.
