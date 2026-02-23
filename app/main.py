@@ -28,12 +28,7 @@ except ImportError as e:
     print(f"Warning: Could not import refresh_data: {e}")
 
 # Import the investment agent
-try:
-    from agent.agents.investment_agent import app as agent_app, AgentState
-    print("Investment agent imported successfully")
-except ImportError as e:
-    agent_app = None
-    print(f"Warning: Could not import investment agent: {e}")
+agent_app=None
 
 # Store chat sessions in memory (in production, use Redis or database)
 chat_sessions: Dict[str, List[Dict]] = {}
